@@ -5,6 +5,10 @@
             {
                 "text": "numbers of people",
                 "dest": "people_tags"
+            },
+            {
+                "text": "places",
+                "dest": "place_tags"
             }
         ]
     },
@@ -38,6 +42,65 @@
             }
         ]
     },
+    "place_tags": {
+        "question": "what kind of places are in the data?",
+        "options": [
+            {
+                "text": "administrative subdivisions (region, country, province, district, etc)",
+                "dest": "admin_tags"
+            },
+            {
+                "text": "latitude and/or longitude",
+                "hashtag": "geo",
+                "dest": "geo_atts"
+            },
+            {
+                "text": "specific locations (e.g. camps) or mixed types of locations",
+                "hashtag": "loc",
+                "dest": "movement_atts"
+            }
+        ]
+    },
+    "admin_tags": {
+        "question": "what admin level do you want to tag?",
+        "options": [
+            {
+                "text": "a multi-country region, like West Africa or the Caribbean",
+                "hashtag": "region",
+                "dest": "movement_atts"
+            },
+            {
+                "text": "a country or country-like (admin0) entity",
+                "hashtag": "country",
+                "dest": "movement_atts"
+            },
+            {
+                "text": "a top-level (admin1) subdivision",
+                "hashtag": "adm1",
+                "dest": "movement_atts"
+            },
+            {
+                "text": "a second-level (admin2) subdivision",
+                "hashtag": "adm2",
+                "dest": "movement_atts"
+            },
+            {
+                "text": "a third-level (admin3) subdivision",
+                "hashtag": "adm3",
+                "dest": "movement_atts"
+            },
+            {
+                "text": "a fourth-level (admin4) subdivision",
+                "hashtag": "adm4",
+                "dest": "movement_atts"
+            },
+            {
+                "text": "a fifth-level (admin5) subdivision",
+                "hashtag": "adm5",
+                "dest": "movement_atts"
+            }
+        ]
+    },
     "impact_atts": {
         "question": "do the numbers apply only to a specific humanitarian situation?",
         "options": [
@@ -45,7 +108,7 @@
                 "text": "people killed",
                 "dest": "gender_atts",
                 "attribute": "killed",
-                "excludes": ["inneed", "targeted", "reached"]
+                "exclude": ["inneed", "targeted", "reached"]
             },
             {
                 "text": "people injured",
@@ -123,6 +186,123 @@
             {
                 "text": "elderly people only",
                 "attribute": "elderly"
+            }
+        ]
+    },
+    "geo_atts": {
+        "question": "what kind of geographic information do you want to tag?",
+        "options": [
+            {
+                "text": "latitude only",
+                "attribute": "lat"
+            },
+            {
+                "text": "longitude only",
+                "attribute": "lon"
+            },
+            {
+                "text": "latitude and longitude together in one field",
+                "attribute": "latlon"
+            },
+            {
+                "text": "elevation above sea level",
+                "attribute": "elev"
+            }
+        ]
+    },
+    "movement_atts": {
+        "question": "is this location part of a population movement?",
+        "options": [
+            {
+                "text": "no, the dataset is not about population movements",
+                "dest": "adm_atts"
+            },
+            {
+                "text": "yes, it is the origin of a population movement",
+                "attribute": "origin",
+                "dest": "adm_atts"
+            },
+            {
+                "text": "yes, it is the destination of a population movement",
+                "attribute": "dest",
+                "dest": "adm_atts"
+            },
+            {
+                "text": "yes, it is a location of asylum",
+                "attribute": "asylum",
+                "dest": "adm_atts"
+            }
+        ]
+    },
+    "adm_atts": {
+        "question": "how is the location described?",
+        "options": [
+            {
+                "text": "by its name",
+                "attribute": "name",
+                "dest": "lang_atts"
+            },
+            {
+                "text": "by a code",
+                "attribute": "code",
+                "dest": "code_atts"
+            }
+        ]
+    },
+    "lang_atts": {
+        "question": "do you want to identify the language of the content?",
+        "options": [
+            {
+                "text": "no, I want to leave it unspecified"
+            },
+            {
+                "text": "yes, the text is in English",
+                "attribute": "i_en"
+            },
+            {
+                "text": "yes, the text is in French",
+                "attribute": "i_fr"
+            },
+            {
+                "text": "yes, the text is in Arabic",
+                "attribute": "i_ar"
+            },
+            {
+                "text": "yes, the text is in Spanish",
+                "attribute": "i_es"
+            },
+            {
+                "text": "yes, the text is in Russian",
+                "attribute": "i_ru"
+            },
+            {
+                "text": "yes, the text is in Swahili",
+                "attribute": "i_sw"
+            }
+        ],
+        "pre-text": "To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog"
+    },
+    "code_atts": {
+        "question": "Do you want to indicate what code list your using?",
+        "pre-text": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
+        "options": [
+            {
+                "text": "no, leave it unspecified"
+            },
+            {
+                "text": "yes, specify ISO3 country codes (like \"SYR\" for Syria)",
+                "attribute": "v_iso3",
+                "include": ["country"]
+            },
+            {
+                "text": "yes, specify ISO2 country codes (like \"SY\" for Syria)",
+                "attribute": "v_iso2",
+                "include": ["country"]
+            },
+            {
+                "text": "yes, specify P-codes",
+                "attribute": "v_pcodes",
+                "exclude": ["region", "country"]
             }
         ]
     }
