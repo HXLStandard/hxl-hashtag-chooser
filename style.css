@@ -1,0 +1,13 @@
+body {
+    font-family: Helvetica, Ariel, sans-serif;
+}
+
+section.result .tagspec {
+    font-family: fixed;
+    font-size: 244%;
+}
+
+section.question, section.result {
+    display: block;
+    min-height: 100vh;
+}
