@@ -1,0 +1,8 @@
+body {
+    font-family: Helvetica, Ariel, sans-serif;
+}
+
+section.question, section.result {
+    display: block;
+    height: 100vh;
+}

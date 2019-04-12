@@ -1,0 +1,130 @@
+{
+    "top": {
+        "question": "What kind of data do you want to tag?",
+        "options": [
+            {
+                "text": "numbers of people",
+                "dest": "people_tags"
+            }
+        ]
+    },
+    "people_tags": {
+        "question": "What is the humanitarian context for the people being counted?",
+        "options": [
+            {
+                "text": "general population (including those not affected by the crisis)",
+                "dest": "gender_atts",
+                "hashtag": "population"
+            },
+            {
+                "text": "people affected by the crisis (including those not in need of assistance)",
+                "dest": "impact_atts",
+                "hashtag": "affected"
+            },
+            {
+                "text": "people in need of humanitarian assistance (including those not targeted by the response)",
+                "dest": "impact_atts",
+                "hashtag": "inneed"
+            },
+            {
+                "text": "people targeted for humanitarian assistance (including those not yet reached)",
+                "dest": "impact_atts",
+                "hashtag": "targeted"
+            },
+            {
+                "text": "people already reached with humanitarian assistance",
+                "dest": "impact_atts",
+                "hashtag": "reached"
+            }
+        ]
+    },
+    "impact_atts": {
+        "question": "do the numbers apply only to a specific humanitarian situation?",
+        "options": [
+            {
+                "text": "people killed",
+                "dest": "gender_atts",
+                "attribute": "killed",
+                "excludes": ["inneed", "targeted", "reached"]
+            },
+            {
+                "text": "people injured",
+                "dest": "gender_atts",
+                "attribute": "injured"
+            },
+            {
+                "text": "people abducted",
+                "dest": "gender_atts",
+                "attribute": "abducted"
+            },
+            {
+                "text": "all displaced people (internal or external)",
+                "dest": "gender_atts",
+                "attribute": "displaced"
+            },
+            {
+                "text": "internally-displaced people (IDPs)",
+                "dest": "gender_atts",
+                "attribute": "idps"
+            },
+            {
+                "text": "refugees",
+                "dest": "gender_atts",
+                "attribute": "refugees"
+            }
+        ]
+    },
+    "gender_atts": {
+        "question": "do the numbers apply only to a specific gender?",
+        "options": [
+            {
+                "text": "all genders are included",
+                "dest": "age_atts"
+            },
+            {
+                "text": "female people only",
+                "dest": "age_atts",
+                "attribute": "f"
+            },
+            {
+                "text": "male people only",
+                "dest": "age_atts",
+                "attribute": "m"
+            },
+            {
+                "text": "non-gender-binary people only",
+                "dest": "age_atts",
+                "attribute": "i"
+            }
+        ]
+    },
+    "age_atts": {
+        "question": "do the numbers apply only to a specific age group?",
+        "options": [
+            {
+                "text": "all ages are included"
+            },
+            {
+                "text": "any children (might include infants or adolescents)",
+                "attribute": "children"
+            },
+            {
+                "text": "infants only",
+                "attribute": "infants"
+            },
+            {
+                "text": "adolescents only",
+                "attribute": "adolescents"
+            },
+            {
+                "text": "any adults (might include adolescents or elderly people",
+                "attribute": "adults"
+            },
+            {
+                "text": "elderly people only",
+                "attribute": "elderly"
+            }
+        ]
+    }
+}
+
