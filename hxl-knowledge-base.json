@@ -3,12 +3,20 @@
         "question": "What kind of data do you want to tag?",
         "options": [
             {
-                "text": "numbers of people",
+                "text": "numbers of people (e.g. from a census or needs assessment)",
                 "dest": "people_tags"
             },
             {
                 "text": "places",
                 "dest": "place_tags"
+            },
+            {
+                "text": "humanitarian response (activities, organisations, clusters, etc.)",
+                "dest": "response_tags"
+            },
+            {
+                "text": "crises or events (e.g. security incidents)",
+                "dest": "event_tags"
             }
         ]
     },
@@ -58,6 +66,72 @@
                 "text": "specific locations (e.g. camps) or mixed types of locations",
                 "hashtag": "loc",
                 "dest": "movement_atts"
+            }
+        ]
+    },
+    "response_tags": {
+        "question": "what kind of response information do you want to tag?",
+        "options": [
+            {
+                "text": "a humanitarian organisation",
+                "hashtag": "org",
+                "dest": "id_atts"
+            },
+            {
+                "text": "a humanitarian cluster or sector",
+                "hashtag": "sector",
+                "dest": "code_atts"
+            },
+            {
+                "text": "a humanitarian programme, project, or activity",
+                "hashtag": "activity",
+                "dest": "id_atts"
+            },
+            {
+                "text": "a longer description of an activity, project, etc",
+                "hashtag": "description",
+                "dest": "lang_atts"
+            },
+            {
+                "text": "the output or outcome of a humanitarian activity",
+                "hashtag": "output",
+                "dest": "code_atts"
+            },
+            {
+                "text": "the beneficiary type for a humanitarian activity",
+                "hashtag": "beneficiary",
+                "dest": "code_atts"
+            },
+            {
+                "text": "the current status of an activity, project, etc.",
+                "hashtag": "status",
+                "dest": "code_atts"
+            },
+            {
+                "text": "a date associated with an activity or response",
+                "hashtag": "date",
+                "dest": "date_atts"
+            }
+        ]
+    },
+    "event_tags": {
+        "question": "what kind of event information do you want to tag?",
+        "options": [
+            {
+                "text": "information about a specific incident",
+                "hashtag": "event"
+            },
+            {
+                "text": "information about a non-humanitarian group involved an incident",
+                "hashtag": "group"
+            },
+            {
+                "text": "the severity of an incident",
+                "hashtag": "severity"
+            },
+            {
+                "text": "an impact of an incident",
+                "hashtag": "impact"
             }
         ]
     },
@@ -234,6 +308,67 @@
             }
         ]
     },
+    "id_atts": {
+        "question": "what kind of information do you want to provide?",
+        "options": [
+            {
+                "text": "a human-readable name",
+                "attribute": "name",
+                "dest": "lang_atts"
+            },
+            {
+                "text": "a unique identifier",
+                "attribute": "id"
+            },
+            {
+                "text": "a type/classification",
+                "attribute": "type"
+            }
+        ]
+    },
+    "code_atts": {
+        "question": "what kind of information do you want to provide?",
+        "options": [
+            {
+                "text": "a human-readable name",
+                "attribute": "name",
+                "dest": "lang_atts"
+            },
+            {
+                "text": "a unique machine code",
+                "attribute": "code"
+            },
+            {
+                "text": "a type/classification",
+                "attribute": "type",
+                "exclude": ["status"]
+            }
+        ]
+    },
+    "date_atts": {
+        "question": "what kind of a date is this?",
+        "options": [
+            {
+                "text": "unspecified"
+            },
+            {
+                "text": "a start date",
+                "attribute": "start"
+            },
+            {
+                "text": "an end date",
+                "attribute": "end"
+            },
+            {
+                "text": "a specific date when something happened",
+                "attribute": "occurred"
+            },
+            {
+                "text": "a specific date when something was reported",
+                "attribute": "reported"
+            }
+        ]
+    },
     "adm_atts": {
         "question": "how is the location described?",
         "options": [
@@ -245,7 +380,7 @@
             {
                 "text": "by a code",
                 "attribute": "code",
-                "dest": "code_atts"
+                "dest": "geocode_atts"
             }
         ]
     },
@@ -282,7 +417,7 @@
         ],
         "pre-text": "To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog"
     },
-    "code_atts": {
+    "geocode_atts": {
         "question": "Do you want to indicate what code list you are using?",
         "pre-text": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
         "options": [

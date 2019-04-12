@@ -1,5 +1,10 @@
 body {
     font-family: Helvetica, Ariel, sans-serif;
+    margin: 1ex 1em;
+}
+
+section {
+    padding: 1em;
 }
 
 section.result .tagspec {
@@ -10,4 +15,8 @@ section.result .tagspec {
 section.question, section.result {
     display: block;
     min-height: 100vh;
+}
+
+li {
+    margin: 1ex 0;
 }

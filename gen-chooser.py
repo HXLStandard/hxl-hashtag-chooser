@@ -17,22 +17,27 @@ def make_html_id(id, hashtag, attributes):
     else:
         return "_".join([hashtag] + attributes)
 
-def display_question(id, hashtag=None, attributes=[]):
+def display_question(id, hashtag=None, attributes=[], previous_id=None):
     question = base[id]
+    html_id = make_html_id(id, hashtag, attributes)
 
     # rendering
-    print("    <section class=\"question\" id=\"{}\">".format(esc(make_html_id(id, hashtag, attributes))))
+    print("    <section class=\"question\" id=\"{}\">".format(esc(html_id)))
+    if id != "top":
+        print("      <div><a href=\"#_top\">Start over</a></p>")
     print("      <h2>{}</h2>".format(esc(question["question"].capitalize())))
     if hashtag is not None:
         print("      <p class=\"tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
-    print("      <ul>")
     if "pre-text" in question:
         print("        <p class=\"pre-text\">{}</p>".format(esc(question["pre-text"])))
+    print("      <ul>")
     for option in question["options"]:
         display_option(option, hashtag, attributes)
+    print("      </ul>")
     if "post-text" in question:
         print("        <p class=\"post-text\">{}</p>".format(esc(question["post-text"])))
-    print("      </ul>")
+    if previous_id is not None:
+        print("      <p><a href=\"#{}\">Back to previous question</a></p>".format(esc(previous_id)))
     print("    </section>")
 
     # recursion
@@ -46,9 +51,9 @@ def display_question(id, hashtag=None, attributes=[]):
                 opt_attributes.append(option["attribute"])
 
             if "dest" in option:
-                display_question(option["dest"], opt_hashtag, opt_attributes)
+                display_question(option["dest"], opt_hashtag, opt_attributes, html_id)
             else:
-                display_result(opt_hashtag, opt_attributes)
+                display_result(opt_hashtag, opt_attributes, html_id)
 
 def display_option(option, hashtag, attributes):
     if "include" in option and hashtag not in option["include"]:
@@ -70,17 +75,19 @@ def display_option(option, hashtag, attributes):
         esc(option["text"])
     ))
 
-def display_result(hashtag, attributes):
+def display_result(hashtag, attributes, previous_id):
     print("    <section class=\"result\" id=\"{}_\">".format(esc(make_html_id(id, hashtag, attributes))))
+    print("      <div><a href=\"#_top\">Start over</a></p>")
     print("      <h2>Use this hashtag and attributes</h2>")
     print("      <p class=\"tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
+    print("      <p><a href=\"#{}\">Back to previous question</a></p>".format(esc(previous_id)))
     print("    </section>")
 
 print("<!DOCTYPE html>")
 print("<html>")
 print("  <head>")
 print("    <title>HXL hashtag chooser</title>")
-print("    <link rel=\"stylesheet\" href=\"style.css\">HXL hashtag chooser</title>")
+print("    <link rel=\"stylesheet\" href=\"style.css\"/>")
 print("  </head>")
 print("  <body>")
 display_question("top")
