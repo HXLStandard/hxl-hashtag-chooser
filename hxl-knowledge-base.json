@@ -1,6 +1,6 @@
 {
     "top": {
-        "question": "What kind of data do you want to tag?",
+        "question": "What kind of data do you want to tag in HXL?",
         "options": [
             {
                 "text": "numbers of people (e.g. from a census or needs assessment)",
@@ -17,6 +17,16 @@
             {
                 "text": "crises or events (e.g. security incidents)",
                 "dest": "event_tags"
+            },
+            {
+                "text": "dates",
+                "hashtag": "date",
+                "dest": "date_atts"
+            },
+            {
+                "text": "indicators other than numbers of people",
+                "hashtag": "indicator",
+                "dest": "indicator_atts"
             }
         ]
     },
@@ -119,19 +129,23 @@
         "options": [
             {
                 "text": "information about a specific incident",
-                "hashtag": "event"
+                "hashtag": "event",
+                "dest": "id_atts"
             },
             {
                 "text": "information about a non-humanitarian group involved an incident",
-                "hashtag": "group"
+                "hashtag": "group",
+                "dest": "id_atts"
             },
             {
                 "text": "the severity of an incident",
-                "hashtag": "severity"
+                "hashtag": "severity",
+                "dest": "code_atts"
             },
             {
                 "text": "an impact of an incident",
-                "hashtag": "impact"
+                "hashtag": "impact",
+                "dest": "code_atts"
             }
         ]
     },
@@ -178,6 +192,10 @@
     "impact_atts": {
         "question": "do the numbers apply only to a specific humanitarian situation?",
         "options": [
+            {
+                "text": "no, the situation is unspecified",
+                "dest": "gender_atts"
+            },
             {
                 "text": "people killed",
                 "dest": "gender_atts",
@@ -239,27 +257,33 @@
         "question": "do the numbers apply only to a specific age group?",
         "options": [
             {
-                "text": "all ages are included"
+                "text": "all ages are included",
+                "note": "The values should always be numbers"
             },
             {
                 "text": "any children (might include infants or adolescents)",
-                "attribute": "children"
+                "attribute": "children",
+                "note": "The values should always be numbers. You may also add a custom attribute like +age_5_12 to give a specific range."
             },
             {
                 "text": "infants only",
-                "attribute": "infants"
+                "attribute": "infants",
+                "note": "The values should always be numbers. You may also add a custom attribute like +age_0_2 to give a specific range."
             },
             {
                 "text": "adolescents only",
-                "attribute": "adolescents"
+                "attribute": "adolescents",
+                "note": "The values should always be numbers. You may also add a custom attribute like +age_12_17 to give a specific range."
             },
             {
                 "text": "any adults (might include adolescents or elderly people",
-                "attribute": "adults"
+                "attribute": "adults",
+                "note": "The values should always be numbers. You may also add a custom attribute like +age_18_64 to give a specific range."
             },
             {
                 "text": "elderly people only",
-                "attribute": "elderly"
+                "attribute": "elderly",
+                "note": "The values should always be numbers. You may also add a custom attribute like +age_65_ to give a specific range."
             }
         ]
     },
@@ -268,19 +292,23 @@
         "options": [
             {
                 "text": "latitude only",
-                "attribute": "lat"
+                "attribute": "lat",
+                "note": "The preferred format for latitude is a decimal value, e.g. \"8.5\" instead of \"8 30.0N\"."
             },
             {
                 "text": "longitude only",
-                "attribute": "lon"
+                "attribute": "lon",
+                "note": "The preferred format for longitude is a decimal value, e.g. \"-75.5\" instead of \"75 30.0W\"."
             },
             {
                 "text": "latitude and longitude together in one field",
-                "attribute": "latlon"
+                "attribute": "latlon",
+                "note": "The preferred format is the decimal latitude separated by a comma from the decimal longitude, e.g. \"8.5, -75.5\"."
             },
             {
                 "text": "elevation above sea level",
-                "attribute": "elev"
+                "attribute": "elev",
+                "note": "The preferred unit is metres above sea level."
             }
         ]
     },
@@ -349,23 +377,28 @@
         "question": "what kind of a date is this?",
         "options": [
             {
-                "text": "unspecified"
+                "text": "unspecified",
+                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
                 "text": "a start date",
-                "attribute": "start"
+                "attribute": "start",
+                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
                 "text": "an end date",
-                "attribute": "end"
+                "attribute": "end",
+                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
                 "text": "a specific date when something happened",
-                "attribute": "occurred"
+                "attribute": "occurred",
+                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
                 "text": "a specific date when something was reported",
-                "attribute": "reported"
+                "attribute": "reported",
+                "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             }
         ]
     },
@@ -438,6 +471,36 @@
                 "text": "yes, specify P-codes",
                 "attribute": "v_pcodes",
                 "exclude": ["region", "country"]
+            }
+        ]
+    },
+    "indicator_atts": {
+        "question": "What is the most-specify data type that applies to every indicator value?",
+        "pre-text": "For general indicators, you also need to add your own, custom attribute to distinguish it, such as +biomass or +severe_acute_malnourished. There is no master list of these, but your organisation may already have its own identifiers.",
+        "options": [
+            {
+                "text": "a boolean (true/false or yes/no-style) value",
+                "attribute": "bool",
+                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+            },
+            {
+                "text": "a percentage",
+                "attribute": "pct",
+                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+            },
+            {
+                "text": "any other numeric value",
+                "attribute": "num",
+                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+            },
+            {
+                "text": "a list of values",
+                "attribute": "list",
+                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+            },
+            {
+                "text": "unstructured text",
+                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
             }
         ]
     }

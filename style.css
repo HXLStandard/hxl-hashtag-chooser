@@ -1,14 +1,17 @@
 body {
     font-family: Helvetica, Ariel, sans-serif;
-    margin: 1ex 1em;
 }
 
 section {
     padding: 1em;
 }
 
+.tagspec {
+    font-family: Courier, fixed;
+    color: #660000;
+}
+
 section.result .tagspec {
-    font-family: fixed;
     font-size: 244%;
 }
 
@@ -19,4 +22,21 @@ section.question, section.result {
 
 li {
     margin: 1ex 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+div.nav {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+div.nav a {
+    text-decoration: none;
+    font-size: 83.333333%;
 }

@@ -7,6 +7,7 @@ def esc(s):
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;").replace("'", "&apos;")
 
 def make_tagspec(hashtag, attributes):
+    attributes = [attribute for attribute in attributes if attribute]
     return " +".join(["#" + hashtag] + attributes)
 
 def make_html_id(id, hashtag, attributes):
@@ -23,11 +24,15 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
 
     # rendering
     print("    <section class=\"question\" id=\"{}\">".format(esc(html_id)))
-    if id != "top":
-        print("      <div><a href=\"#_top\">Start over</a></p>")
+    print("      <div class=\"nav\">")
+    if id == "top":
+        print("      <a>HXL hashtag chooser</a>")
+    else:
+        print("      <a href=\"#_top\">Start over</a>")
+    print("      </div>")
     print("      <h2>{}</h2>".format(esc(question["question"].capitalize())))
     if hashtag is not None:
-        print("      <p class=\"tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
+        print("      <p>So far: <span class=\"tagspec\">{}</span></p>".format(esc(make_tagspec(hashtag, attributes))))
     if "pre-text" in question:
         print("        <p class=\"pre-text\">{}</p>".format(esc(question["pre-text"])))
     print("      <ul>")
@@ -36,8 +41,13 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     print("      </ul>")
     if "post-text" in question:
         print("        <p class=\"post-text\">{}</p>".format(esc(question["post-text"])))
+    print("        <div class=\"nav\">")
     if previous_id is not None:
-        print("      <p><a href=\"#{}\">Back to previous question</a></p>".format(esc(previous_id)))
+        print("      <a href=\"#{}\">Previous question</a>".format(esc(previous_id)))
+    else:
+        print("      <a>Previous question</a>")
+    print("          <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">HXL dictionary</a>")
+    print("        </div>")
     print("    </section>")
 
     # recursion
@@ -47,13 +57,13 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
             opt_attributes = list(attributes)
             if "hashtag" in option:
                 opt_hashtag = option["hashtag"]
-            if "attribute" in option:
-                opt_attributes.append(option["attribute"])
+            elif opt_hashtag is not None:
+                opt_attributes.append(option.get("attribute", ""))
 
             if "dest" in option:
                 display_question(option["dest"], opt_hashtag, opt_attributes, html_id)
             else:
-                display_result(opt_hashtag, opt_attributes, html_id)
+                display_result(option, opt_hashtag, opt_attributes, html_id)
 
 def display_option(option, hashtag, attributes):
     if "include" in option and hashtag not in option["include"]:
@@ -65,22 +75,28 @@ def display_option(option, hashtag, attributes):
     opt_attributes = list(attributes)
     if "hashtag" in option:
         opt_hashtag = option["hashtag"]
-    if "attribute" in option:
-        opt_attributes.append(option["attribute"])
+    elif opt_hashtag is not None:
+        opt_attributes.append(option.get("attribute", ""))
+        
     link = make_html_id(option.get("dest"), opt_hashtag, opt_attributes)
     if "dest" not in option:
-        link = link + "_"
+        link = link + "_000"
     print("        <li><a href=\"#{}\">{}</a></li>".format(
         esc(link),
         esc(option["text"])
     ))
 
-def display_result(hashtag, attributes, previous_id):
-    print("    <section class=\"result\" id=\"{}_\">".format(esc(make_html_id(id, hashtag, attributes))))
-    print("      <div><a href=\"#_top\">Start over</a></p>")
+def display_result(option, hashtag, attributes, previous_id):
+    print("    <section class=\"result\" id=\"{}_000\">".format(esc(make_html_id(id, hashtag, attributes))))
+    print("      <div class=\"nav\"><a href=\"#_top\">Start over</a></div>")
     print("      <h2>Use this hashtag and attributes</h2>")
     print("      <p class=\"tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
-    print("      <p><a href=\"#{}\">Back to previous question</a></p>".format(esc(previous_id)))
+    if "note" in option:
+        print("      <p class=\"note\">{}</p>".format(esc(option["note"])))
+    print("      <div class=\"nav\">")
+    print("        <a href=\"#{}\">Previous question</a>".format(esc(previous_id)))
+    print("        <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">HXL dictionary</a>")
+    print("      </div>")
     print("    </section>")
 
 print("<!DOCTYPE html>")
