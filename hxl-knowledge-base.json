@@ -84,17 +84,17 @@
         "question": "what kind of response information do you want to tag?",
         "options": [
             {
-                "text": "a humanitarian organisation",
+                "text": "an organisation (humanitarian)",
                 "hashtag": "org",
                 "dest": "org_atts"
             },
             {
-                "text": "a humanitarian cluster or sector",
+                "text": "a cluster or sector",
                 "hashtag": "sector",
                 "dest": "sector_tags"
             },
             {
-                "text": "a humanitarian programme, project, or activity",
+                "text": "a programme, project, or activity",
                 "hashtag": "activity",
                 "dest": "id_atts"
             },
@@ -109,7 +109,7 @@
                 "dest": "code_atts"
             },
             {
-                "text": "the beneficiary type for a humanitarian activity",
+                "text": "the intended beneficiary/ies",
                 "hashtag": "beneficiary",
                 "dest": "code_atts"
             },
