@@ -26,6 +26,7 @@
             {
                 "text": "indicators other than numbers of people",
                 "hashtag": "indicator",
+                "attribute": "MY_CUSTOM_ATTRIBUTE",
                 "dest": "indicator_atts"
             }
         ]
@@ -476,26 +477,26 @@
             {
                 "text": "a boolean (true/false or yes/no-style) value",
                 "attribute": "bool",
-                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
             },
             {
                 "text": "a percentage",
                 "attribute": "pct",
-                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
             },
             {
                 "text": "any other numeric value",
                 "attribute": "num",
-                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
             },
             {
                 "text": "a list of values",
                 "attribute": "list",
-                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
             },
             {
                 "text": "unstructured text",
-                "note": "Do not forget to add your own custom attribute as well, such as +severe_acute_malnourished."
+                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
             }
         ]
     }

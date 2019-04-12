@@ -57,6 +57,8 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
             opt_attributes = list(attributes)
             if "hashtag" in option:
                 opt_hashtag = option["hashtag"]
+                if "attribute" in option:
+                    opt_attributes.append(option["attribute"])
             elif opt_hashtag is not None:
                 opt_attributes.append(option.get("attribute", ""))
 
@@ -75,6 +77,8 @@ def display_option(option, hashtag, attributes):
     opt_attributes = list(attributes)
     if "hashtag" in option:
         opt_hashtag = option["hashtag"]
+        if "attribute" in option:
+            opt_attributes.append(option["attribute"])
     elif opt_hashtag is not None:
         opt_attributes.append(option.get("attribute", ""))
         
