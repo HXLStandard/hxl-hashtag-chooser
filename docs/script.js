@@ -1,15 +1,21 @@
 // Progressive-enhancement script for HXL hashtag chooser
 
-function getHash() {
+/**
+ * Update the current display based on the hash.
+ */
+function updateHash() {
     var hash = location.hash;
     if (hash) {
         hash = hash.substr(1);
     } else {
         hash = "_top";
     }
-    return hash;
+    showSection(hash);
 }
 
+/**
+ * Hide all sections except the one with the hash (id) provided
+ */
 function showSection(hash) {
     var nodes = document.getElementsByTagName("section");
     for (var i = 0; i < nodes.length; i++) {
@@ -22,13 +28,9 @@ function showSection(hash) {
     }
 }
 
-function updateHash() {
-    var hash = getHash();
-    console.log("Hash change!", hash);
-    showSection(hash);
-}
-
+// Fire updateHash whenever the user clicks on a link that changes the hash
 window.addEventListener('hashchange', updateHash);
-    
+
+// Fire updateHash on start
 window.onload = updateHash;
     
