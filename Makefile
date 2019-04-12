@@ -1,7 +1,7 @@
-all: www/index.html
+all: docs/index.html
 
-www/style.css: style.css
-	cp style.css www
+docs/style.css: style.css
+	cp style.css docs/style.css
 
-www/index.html: hxl-knowledge-base.json gen-chooser.py www/style.css
-	python gen-chooser.py > www/index.html
+docs/index.html: hxl-knowledge-base.json gen-chooser.py docs/style.css
+	python gen-chooser.py > docs/index.html

@@ -18,34 +18,26 @@ def make_html_id(id, hashtag, attributes):
         return "_".join([hashtag] + attributes)
 
 def display_question(id, hashtag=None, attributes=[]):
-    data = base[id]
+    question = base[id]
 
     # rendering
     print("    <section class=\"question\" id=\"{}\">".format(esc(make_html_id(id, hashtag, attributes))))
-    print("      <h2>{}</h2>".format(esc(data["question"].capitalize())))
+    print("      <h2>{}</h2>".format(esc(question["question"].capitalize())))
     if hashtag is not None:
         print("      <p class=\"tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
     print("      <ul>")
-    for option in data["options"]:
-        opt_hashtag = hashtag
-        opt_attributes = list(attributes)
-        if "hashtag" in option:
-            opt_hashtag = option["hashtag"]
-        if "attribute" in option:
-            opt_attributes.append(option["attribute"])
-        link = make_html_id(option.get("dest"), opt_hashtag, opt_attributes)
-        if "dest" not in option:
-            link = link + "_"
-        print("        <li><a href=\"#{}\">{}</a></li>".format(
-            esc(link),
-            esc(option["text"])
-        ))
+    if "pre-text" in question:
+        print("        <p class=\"pre-text\">{}</p>".format(esc(question["pre-text"])))
+    for option in question["options"]:
+        display_option(option, hashtag, attributes)
+    if "post-text" in question:
+        print("        <p class=\"post-text\">{}</p>".format(esc(question["post-text"])))
     print("      </ul>")
     print("    </section>")
 
     # recursion
-    if "options" in data:
-        for option in data["options"]:
+    if "options" in question:
+        for option in question["options"]:
             opt_hashtag = hashtag
             opt_attributes = list(attributes)
             if "hashtag" in option:
@@ -57,6 +49,26 @@ def display_question(id, hashtag=None, attributes=[]):
                 display_question(option["dest"], opt_hashtag, opt_attributes)
             else:
                 display_result(opt_hashtag, opt_attributes)
+
+def display_option(option, hashtag, attributes):
+    if "include" in option and hashtag not in option["include"]:
+        return
+    elif "exclude" in option and hashtag in option["exclude"]:
+        return
+    
+    opt_hashtag = hashtag
+    opt_attributes = list(attributes)
+    if "hashtag" in option:
+        opt_hashtag = option["hashtag"]
+    if "attribute" in option:
+        opt_attributes.append(option["attribute"])
+    link = make_html_id(option.get("dest"), opt_hashtag, opt_attributes)
+    if "dest" not in option:
+        link = link + "_"
+    print("        <li><a href=\"#{}\">{}</a></li>".format(
+        esc(link),
+        esc(option["text"])
+    ))
 
 def display_result(hashtag, attributes):
     print("    <section class=\"result\" id=\"{}_\">".format(esc(make_html_id(id, hashtag, attributes))))

@@ -1116,7 +1116,6 @@
       <h2>Do the numbers apply only to a specific humanitarian situation?</h2>
       <p class="tagspec">#inneed</p>
       <ul>
-        <li><a href="#inneed_killed">people killed</a></li>
         <li><a href="#inneed_injured">people injured</a></li>
         <li><a href="#inneed_abducted">people abducted</a></li>
         <li><a href="#inneed_displaced">all displaced people (internal or external)</a></li>
@@ -2052,7 +2051,6 @@
       <h2>Do the numbers apply only to a specific humanitarian situation?</h2>
       <p class="tagspec">#targeted</p>
       <ul>
-        <li><a href="#targeted_killed">people killed</a></li>
         <li><a href="#targeted_injured">people injured</a></li>
         <li><a href="#targeted_abducted">people abducted</a></li>
         <li><a href="#targeted_displaced">all displaced people (internal or external)</a></li>
@@ -2988,7 +2986,6 @@
       <h2>Do the numbers apply only to a specific humanitarian situation?</h2>
       <p class="tagspec">#reached</p>
       <ul>
-        <li><a href="#reached_killed">people killed</a></li>
         <li><a href="#reached_injured">people injured</a></li>
         <li><a href="#reached_abducted">people abducted</a></li>
         <li><a href="#reached_displaced">all displaced people (internal or external)</a></li>
@@ -3962,6 +3959,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#region +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#region_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#region_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#region_name_i_fr_">yes, the text is in French</a></li>
@@ -4000,13 +3998,11 @@
       <p class="tagspec">#region +name +i_sw</p>
     </section>
     <section class="question" id="region_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#region +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#region_code_">no, leave it unspecified</a></li>
-        <li><a href="#region_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#region_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#region_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="region_code_">
@@ -4037,6 +4033,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#region +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#region_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#region_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#region_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -4075,13 +4072,11 @@
       <p class="tagspec">#region +origin +name +i_sw</p>
     </section>
     <section class="question" id="region_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#region +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#region_origin_code_">no, leave it unspecified</a></li>
-        <li><a href="#region_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#region_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#region_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="region_origin_code_">
@@ -4112,6 +4107,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#region +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#region_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#region_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#region_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -4150,13 +4146,11 @@
       <p class="tagspec">#region +dest +name +i_sw</p>
     </section>
     <section class="question" id="region_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#region +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#region_dest_code_">no, leave it unspecified</a></li>
-        <li><a href="#region_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#region_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#region_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="region_dest_code_">
@@ -4187,6 +4181,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#region +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#region_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#region_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#region_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -4225,13 +4220,11 @@
       <p class="tagspec">#region +asylum +name +i_sw</p>
     </section>
     <section class="question" id="region_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#region +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#region_asylum_code_">no, leave it unspecified</a></li>
-        <li><a href="#region_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#region_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#region_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="region_asylum_code_">
@@ -4272,6 +4265,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#country +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#country_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#country_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#country_name_i_fr_">yes, the text is in French</a></li>
@@ -4310,13 +4304,13 @@
       <p class="tagspec">#country +name +i_sw</p>
     </section>
     <section class="question" id="country_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#country +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#country_code_">no, leave it unspecified</a></li>
         <li><a href="#country_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
         <li><a href="#country_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#country_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="country_code_">
@@ -4347,6 +4341,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#country +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#country_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#country_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#country_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -4385,13 +4380,13 @@
       <p class="tagspec">#country +origin +name +i_sw</p>
     </section>
     <section class="question" id="country_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#country +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#country_origin_code_">no, leave it unspecified</a></li>
         <li><a href="#country_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
         <li><a href="#country_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#country_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="country_origin_code_">
@@ -4422,6 +4417,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#country +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#country_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#country_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#country_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -4460,13 +4456,13 @@
       <p class="tagspec">#country +dest +name +i_sw</p>
     </section>
     <section class="question" id="country_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#country +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#country_dest_code_">no, leave it unspecified</a></li>
         <li><a href="#country_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
         <li><a href="#country_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#country_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="country_dest_code_">
@@ -4497,6 +4493,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#country +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#country_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#country_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#country_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -4535,13 +4532,13 @@
       <p class="tagspec">#country +asylum +name +i_sw</p>
     </section>
     <section class="question" id="country_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#country +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#country_asylum_code_">no, leave it unspecified</a></li>
         <li><a href="#country_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
         <li><a href="#country_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
-        <li><a href="#country_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
     <section class="result" id="country_asylum_code_">
@@ -4582,6 +4579,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm1 +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm1_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm1_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm1_name_i_fr_">yes, the text is in French</a></li>
@@ -4620,12 +4618,11 @@
       <p class="tagspec">#adm1 +name +i_sw</p>
     </section>
     <section class="question" id="adm1_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm1 +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm1_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm1_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm1_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm1_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -4657,6 +4654,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm1 +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm1_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm1_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm1_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -4695,12 +4693,11 @@
       <p class="tagspec">#adm1 +origin +name +i_sw</p>
     </section>
     <section class="question" id="adm1_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm1 +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm1_origin_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm1_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm1_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm1_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -4732,6 +4729,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm1 +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm1_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm1_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm1_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -4770,12 +4768,11 @@
       <p class="tagspec">#adm1 +dest +name +i_sw</p>
     </section>
     <section class="question" id="adm1_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm1 +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm1_dest_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm1_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm1_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm1_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -4807,6 +4804,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm1 +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm1_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm1_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm1_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -4845,12 +4843,11 @@
       <p class="tagspec">#adm1 +asylum +name +i_sw</p>
     </section>
     <section class="question" id="adm1_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm1 +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm1_asylum_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm1_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm1_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm1_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -4892,6 +4889,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm2 +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm2_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm2_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm2_name_i_fr_">yes, the text is in French</a></li>
@@ -4930,12 +4928,11 @@
       <p class="tagspec">#adm2 +name +i_sw</p>
     </section>
     <section class="question" id="adm2_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm2 +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm2_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm2_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm2_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm2_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -4967,6 +4964,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm2 +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm2_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm2_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm2_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -5005,12 +5003,11 @@
       <p class="tagspec">#adm2 +origin +name +i_sw</p>
     </section>
     <section class="question" id="adm2_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm2 +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm2_origin_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm2_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm2_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm2_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5042,6 +5039,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm2 +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm2_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm2_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm2_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -5080,12 +5078,11 @@
       <p class="tagspec">#adm2 +dest +name +i_sw</p>
     </section>
     <section class="question" id="adm2_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm2 +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm2_dest_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm2_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm2_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm2_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5117,6 +5114,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm2 +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm2_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm2_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm2_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -5155,12 +5153,11 @@
       <p class="tagspec">#adm2 +asylum +name +i_sw</p>
     </section>
     <section class="question" id="adm2_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm2 +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm2_asylum_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm2_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm2_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm2_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5202,6 +5199,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm3 +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm3_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm3_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm3_name_i_fr_">yes, the text is in French</a></li>
@@ -5240,12 +5238,11 @@
       <p class="tagspec">#adm3 +name +i_sw</p>
     </section>
     <section class="question" id="adm3_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm3 +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm3_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm3_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm3_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm3_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5277,6 +5274,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm3 +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm3_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm3_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm3_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -5315,12 +5313,11 @@
       <p class="tagspec">#adm3 +origin +name +i_sw</p>
     </section>
     <section class="question" id="adm3_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm3 +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm3_origin_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm3_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm3_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm3_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5352,6 +5349,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm3 +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm3_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm3_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm3_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -5390,12 +5388,11 @@
       <p class="tagspec">#adm3 +dest +name +i_sw</p>
     </section>
     <section class="question" id="adm3_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm3 +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm3_dest_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm3_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm3_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm3_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5427,6 +5424,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm3 +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm3_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm3_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm3_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -5465,12 +5463,11 @@
       <p class="tagspec">#adm3 +asylum +name +i_sw</p>
     </section>
     <section class="question" id="adm3_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm3 +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm3_asylum_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm3_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm3_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm3_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5512,6 +5509,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm4 +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm4_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm4_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm4_name_i_fr_">yes, the text is in French</a></li>
@@ -5550,12 +5548,11 @@
       <p class="tagspec">#adm4 +name +i_sw</p>
     </section>
     <section class="question" id="adm4_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm4 +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm4_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm4_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm4_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm4_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5587,6 +5584,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm4 +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm4_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm4_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm4_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -5625,12 +5623,11 @@
       <p class="tagspec">#adm4 +origin +name +i_sw</p>
     </section>
     <section class="question" id="adm4_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm4 +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm4_origin_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm4_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm4_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm4_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5662,6 +5659,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm4 +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm4_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm4_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm4_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -5700,12 +5698,11 @@
       <p class="tagspec">#adm4 +dest +name +i_sw</p>
     </section>
     <section class="question" id="adm4_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm4 +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm4_dest_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm4_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm4_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm4_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5737,6 +5734,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm4 +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm4_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm4_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm4_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -5775,12 +5773,11 @@
       <p class="tagspec">#adm4 +asylum +name +i_sw</p>
     </section>
     <section class="question" id="adm4_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm4 +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm4_asylum_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm4_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm4_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm4_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5822,6 +5819,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm5 +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm5_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm5_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm5_name_i_fr_">yes, the text is in French</a></li>
@@ -5860,12 +5858,11 @@
       <p class="tagspec">#adm5 +name +i_sw</p>
     </section>
     <section class="question" id="adm5_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm5 +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm5_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm5_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm5_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm5_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5897,6 +5894,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm5 +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm5_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm5_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm5_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -5935,12 +5933,11 @@
       <p class="tagspec">#adm5 +origin +name +i_sw</p>
     </section>
     <section class="question" id="adm5_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm5 +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm5_origin_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm5_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm5_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm5_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -5972,6 +5969,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm5 +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm5_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm5_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm5_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -6010,12 +6008,11 @@
       <p class="tagspec">#adm5 +dest +name +i_sw</p>
     </section>
     <section class="question" id="adm5_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm5 +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm5_dest_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm5_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm5_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm5_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -6047,6 +6044,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#adm5 +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#adm5_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#adm5_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#adm5_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -6085,12 +6083,11 @@
       <p class="tagspec">#adm5 +asylum +name +i_sw</p>
     </section>
     <section class="question" id="adm5_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#adm5 +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#adm5_asylum_code_">no, leave it unspecified</a></li>
-        <li><a href="#adm5_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#adm5_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#adm5_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -6158,6 +6155,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#loc +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#loc_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#loc_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#loc_name_i_fr_">yes, the text is in French</a></li>
@@ -6196,12 +6194,11 @@
       <p class="tagspec">#loc +name +i_sw</p>
     </section>
     <section class="question" id="loc_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#loc +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#loc_code_">no, leave it unspecified</a></li>
-        <li><a href="#loc_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#loc_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#loc_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -6233,6 +6230,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#loc +origin +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#loc_origin_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#loc_origin_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#loc_origin_name_i_fr_">yes, the text is in French</a></li>
@@ -6271,12 +6269,11 @@
       <p class="tagspec">#loc +origin +name +i_sw</p>
     </section>
     <section class="question" id="loc_origin_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#loc +origin +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#loc_origin_code_">no, leave it unspecified</a></li>
-        <li><a href="#loc_origin_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#loc_origin_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#loc_origin_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -6308,6 +6305,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#loc +dest +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#loc_dest_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#loc_dest_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#loc_dest_name_i_fr_">yes, the text is in French</a></li>
@@ -6346,12 +6344,11 @@
       <p class="tagspec">#loc +dest +name +i_sw</p>
     </section>
     <section class="question" id="loc_dest_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#loc +dest +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#loc_dest_code_">no, leave it unspecified</a></li>
-        <li><a href="#loc_dest_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#loc_dest_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#loc_dest_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>
@@ -6383,6 +6380,7 @@
       <h2>Do you want to identify the language of the content?</h2>
       <p class="tagspec">#loc +asylum +name</p>
       <ul>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
         <li><a href="#loc_asylum_name_">no, I want to leave it unspecified</a></li>
         <li><a href="#loc_asylum_name_i_en_">yes, the text is in English</a></li>
         <li><a href="#loc_asylum_name_i_fr_">yes, the text is in French</a></li>
@@ -6421,12 +6419,11 @@
       <p class="tagspec">#loc +asylum +name +i_sw</p>
     </section>
     <section class="question" id="loc_asylum_code">
-      <h2>Do you want to indicate what code list your using?</h2>
+      <h2>Do you want to indicate what code list you are using?</h2>
       <p class="tagspec">#loc +asylum +code</p>
       <ul>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
         <li><a href="#loc_asylum_code_">no, leave it unspecified</a></li>
-        <li><a href="#loc_asylum_code_v_iso3_">yes, specify ISO3 country codes (like &quot;SYR&quot; for Syria)</a></li>
-        <li><a href="#loc_asylum_code_v_iso2_">yes, specify ISO2 country codes (like &quot;SY&quot; for Syria)</a></li>
         <li><a href="#loc_asylum_code_v_pcodes_">yes, specify P-codes</a></li>
       </ul>
     </section>

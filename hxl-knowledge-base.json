@@ -283,7 +283,7 @@
         "pre-text": "To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog"
     },
     "code_atts": {
-        "question": "Do you want to indicate what code list your using?",
+        "question": "Do you want to indicate what code list you are using?",
         "pre-text": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
         "options": [
             {
