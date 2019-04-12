@@ -18,7 +18,7 @@
         <li><a href="#_response_tags">humanitarian response (activities, organisations, clusters, etc.)</a></li>
         <li><a href="#_event_tags">crises or events (e.g. security incidents)</a></li>
         <li><a href="#date">dates</a></li>
-        <li><a href="#indicator_MY_CUSTOM_ATTRIBUTE">indicators other than numbers of people</a></li>
+        <li><a href="#indicator">indicators other than numbers of people</a></li>
       </ul>
         <div class="nav">
       <a>Previous question</a>
@@ -16943,13 +16943,28 @@
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
+    <section class="question" id="indicator">
+      <div class="nav">
+      <a href="#_top">Start over</a>
+      </div>
+      <h2>How is your overall dataset shaped?</h2>
+      <p>So far: <span class="tagspec">#indicator</span></p>
+        <p class="pre-text">Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools.</p>
+      <ul>
+        <li><a href="#indicator_MY_CUSTOM_ATTRIBUTE">it is wide, with multiple columns of indicator values in each row</a></li>
+        <li><a href="#indicator_">it is narrow and long, with one indicator value in each row, together with the indicator&apos;s name or code</a></li>
+      </ul>
+        <div class="nav">
+      <a href="#_top">Previous question</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
     <section class="question" id="indicator_MY_CUSTOM_ATTRIBUTE">
       <div class="nav">
       <a href="#_top">Start over</a>
       </div>
       <h2>What is the most-specify data type that applies to every indicator value?</h2>
       <p>So far: <span class="tagspec">#indicator +MY_CUSTOM_ATTRIBUTE</span></p>
-        <p class="pre-text">For general indicators, you also need to add your own, custom attribute to distinguish it, such as +biomass or +severe_acute_malnourished. There is no master list of these, but your organisation may already have its own identifiers.</p>
       <ul>
         <li><a href="#indicator_MY_CUSTOM_ATTRIBUTE_bool_000">a boolean (true/false or yes/no-style) value</a></li>
         <li><a href="#indicator_MY_CUSTOM_ATTRIBUTE_pct_000">a percentage</a></li>
@@ -16957,8 +16972,9 @@
         <li><a href="#indicator_MY_CUSTOM_ATTRIBUTE_list_000">a list of values</a></li>
         <li><a href="#indicator_MY_CUSTOM_ATTRIBUTE__000">unstructured text</a></li>
       </ul>
+        <p class="post-text">You will need to replace +MY_CUSTOM_INDICATOR with a meaningful one, such as +biomass or +severe_acute_malnourished. There is no universal master list of these, but your organisation or cluster may already have a data dictionary for its own community of practice.</p>
         <div class="nav">
-      <a href="#_top">Previous question</a>
+      <a href="#indicator">Previous question</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
@@ -17009,6 +17025,134 @@
       <p class="note">Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished.</p>
       <div class="nav">
         <a href="#indicator_MY_CUSTOM_ATTRIBUTE">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="indicator_">
+      <div class="nav">
+      <a href="#_top">Start over</a>
+      </div>
+      <h2>What do these values tell about the indicator (one indicator per row)?</h2>
+      <p>So far: <span class="tagspec">#indicator</span></p>
+      <ul>
+        <li><a href="#indicator__name">the indicator&apos;s name</a></li>
+        <li><a href="#indicator__code_000">the indicator&apos;s identifier or code</a></li>
+        <li><a href="#indicator__type_000">the indicators type/classification</a></li>
+        <li><a href="#indicator__value_000">the indicator&apos;s value</a></li>
+      </ul>
+        <div class="nav">
+      <a href="#indicator">Previous question</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="indicator__name">
+      <div class="nav">
+      <a href="#_top">Start over</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <p>So far: <span class="tagspec">#indicator +name</span></p>
+        <p class="pre-text">To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog</p>
+      <ul>
+        <li><a href="#indicator__name__000">no, I want to leave it unspecified</a></li>
+        <li><a href="#indicator__name_i_en_000">yes, the text is in English</a></li>
+        <li><a href="#indicator__name_i_fr_000">yes, the text is in French</a></li>
+        <li><a href="#indicator__name_i_ar_000">yes, the text is in Arabic</a></li>
+        <li><a href="#indicator__name_i_es_000">yes, the text is in Spanish</a></li>
+        <li><a href="#indicator__name_i_ru_000">yes, the text is in Russian</a></li>
+        <li><a href="#indicator__name_i_sw_000">yes, the text is in Swahili</a></li>
+      </ul>
+        <div class="nav">
+      <a href="#indicator_">Previous question</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="indicator__name__000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +name</p>
+      <div class="nav">
+        <a href="#indicator__name">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__name_i_en_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +name +i_en</p>
+      <div class="nav">
+        <a href="#indicator__name">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__name_i_fr_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +name +i_fr</p>
+      <div class="nav">
+        <a href="#indicator__name">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__name_i_ar_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +name +i_ar</p>
+      <div class="nav">
+        <a href="#indicator__name">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__name_i_es_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +name +i_es</p>
+      <div class="nav">
+        <a href="#indicator__name">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__name_i_ru_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +name +i_ru</p>
+      <div class="nav">
+        <a href="#indicator__name">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__name_i_sw_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +name +i_sw</p>
+      <div class="nav">
+        <a href="#indicator__name">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__code_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +code</p>
+      <div class="nav">
+        <a href="#indicator_">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__type_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +type</p>
+      <div class="nav">
+        <a href="#indicator_">Previous question</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="indicator__value_000">
+      <div class="nav"><a href="#_top">Start over</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <p class="tagspec">#indicator +value</p>
+      <div class="nav">
+        <a href="#indicator_">Previous question</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>

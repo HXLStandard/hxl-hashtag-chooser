@@ -26,7 +26,21 @@
             {
                 "text": "indicators other than numbers of people",
                 "hashtag": "indicator",
+                "dest": "indicator_shape"
+            }
+        ]
+    },
+    "indicator_shape": {
+        "question": "how is your overall dataset shaped?",
+        "pre-text": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools.",
+        "options": [
+            {
+                "text": "it is wide, with multiple columns of indicator values in each row",
                 "attribute": "MY_CUSTOM_ATTRIBUTE",
+                "dest": "datatype_atts"
+            },
+            {
+                "text": "it is narrow and long, with one indicator value in each row, together with the indicator's name or code",
                 "dest": "indicator_atts"
             }
         ]
@@ -493,8 +507,30 @@
         ]
     },
     "indicator_atts": {
+        "question": "what do these values tell about the indicator (one indicator per row)?",
+        "options": [
+            {
+                "text": "the indicator's name",
+                "attribute": "name",
+                "dest": "lang_atts"
+            },
+            {
+                "text": "the indicator's identifier or code",
+                "attribute": "code"
+            },
+            {
+                "text": "the indicators type/classification",
+                "attribute": "type"
+            },
+            {
+                "text": "the indicator's value",
+                "attribute": "value"
+            }
+        ]
+    },
+    "datatype_atts": {
         "question": "What is the most-specify data type that applies to every indicator value?",
-        "pre-text": "For general indicators, you also need to add your own, custom attribute to distinguish it, such as +biomass or +severe_acute_malnourished. There is no master list of these, but your organisation may already have its own identifiers.",
+        "post-text": "You will need to replace +MY_CUSTOM_INDICATOR with a meaningful one, such as +biomass or +severe_acute_malnourished. There is no universal master list of these, but your organisation or cluster may already have a data dictionary for its own community of practice.",
         "options": [
             {
                 "text": "a boolean (true/false or yes/no-style) value",
