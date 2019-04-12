@@ -86,12 +86,12 @@
             {
                 "text": "a humanitarian organisation",
                 "hashtag": "org",
-                "dest": "id_atts"
+                "dest": "org_atts"
             },
             {
                 "text": "a humanitarian cluster or sector",
                 "hashtag": "sector",
-                "dest": "code_atts"
+                "dest": "sector_tags"
             },
             {
                 "text": "a humanitarian programme, project, or activity",
@@ -182,6 +182,28 @@
                 "text": "a fifth-level (admin5) subdivision",
                 "hashtag": "adm5",
                 "dest": "movement_atts"
+            }
+        ]
+    },
+    "sector_tags": {
+        "question": "what kind of sector do you want to describe?",
+        "options": [
+            {
+                "text": "a humanitarian cluster",
+                "hashtag": "sector",
+                "attribute": "cluster",
+                "dest": "code_atts"
+               
+            },
+            {
+                "text": "another kind of top-level sector",
+                "hashtag": "sector",
+                "dest": "code_atts"
+            },
+            {
+                "text": "a subsector",
+                "hashtag": "subsector",
+                "dest": "code_atts"
             }
         ]
     },
@@ -497,6 +519,35 @@
             {
                 "text": "unstructured text",
                 "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
+            }
+        ]
+    },
+    "org_atts": {
+        "question": "are all the organisations tagged playing a specific role?",
+        "options": [
+            {
+                "text": "no, there are different roles mixed in the column",
+                "dest": "id_atts"
+            },
+            {
+                "text": "yes, they are all donor organisations",
+                "attribute": "funding",
+                "dest": "id_atts"
+            },
+            {
+                "text": "yes, they are all programming/extending organisations",
+                "attribute": "prog",
+                "dest": "id_atts"
+            },
+            {
+                "text": "yes, they are all implementing partners",
+                "attribute": "impl",
+                "dest": "id_atts"
+            },
+            {
+                "text": "yes, they are all organisations making a report",
+                "attribute": "reporting",
+                "dest": "id_atts"
             }
         ]
     }
