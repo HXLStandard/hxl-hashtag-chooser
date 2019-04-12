@@ -17,7 +17,6 @@ section.result .tagspec {
 
 section.question, section.result {
     display: block;
-    min-height: 100vh;
 }
 
 li {

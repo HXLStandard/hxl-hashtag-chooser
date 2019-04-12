@@ -116,11 +116,6 @@
                 "text": "the current status of an activity, project, etc.",
                 "hashtag": "status",
                 "dest": "code_atts"
-            },
-            {
-                "text": "a date associated with an activity or response",
-                "hashtag": "date",
-                "dest": "date_atts"
             }
         ]
     },
