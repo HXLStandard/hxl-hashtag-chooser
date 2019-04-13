@@ -152,6 +152,11 @@
                 "dest": "id_atts"
             },
             {
+                "text": "the cause of an incident",
+                "hashtag": "cause",
+                "dest": "code_atts"
+            },
+            {
                 "text": "the severity of an incident",
                 "hashtag": "severity",
                 "dest": "code_atts"
@@ -508,9 +513,13 @@
             {
                 "text": "yes, the text is in Swahili",
                 "attribute": "i_sw"
+            },
+            {
+                "text": "the text is in a language not listed here",
+                "attribute": "i_XX",
+                "note": "Replace the \"XX\" in +i_XX with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog."
             }
-        ],
-        "pre-text": "To specify a language not listed, construct an attribute using +i_ followed by an ISO 639 language code, e.g. +i_tl for Tagalog"
+        ]
     },
     "geocode_atts": {
         "question": "Do you want to indicate what code list you are using?",
