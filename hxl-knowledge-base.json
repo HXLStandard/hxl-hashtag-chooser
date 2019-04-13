@@ -27,6 +27,10 @@
                 "text": "indicators other than numbers of people",
                 "hashtag": "indicator",
                 "dest": "indicator_shape"
+            },
+            {
+                "text": "cash or financial information",
+                "dest": "cash_tags"
             }
         ]
     },
@@ -217,6 +221,32 @@
             {
                 "text": "a subsector",
                 "hashtag": "subsector",
+                "dest": "code_atts"
+            }
+        ]
+    },
+    "cash_tags": {
+        "question": "what kind of cash/finance information does the column contain?",
+        "options": [
+            {
+                "text": "an amount of money",
+                "hashtag": "value",
+                "dest": "value_atts"
+            },
+            {
+                "text": "a monetary currency",
+                "hashtag": "currency",
+                "attribute": "code",
+                "note": "Preferred content is ISO 4217 currency codes, such as \"CFA\" for the West African franc."
+            },
+            {
+                "text": "a modality/method of cash transfer",
+                "hashtag": "modality",
+                "dest": "code_atts"
+            },
+            {
+                "text": "the channel through which money is transferred",
+                "hashtag": "channel",
                 "dest": "code_atts"
             }
         ]
@@ -584,6 +614,71 @@
                 "text": "yes, they are all organisations making a report",
                 "attribute": "reporting",
                 "dest": "id_atts"
+            }
+        ]
+    },
+    "value_atts": {
+        "question": "what type of monetary value is this?",
+        "options": [
+            {
+                "text": "not specified",
+                "dest": "currency_atts"
+            },
+            {
+                "text": "a cash transfer",
+                "attribute": "transfer",
+                "dest": "currency_atts"
+            },
+            {
+                "text": "an incoming funding commitment",
+                "attribute": "incoming",
+                "dest": "currency_atts"
+            },
+            {
+                "text": "an outgoing funding commitment",
+                "attribute": "outgoing",
+                "dest": "currency_atts"
+            },
+            {
+                "text": "a budget",
+                "attribute": "budget",
+                "dest": "currency_atts"
+            },
+            {
+                "text": "a disbursement",
+                "attribute": "disbursement",
+                "dest": "currency_atts"
+            },
+            {
+                "text": "an expenditure",
+                "attribute": "expenditure",
+                "dest": "currency_atts"
+            }
+        ]
+    },
+    "currency_atts": {
+        "question": "what currency do the monetary values represent?",
+        "options": [
+            {
+                "text": "a mixture of different currencies",
+                "note": "there should be another column tagged with #currency"
+            },
+            {
+                "text": "US dollars",
+                "attribute": "usd"
+            },
+            {
+                "text": "Euros",
+                "attribute": "eur"
+            },
+            {
+                "text": "Pounds Sterling",
+                "attribute": "gbp"
+            },
+            {
+                "text": "A currency not listed here",
+                "attribute": "XXX",
+                "note": "Replace +XXX with your currency code, e.g. +caf for West African francs"
             }
         ]
     }
