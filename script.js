@@ -25,19 +25,23 @@ function updateHash() {
 function addCopyButtons() {
     var nodes = document.getElementsByClassName("final-tagspec");
     for (var i = 0; i < nodes.length; i++) {
-        var node = nodes.item(i);
+        var tagspecNode = nodes.item(i);
         var buttonNode = document.createElement("button");
         buttonNode.className = "copy-button";
         buttonNode.innerHTML = "Copy to clipboard";
-        buttonNode.onclick = () => {
+        buttonNode.onclick = (ev) => {
+            // to copy, temporarily create an <input> element
+            var buttonNode = ev.target;
+            var tagspecNode = buttonNode.previousSibling;
+            var inputNode = document.createElement("input");
+            tagspecNode.parentNode.insertBefore(inputNode, tagspecNode.nextSibling);
+            inputNode.value = tagspecNode.innerHTML;
             inputNode.focus();
             inputNode.select();
-            console.log(window.getSelection().toString());
-            console.log(document.execCommand("copy"));
-            console.log(inputNode.value);
+            document.execCommand("copy");
+            tagspecNode.parentNode.removeChild(inputNode);
         };
-        node.parentNode.insertBefore(inputNode, node.nextSibling);
-        node.parentNode.insertBefore(buttonNode, inputNode);
+        tagspecNode.parentNode.insertBefore(buttonNode, tagspecNode.nextSibling);
     }
 }
 
