@@ -28,8 +28,10 @@ function addCopyButtons() {
         var tagspecNode = nodes.item(i);
         var buttonNode = document.createElement("button");
         buttonNode.className = "copy-button";
-        buttonNode.innerHTML = "Copy to clipboard";
+        buttonNode.innerHTML = "&#x1f4cb;";
+        buttonNode.title = "Copy to clipboard";
         buttonNode.onclick = (ev) => {
+            // to copy, temporarily create an <input> element
             var buttonNode = ev.target;
             var tagspecNode = buttonNode.previousSibling;
             var inputNode = document.createElement("input");
@@ -37,7 +39,6 @@ function addCopyButtons() {
             inputNode.value = tagspecNode.innerHTML;
             inputNode.focus();
             inputNode.select();
-            console.log(inputNode.value);
             document.execCommand("copy");
             tagspecNode.parentNode.removeChild(inputNode);
         };

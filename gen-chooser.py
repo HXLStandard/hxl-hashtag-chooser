@@ -28,7 +28,7 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     if id == "top":
         print("      <a>HXL hashtag chooser</a>")
     else:
-        print("      <a href=\"#_top\">New hashtag</a>")
+        print("      <a href=\"#_top\">Start new hashtag</a>")
     print("      </div>")
     print("      <h2>{}</h2>".format(esc(question["question"])))
     if "pre-text" in question:
@@ -94,7 +94,9 @@ def display_result(option, hashtag, attributes, previous_id):
     print("    <section class=\"result\" id=\"{}_000\">".format(esc(make_html_id(id, hashtag, attributes))))
     print("      <div class=\"nav\"><a href=\"#_top\">New hashtag</a></div>")
     print("      <h2>Use this hashtag and attributes</h2>")
-    print("      <p class=\"tagspec final-tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
+    print("      <div class=\"tagspec-container\">")
+    print("        <div class=\"tagspec final-tagspec\">{}</div>".format(esc(make_tagspec(hashtag, attributes))))
+    print("      </div>")
     for attribute in attributes:
         if re.match(r"[A-Z]", attribute):
             print("        <p>Don't forget to replace <b><code>+{}</code></b> with your own attribute.</p>".format(esc(attribute)))
@@ -112,6 +114,7 @@ print("<html>")
 print("  <head>")
 print("    <title>HXL hashtag chooser</title>")
 print("    <link rel=\"stylesheet\" href=\"style.css\"/>")
+print("    <link rel=\"icon\" href=\"icon.png\"/>")
 print("    <meta charset=\"utf-8\"/>")
 print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>")
 print("  </head>")

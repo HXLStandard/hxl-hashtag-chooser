@@ -28,7 +28,8 @@ function addCopyButtons() {
         var tagspecNode = nodes.item(i);
         var buttonNode = document.createElement("button");
         buttonNode.className = "copy-button";
-        buttonNode.innerHTML = "Copy to clipboard";
+        buttonNode.innerHTML = "&#x1f4cb;";
+        buttonNode.title = "Copy to clipboard";
         buttonNode.onclick = (ev) => {
             // to copy, temporarily create an <input> element
             var buttonNode = ev.target;

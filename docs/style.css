@@ -13,10 +13,6 @@ section {
     color: #660000;
 }
 
-section.result .tagspec {
-    font-size: 244%;
-}
-
 section.question, section.result {
     display: block;
 }
@@ -42,7 +38,20 @@ div.nav a {
     font-size: 83.333333%;
 }
 
+.tagspec-container {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3ex 0;
+    font-size: 172.8%;
+}
+
+.final-tagspec {
+    display: inline-block;
+    margin-right: 1em;
+}
+
 .copy-button {
-    display: inline-block
-    margin-left: 1em;
+    display: inline-block;
+    padding: 0;
 }
