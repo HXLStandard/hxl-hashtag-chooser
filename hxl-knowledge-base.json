@@ -3,521 +3,536 @@
         "question": "What kind of data do you want to tag in HXL?",
         "options": [
             {
-                "text": "numbers of people (e.g. from a census or needs assessment)",
+                "text": "Numbers of people (e.g. from a census or needs assessment)",
                 "dest": "people_tags"
             },
             {
-                "text": "places",
+                "text": "Places",
                 "dest": "place_tags"
             },
             {
-                "text": "humanitarian response (activities, organisations, clusters, etc.)",
+                "text": "Humanitarian organisations",
+                "hashtag": "org",
+                "dest": "org_atts"
+            },
+            {
+                "text": "Humanitarian response (activities, clusters, etc.)",
                 "dest": "response_tags"
             },
             {
-                "text": "crises or events (e.g. security incidents)",
+                "text": "Crises or events (e.g. security incidents)",
                 "dest": "event_tags"
             },
             {
-                "text": "dates",
+                "text": "Dates",
                 "hashtag": "date",
                 "dest": "date_atts"
             },
             {
-                "text": "indicators other than numbers of people",
+                "text": "Cash or financial information",
+                "dest": "cash_tags"
+            },
+            {
+                "text": "Any humanitarian indicators not covered above",
                 "hashtag": "indicator",
                 "dest": "indicator_shape"
             },
             {
-                "text": "cash or financial information",
-                "dest": "cash_tags"
+                "text": "Metadata describing the data row (e.g. source)",
+                "hashtag": "meta",
+                "dest": "meta_atts"
+            },
+            {
+                "text": "None of the above",
+                "hashtag": "x_???",
+                "note": "The core HXL hashtags cannot cover every specialised type of humanitarian data. If you cannot find any match for what you need to tag, you are free to create a custom hashtag beginning with \"#x_\", e.g. \"#x_virulence\"."
             }
         ]
     },
     "indicator_shape": {
-        "question": "how is your overall dataset shaped?",
-        "pre-text": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools.",
+        "question": "How is your overall dataset shaped?",
         "options": [
             {
-                "text": "it is wide, with multiple columns of indicator values in each row",
+                "text": "It is wide, with multiple columns of indicator values in each row",
                 "attribute": "MY_CUSTOM_ATTRIBUTE",
                 "dest": "datatype_atts"
             },
             {
-                "text": "it is narrow and long, with one indicator value in each row, together with the indicator's name or code",
+                "text": "It is narrow and long, with one indicator value in each row, together with the indicator's name or code",
                 "dest": "indicator_atts"
             }
-        ]
+        ],
+        "pre-text": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools."
     },
     "people_tags": {
         "question": "What is the humanitarian context for the people being counted?",
         "options": [
             {
-                "text": "general population (including those not affected by the crisis)",
+                "text": "General population (including those not affected by the crisis)",
                 "dest": "gender_atts",
                 "hashtag": "population"
             },
             {
-                "text": "people affected by the crisis (including those not in need of assistance)",
+                "text": "People affected by the crisis (including those not in need of assistance)",
                 "dest": "impact_atts",
                 "hashtag": "affected"
             },
             {
-                "text": "people in need of humanitarian assistance (including those not targeted by the response)",
+                "text": "People in need of humanitarian assistance (including those not targeted by the response)",
                 "dest": "impact_atts",
                 "hashtag": "inneed"
             },
             {
-                "text": "people targeted for humanitarian assistance (including those not yet reached)",
+                "text": "People targeted for humanitarian assistance (including those not yet reached)",
                 "dest": "impact_atts",
                 "hashtag": "targeted"
             },
             {
-                "text": "people already reached with humanitarian assistance",
+                "text": "People already reached with humanitarian assistance",
                 "dest": "impact_atts",
                 "hashtag": "reached"
             }
         ]
     },
     "place_tags": {
-        "question": "what kind of places are in the data?",
+        "question": "What kind of places are in the data?",
         "options": [
             {
-                "text": "administrative subdivisions (region, country, province, district, etc)",
+                "text": "Administrative subdivisions (region, country, province, district, etc)",
                 "dest": "admin_tags"
             },
             {
-                "text": "latitude and/or longitude",
+                "text": "Latitude and/or longitude",
                 "hashtag": "geo",
                 "dest": "geo_atts"
             },
             {
-                "text": "specific locations (e.g. camps) or mixed types of locations",
+                "text": "Specific locations (e.g. camps) or mixed types of locations",
                 "hashtag": "loc",
                 "dest": "movement_atts"
             }
         ]
     },
     "response_tags": {
-        "question": "what kind of response information do you want to tag?",
+        "question": "What kind of response information do you want to tag?",
         "options": [
             {
-                "text": "an organisation (humanitarian)",
-                "hashtag": "org",
-                "dest": "org_atts"
-            },
-            {
-                "text": "a cluster or sector",
+                "text": "A cluster or sector",
                 "hashtag": "sector",
                 "dest": "sector_tags"
             },
             {
-                "text": "a programme, project, or activity",
+                "text": "A programme, project, or activity",
                 "hashtag": "activity",
                 "dest": "id_atts"
             },
             {
-                "text": "a longer description of an activity, project, etc",
+                "text": "A longer description of an activity, project, etc",
                 "hashtag": "description",
                 "dest": "lang_atts"
             },
             {
-                "text": "the output or outcome of a humanitarian activity",
+                "text": "The output or outcome of a humanitarian activity",
                 "hashtag": "output",
                 "dest": "code_atts"
             },
             {
-                "text": "the intended beneficiary/ies",
+                "text": "The intended beneficiary/ies",
                 "hashtag": "beneficiary",
                 "dest": "code_atts"
             },
             {
-                "text": "the current status of an activity, project, etc.",
+                "text": "The current status of an activity, project, etc.",
                 "hashtag": "status",
                 "dest": "code_atts"
+            },
+            {
+                "text": "Contact information",
+                "hashtag": "contact",
+                "dest": "contact_atts"
             }
         ]
     },
     "event_tags": {
-        "question": "what kind of event information do you want to tag?",
+        "question": "What kind of event information do you want to tag?",
         "options": [
             {
-                "text": "information about a specific incident",
+                "text": "Information about a specific incident",
                 "hashtag": "event",
                 "dest": "id_atts"
             },
             {
-                "text": "information about a non-humanitarian group involved an incident",
+                "text": "Information about a non-humanitarian group involved an incident",
                 "hashtag": "group",
                 "dest": "id_atts"
             },
             {
-                "text": "the cause of an incident",
+                "text": "The cause of an incident",
                 "hashtag": "cause",
                 "dest": "code_atts"
             },
             {
-                "text": "the severity of an incident",
+                "text": "The severity of an incident",
                 "hashtag": "severity",
                 "dest": "code_atts"
             },
             {
-                "text": "an impact of an incident",
+                "text": "An impact of an incident",
                 "hashtag": "impact",
                 "dest": "code_atts"
             }
         ]
     },
     "admin_tags": {
-        "question": "what admin level do you want to tag?",
+        "question": "What admin level do you want to tag?",
         "options": [
             {
-                "text": "a multi-country region, like West Africa or the Caribbean",
+                "text": "A multi-country region, like West Africa or the Caribbean",
                 "hashtag": "region",
                 "dest": "movement_atts"
             },
             {
-                "text": "a country or country-like (admin0) entity",
+                "text": "A country or country-like (admin0) entity",
                 "hashtag": "country",
                 "dest": "movement_atts"
             },
             {
-                "text": "a top-level (admin1) subdivision",
+                "text": "A top-level (admin1) subdivision",
                 "hashtag": "adm1",
                 "dest": "movement_atts"
             },
             {
-                "text": "a second-level (admin2) subdivision",
+                "text": "A second-level (admin2) subdivision",
                 "hashtag": "adm2",
                 "dest": "movement_atts"
             },
             {
-                "text": "a third-level (admin3) subdivision",
+                "text": "A third-level (admin3) subdivision",
                 "hashtag": "adm3",
                 "dest": "movement_atts"
             },
             {
-                "text": "a fourth-level (admin4) subdivision",
+                "text": "A fourth-level (admin4) subdivision",
                 "hashtag": "adm4",
                 "dest": "movement_atts"
             },
             {
-                "text": "a fifth-level (admin5) subdivision",
+                "text": "A fifth-level (admin5) subdivision",
                 "hashtag": "adm5",
                 "dest": "movement_atts"
             }
         ]
     },
     "sector_tags": {
-        "question": "what kind of sector do you want to describe?",
+        "question": "What kind of sector do you want to describe?",
         "options": [
             {
-                "text": "a humanitarian cluster",
+                "text": "A humanitarian cluster",
                 "hashtag": "sector",
                 "attribute": "cluster",
                 "dest": "code_atts"
                
             },
             {
-                "text": "another kind of top-level sector",
+                "text": "Another kind of top-level sector",
                 "hashtag": "sector",
                 "dest": "code_atts"
             },
             {
-                "text": "a subsector",
+                "text": "A subsector",
                 "hashtag": "subsector",
                 "dest": "code_atts"
             }
         ]
     },
     "cash_tags": {
-        "question": "what kind of cash/finance information does the column contain?",
+        "question": "What kind of cash/finance information does the column contain?",
         "options": [
             {
-                "text": "an amount of money",
+                "text": "An amount of money",
                 "hashtag": "value",
                 "dest": "value_atts"
             },
             {
-                "text": "a monetary currency",
+                "text": "A monetary currency",
                 "hashtag": "currency",
                 "attribute": "code",
                 "note": "Preferred content is ISO 4217 currency codes, such as \"CFA\" for the West African franc."
             },
             {
-                "text": "a modality/method of cash transfer",
+                "text": "A modality/method of cash transfer",
                 "hashtag": "modality",
                 "dest": "code_atts"
             },
             {
-                "text": "the channel through which money is transferred",
+                "text": "The channel through which money is transferred",
                 "hashtag": "channel",
                 "dest": "code_atts"
             }
         ]
     },
     "impact_atts": {
-        "question": "do the numbers apply only to a specific humanitarian situation?",
+        "question": "Do the numbers apply only to a specific humanitarian situation?",
         "options": [
             {
-                "text": "no, the situation is unspecified",
+                "text": "No, the situation is unspecified",
                 "dest": "gender_atts"
             },
             {
-                "text": "people killed",
+                "text": "People killed",
                 "dest": "gender_atts",
                 "attribute": "killed",
                 "exclude": ["inneed", "targeted", "reached"]
             },
             {
-                "text": "people injured",
+                "text": "People injured",
                 "dest": "gender_atts",
                 "attribute": "injured"
             },
             {
-                "text": "people abducted",
+                "text": "People abducted",
                 "dest": "gender_atts",
                 "attribute": "abducted"
             },
             {
-                "text": "all displaced people (internal or external)",
+                "text": "All displaced people (internal or external)",
                 "dest": "gender_atts",
                 "attribute": "displaced"
             },
             {
-                "text": "internally-displaced people (IDPs)",
+                "text": "Internally-displaced people (IDPs)",
                 "dest": "gender_atts",
                 "attribute": "idps"
             },
             {
-                "text": "refugees",
+                "text": "Refugees",
                 "dest": "gender_atts",
                 "attribute": "refugees"
             }
         ]
     },
     "gender_atts": {
-        "question": "do the numbers apply only to a specific gender?",
+        "question": "Do the numbers apply only to a specific gender?",
         "options": [
             {
-                "text": "all genders are included",
+                "text": "All genders are included",
                 "dest": "age_atts"
             },
             {
-                "text": "female people only",
+                "text": "Female people only",
                 "dest": "age_atts",
                 "attribute": "f"
             },
             {
-                "text": "male people only",
+                "text": "Male people only",
                 "dest": "age_atts",
                 "attribute": "m"
             },
             {
-                "text": "non-gender-binary people only",
+                "text": "Non-gender-binary people only",
                 "dest": "age_atts",
                 "attribute": "i"
             }
         ]
     },
     "age_atts": {
-        "question": "do the numbers apply only to a specific age group?",
+        "question": "Do the numbers apply only to a specific age group?",
         "options": [
             {
-                "text": "all ages are included",
+                "text": "All ages are included",
                 "note": "The values should always be numbers"
             },
             {
-                "text": "any children (might include infants or adolescents)",
+                "text": "Any children (might include infants or adolescents)",
                 "attribute": "children",
                 "note": "The values should always be numbers. You may also add a custom attribute like +age_5_12 to give a specific range."
             },
             {
-                "text": "infants only",
+                "text": "Infants only",
                 "attribute": "infants",
                 "note": "The values should always be numbers. You may also add a custom attribute like +age_0_2 to give a specific range."
             },
             {
-                "text": "adolescents only",
+                "text": "Adolescents only",
                 "attribute": "adolescents",
                 "note": "The values should always be numbers. You may also add a custom attribute like +age_12_17 to give a specific range."
             },
             {
-                "text": "any adults (might include adolescents or elderly people",
+                "text": "Any adults (might include adolescents or elderly people",
                 "attribute": "adults",
                 "note": "The values should always be numbers. You may also add a custom attribute like +age_18_64 to give a specific range."
             },
             {
-                "text": "elderly people only",
+                "text": "Elderly people only",
                 "attribute": "elderly",
                 "note": "The values should always be numbers. You may also add a custom attribute like +age_65_ to give a specific range."
             }
         ]
     },
     "geo_atts": {
-        "question": "what kind of geographic information do you want to tag?",
+        "question": "What kind of geographic information do you want to tag?",
         "options": [
             {
-                "text": "latitude only",
+                "text": "Latitude only",
                 "attribute": "lat",
                 "note": "The preferred format for latitude is a decimal value, e.g. \"8.5\" instead of \"8 30.0N\"."
             },
             {
-                "text": "longitude only",
+                "text": "Longitude only",
                 "attribute": "lon",
                 "note": "The preferred format for longitude is a decimal value, e.g. \"-75.5\" instead of \"75 30.0W\"."
             },
             {
-                "text": "latitude and longitude together in one field",
+                "text": "Latitude and longitude together in one field",
                 "attribute": "latlon",
                 "note": "The preferred format is the decimal latitude separated by a comma from the decimal longitude, e.g. \"8.5, -75.5\"."
             },
             {
-                "text": "elevation above sea level",
+                "text": "Elevation above sea level",
                 "attribute": "elev",
                 "note": "The preferred unit is metres above sea level."
             }
         ]
     },
     "movement_atts": {
-        "question": "is this location part of a population movement?",
+        "question": "Is this location part of a population movement?",
         "options": [
             {
-                "text": "no, the dataset is not about population movements",
+                "text": "No, the dataset is not about population movements",
                 "dest": "adm_atts"
             },
             {
-                "text": "yes, it is the origin of a population movement",
+                "text": "Yes, it is the origin of a population movement",
                 "attribute": "origin",
                 "dest": "adm_atts"
             },
             {
-                "text": "yes, it is the destination of a population movement",
+                "text": "Yes, it is the destination of a population movement",
                 "attribute": "dest",
                 "dest": "adm_atts"
             },
             {
-                "text": "yes, it is a location of asylum",
+                "text": "Yes, it is a location of asylum",
                 "attribute": "asylum",
                 "dest": "adm_atts"
             }
         ]
     },
     "id_atts": {
-        "question": "what kind of information do you want to provide?",
+        "question": "What kind of information do you want to provide?",
         "options": [
             {
-                "text": "a human-readable name",
+                "text": "A human-readable name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "a unique identifier",
+                "text": "A unique identifier",
                 "attribute": "id"
             },
             {
-                "text": "a type/classification",
+                "text": "A type/classification",
                 "attribute": "type"
             }
         ]
     },
     "code_atts": {
-        "question": "what kind of information do you want to provide?",
+        "question": "What kind of information do you want to provide?",
         "options": [
             {
-                "text": "a human-readable name",
+                "text": "A human-readable name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "a unique machine code",
+                "text": "A unique machine code",
                 "attribute": "code"
             },
             {
-                "text": "a type/classification",
+                "text": "A type/classification",
                 "attribute": "type",
                 "exclude": ["status"]
             }
         ]
     },
     "date_atts": {
-        "question": "what kind of a date is this?",
+        "question": "What kind of a date is this?",
         "options": [
             {
-                "text": "unspecified",
+                "text": "Unspecified",
                 "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "a start date",
+                "text": "A start date",
                 "attribute": "start",
                 "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "an end date",
+                "text": "An end date",
                 "attribute": "end",
                 "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "a specific date when something happened",
+                "text": "A specific date when something happened",
                 "attribute": "occurred",
                 "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
-                "text": "a specific date when something was reported",
+                "text": "A specific date when something was reported",
                 "attribute": "reported",
                 "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             }
         ]
     },
     "adm_atts": {
-        "question": "how is the location described?",
+        "question": "How is the location described?",
         "options": [
             {
-                "text": "by its name",
+                "text": "By its name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "by a code",
+                "text": "By a code",
                 "attribute": "code",
                 "dest": "geocode_atts"
             }
         ]
     },
     "lang_atts": {
-        "question": "do you want to identify the language of the content?",
+        "question": "Do you want to identify the language of the content?",
         "options": [
             {
-                "text": "no, I want to leave it unspecified"
+                "text": "No, I want to leave it unspecified"
             },
             {
-                "text": "yes, the text is in English",
+                "text": "Yes, the text is in English",
                 "attribute": "i_en"
             },
             {
-                "text": "yes, the text is in French",
+                "text": "Yes, the text is in French",
                 "attribute": "i_fr"
             },
             {
-                "text": "yes, the text is in Arabic",
+                "text": "Yes, the text is in Arabic",
                 "attribute": "i_ar"
             },
             {
-                "text": "yes, the text is in Spanish",
+                "text": "Yes, the text is in Spanish",
                 "attribute": "i_es"
             },
             {
-                "text": "yes, the text is in Russian",
+                "text": "Yes, the text is in Russian",
                 "attribute": "i_ru"
             },
             {
-                "text": "yes, the text is in Swahili",
+                "text": "Yes, the text is in Swahili",
                 "attribute": "i_sw"
             },
             {
-                "text": "the text is in a language not listed here",
-                "attribute": "i_XX",
-                "note": "Replace the \"XX\" in +i_XX with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog."
+                "text": "The text is in a language not listed here",
+                "attribute": "i_xx",
+                "note": "Replace the \"xx\" in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog."
             }
         ]
     },
@@ -526,154 +541,149 @@
         "pre-text": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
         "options": [
             {
-                "text": "no, leave it unspecified"
+                "text": "No, leave it unspecified"
             },
             {
-                "text": "yes, specify ISO3 country codes (like \"SYR\" for Syria)",
+                "text": "Yes, specify ISO3 country codes (like \"SYR\" for Syria)",
                 "attribute": "v_iso3",
                 "include": ["country"]
             },
             {
-                "text": "yes, specify ISO2 country codes (like \"SY\" for Syria)",
+                "text": "Yes, specify ISO2 country codes (like \"SY\" for Syria)",
                 "attribute": "v_iso2",
                 "include": ["country"]
             },
             {
-                "text": "yes, specify P-codes",
+                "text": "Yes, specify P-codes",
                 "attribute": "v_pcodes",
                 "exclude": ["region", "country"]
             }
         ]
     },
     "indicator_atts": {
-        "question": "what do these values tell about the indicator (one indicator per row)?",
+        "question": "What do these values tell about the indicator (one indicator per row)?",
         "options": [
             {
-                "text": "the indicator's name",
+                "text": "The indicator's name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "the indicator's identifier or code",
+                "text": "The indicator's identifier or code",
                 "attribute": "code"
             },
             {
-                "text": "the indicators type/classification",
+                "text": "The indicators type/classification",
                 "attribute": "type"
             },
             {
-                "text": "the indicator's value",
-                "attribute": "value"
+                "text": "The indicator's value",
+                "attribute": "value",
+                "dest": "datatype_atts"
             }
         ]
     },
     "datatype_atts": {
-        "question": "What is the most-specify data type that applies to every indicator value?",
-        "post-text": "You will need to replace +MY_CUSTOM_INDICATOR with a meaningful one, such as +biomass or +severe_acute_malnourished. There is no universal master list of these, but your organisation or cluster may already have a data dictionary for its own community of practice.",
+        "question": "What is the most-specific data type that applies to every indicator value?",
         "options": [
             {
-                "text": "a boolean (true/false or yes/no-style) value",
-                "attribute": "bool",
-                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
+                "text": "Mixed types, or all text"
             },
             {
-                "text": "a percentage",
-                "attribute": "pct",
-                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
+                "text": "A boolean (true/false or yes/no-style) value",
+                "attribute": "bool"
             },
             {
-                "text": "any other numeric value",
-                "attribute": "num",
-                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
+                "text": "A percentage",
+                "attribute": "pct"
             },
             {
-                "text": "a list of values",
-                "attribute": "list",
-                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
+                "text": "Any other numeric value",
+                "attribute": "num"
             },
             {
-                "text": "unstructured text",
-                "note": "Do not forget to replace +MY_CUSTOM_ATTRIBUTE with a meaningful one, such as +severe_acute_malnourished."
+                "text": "A web link",
+                "attribute": "url"
             }
         ]
     },
     "org_atts": {
-        "question": "are all the organisations tagged playing a specific role?",
+        "question": "Are all the organisations tagged playing a specific role?",
         "options": [
             {
-                "text": "no, there are different roles mixed in the column",
+                "text": "No, there are different roles mixed in the column",
                 "dest": "id_atts"
             },
             {
-                "text": "yes, they are all donor organisations",
+                "text": "Yes, they are all donor organisations",
                 "attribute": "funding",
                 "dest": "id_atts"
             },
             {
-                "text": "yes, they are all programming/extending organisations",
+                "text": "Yes, they are all programming/extending organisations",
                 "attribute": "prog",
                 "dest": "id_atts"
             },
             {
-                "text": "yes, they are all implementing partners",
+                "text": "Yes, they are all implementing partners",
                 "attribute": "impl",
                 "dest": "id_atts"
             },
             {
-                "text": "yes, they are all organisations making a report",
+                "text": "Yes, they are all organisations making a report",
                 "attribute": "reporting",
                 "dest": "id_atts"
             }
         ]
     },
     "value_atts": {
-        "question": "what type of monetary value is this?",
+        "question": "What type of monetary value is this?",
         "options": [
             {
-                "text": "not specified",
+                "text": "Not specified",
                 "dest": "currency_atts"
             },
             {
-                "text": "a cash transfer",
+                "text": "A cash transfer",
                 "attribute": "transfer",
                 "dest": "currency_atts"
             },
             {
-                "text": "an incoming funding commitment",
+                "text": "An incoming funding commitment",
                 "attribute": "incoming",
                 "dest": "currency_atts"
             },
             {
-                "text": "an outgoing funding commitment",
+                "text": "An outgoing funding commitment",
                 "attribute": "outgoing",
                 "dest": "currency_atts"
             },
             {
-                "text": "a budget",
+                "text": "A budget",
                 "attribute": "budget",
                 "dest": "currency_atts"
             },
             {
-                "text": "a disbursement",
+                "text": "A disbursement",
                 "attribute": "disbursement",
                 "dest": "currency_atts"
             },
             {
-                "text": "an expenditure",
+                "text": "An expenditure",
                 "attribute": "expenditure",
                 "dest": "currency_atts"
             }
         ]
     },
     "currency_atts": {
-        "question": "what currency do the monetary values represent?",
+        "question": "What currency do the monetary values represent?",
         "options": [
             {
-                "text": "a mixture of different currencies",
+                "text": "A mixture of different currencies",
                 "note": "there should be another column tagged with #currency"
             },
             {
-                "text": "US dollars",
+                "text": "Us dollars",
                 "attribute": "usd"
             },
             {
@@ -686,8 +696,52 @@
             },
             {
                 "text": "A currency not listed here",
+                "attribute": "xxx",
+                "note": "Replace +xxx with your currency code, e.g. +caf for West African francs"
+            }
+        ]
+    },
+    "contact_atts": {
+        "question": "What kind of contact information?",
+        "options": [
+            {
+                "text": "Name of a contact person",
+                "attribute": "name"
+            },
+            {
+                "text": "Email address",
+                "attribute": "email"
+            },
+            {
+                "text": "Phone number",
+                "attribute": "phone"
+            },
+            {
+                "text": "Web site",
+                "attribute": "url"
+            }
+        ]
+    },
+    "meta_atts": {
+        "question": "What kind of row metadata?",
+        "options": [
+            {
+                "text": "A unique identifier for the record/row",
+                "attribute": "id",
+                "note": "Assumed to be unique only within the dataset, not globally."
+            },
+            {
+                "text": "The source of the data",
+                "attribute": "source"
+            },
+            {
+                "text": "A URL for the data in the row",
+                "attribute": "url"
+            },
+            {
+                "text": "Metadata not listed above",
                 "attribute": "XXX",
-                "note": "Replace +XXX with your currency code, e.g. +caf for West African francs"
+                "note": "You can invent any custom attribute you need to describe your metadata, e.g. +certainty"
             }
         ]
     }

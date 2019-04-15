@@ -1,4 +1,4 @@
-import json
+import json, re
 
 with open("hxl-knowledge-base.json", "r") as input:
     base = json.load(input)
@@ -28,11 +28,9 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     if id == "top":
         print("      <a>HXL hashtag chooser</a>")
     else:
-        print("      <a href=\"#_top\">Start over</a>")
+        print("      <a href=\"#_top\">New hashtag</a>")
     print("      </div>")
-    print("      <h2>{}</h2>".format(esc(question["question"].capitalize())))
-    if hashtag is not None:
-        print("      <p>So far: <span class=\"tagspec\">{}</span></p>".format(esc(make_tagspec(hashtag, attributes))))
+    print("      <h2>{}</h2>".format(esc(question["question"])))
     if "pre-text" in question:
         print("        <p class=\"pre-text\">{}</p>".format(esc(question["pre-text"])))
     print("      <ul>")
@@ -41,11 +39,13 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     print("      </ul>")
     if "post-text" in question:
         print("        <p class=\"post-text\">{}</p>".format(esc(question["post-text"])))
+    if hashtag is not None:
+        print("      <p>So far: <span class=\"tagspec\">{}</span></p>".format(esc(make_tagspec(hashtag, attributes))))
     print("        <div class=\"nav\">")
     if previous_id is not None:
-        print("      <a href=\"#{}\">Previous question</a>".format(esc(previous_id)))
+        print("      <a href=\"#{}\">Back a step</a>".format(esc(previous_id)))
     else:
-        print("      <a>Previous question</a>")
+        print("      <a>&nbsp</a>")
     print("          <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">HXL dictionary</a>")
     print("        </div>")
     print("    </section>")
@@ -92,13 +92,17 @@ def display_option(option, hashtag, attributes):
 
 def display_result(option, hashtag, attributes, previous_id):
     print("    <section class=\"result\" id=\"{}_000\">".format(esc(make_html_id(id, hashtag, attributes))))
-    print("      <div class=\"nav\"><a href=\"#_top\">Start over</a></div>")
+    print("      <div class=\"nav\"><a href=\"#_top\">New hashtag</a></div>")
     print("      <h2>Use this hashtag and attributes</h2>")
-    print("      <p class=\"tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
+    print("      <p class=\"tagspec final-tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
+    for attribute in attributes:
+        if re.match(r"[A-Z]", attribute):
+            print("        <p>Don't forget to replace <b><code>+{}</code></b> with your own attribute.</p>".format(esc(attribute)))
     if "note" in option:
-        print("      <p class=\"note\">{}</p>".format(esc(option["note"])))
+        print("       <p class=\"note\">{}</p>".format(esc(option["note"])))
+    print("      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>")
     print("      <div class=\"nav\">")
-    print("        <a href=\"#{}\">Previous question</a>".format(esc(previous_id)))
+    print("        <a href=\"#{}\">Back a step</a>".format(esc(previous_id)))
     print("        <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">HXL dictionary</a>")
     print("      </div>")
     print("    </section>")

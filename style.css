@@ -4,6 +4,7 @@ body {
 
 section {
     padding: 1em;
+    min-height: 500ex; /* fallback for ancient browsers */
     min-height: 100vh; 
 }
 
@@ -39,4 +40,9 @@ div.nav {
 div.nav a {
     text-decoration: none;
     font-size: 83.333333%;
+}
+
+.copy-button {
+    display: inline-block
+    margin-left: 1em;
 }
