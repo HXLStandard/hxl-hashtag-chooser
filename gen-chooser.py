@@ -110,7 +110,7 @@ def display_result(option, hashtag, attributes, previous_id):
     print("    </section>")
 
 print("<!DOCTYPE html>")
-print("<html>")
+print("<html manifest=\"manifest.appcache\">")
 print("  <head>")
 print("    <title>HXL hashtag chooser</title>")
 print("    <link rel=\"stylesheet\" href=\"style.css\"/>")
