@@ -12,16 +12,17 @@
       <div class="nav">
       <a>HXL hashtag chooser</a>
       </div>
-      <h2>What kind of data do you want to tag in HXL?</h2>
+      <h2>What kind of data do you have in the column?</h2>
       <ul>
-        <li><a href="#_people_tags">Numbers of people (e.g. from a census or needs assessment)</a></li>
+        <li><a href="#_people_tags">Numbers of people (e.g. census or needs overview)</a></li>
         <li><a href="#_place_tags">Places</a></li>
+        <li><a href="#_survey_tags">Survey or assessment results</a></li>
         <li><a href="#org">Humanitarian organisations</a></li>
         <li><a href="#_response_tags">Humanitarian response (activities, clusters, etc.)</a></li>
         <li><a href="#_event_tags">Crises or events (e.g. security incidents)</a></li>
         <li><a href="#date">Dates</a></li>
         <li><a href="#_cash_tags">Cash or financial information</a></li>
-        <li><a href="#indicator">Any humanitarian indicators not covered above</a></li>
+        <li><a href="#indicator">General humanitarian indicators</a></li>
         <li><a href="#meta">Metadata describing the data row (e.g. source)</a></li>
         <li><a href="#x_???_000">None of the above</a></li>
       </ul>
@@ -34,7 +35,7 @@
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
-      <h2>What is the humanitarian context for the people being counted?</h2>
+      <h2>What is the humanitarian context of the people being counted?</h2>
       <ul>
         <li><a href="#population">General population (including those not affected by the crisis)</a></li>
         <li><a href="#affected">People affected by the crisis (including those not in need of assistance)</a></li>
@@ -17611,12 +17612,12 @@
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
-      <h2>Is this location part of a population movement?</h2>
+      <h2>What kind of locations are they?</h2>
       <ul>
-        <li><a href="#loc_">No, the dataset is not about population movements</a></li>
-        <li><a href="#loc_origin">Yes, it is the origin of a population movement</a></li>
-        <li><a href="#loc_dest">Yes, it is the destination of a population movement</a></li>
-        <li><a href="#loc_asylum">Yes, it is a location of asylum</a></li>
+        <li><a href="#loc_camp">Camps</a></li>
+        <li><a href="#loc_facility">Facilities (health, education, etc)</a></li>
+        <li><a href="#loc_market">Marketplaces</a></li>
+        <li><a href="#loc_">None of the above</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc</span></p>
         <div class="nav">
@@ -17624,14 +17625,1215 @@
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="question" id="loc_">
+    <section class="question" id="loc_camp">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Is this location part of a population movement?</h2>
+      <ul>
+        <li><a href="#loc_camp_">No, the dataset is not about population movements</a></li>
+        <li><a href="#loc_camp_origin">Yes, it is the origin of a population movement</a></li>
+        <li><a href="#loc_camp_dest">Yes, it is the destination of a population movement</a></li>
+        <li><a href="#loc_camp_asylum">Yes, it is a location of asylum</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp</span></p>
+        <div class="nav">
+      <a href="#loc">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="loc_camp_">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>How is the location described?</h2>
       <ul>
-        <li><a href="#loc__name">By its name</a></li>
-        <li><a href="#loc__code">By a code</a></li>
+        <li><a href="#loc_camp__name">By its name</a></li>
+        <li><a href="#loc_camp__code">By a code</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp</span></p>
+        <div class="nav">
+      <a href="#loc_camp">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="loc_camp__name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#loc_camp__name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc_camp__name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc_camp__name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc_camp__name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc_camp__name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc_camp__name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc_camp__name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc_camp__name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +name</span></p>
+        <div class="nav">
+      <a href="#loc_camp_">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp__name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_camp__code">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to indicate what code list you are using?</h2>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
+      <ul>
+        <li><a href="#loc_camp__code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc_camp__code_v_pcodes_000">Yes, specify P-codes</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +code</span></p>
+        <div class="nav">
+      <a href="#loc_camp_">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp__code__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__code_v_iso3_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +code +v_iso3</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__code_v_iso2_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +code +v_iso2</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp__code_v_pcodes_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +code +v_pcodes</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp__code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_camp_origin">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>How is the location described?</h2>
+      <ul>
+        <li><a href="#loc_camp_origin_name">By its name</a></li>
+        <li><a href="#loc_camp_origin_code">By a code</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +origin</span></p>
+        <div class="nav">
+      <a href="#loc_camp">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="loc_camp_origin_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#loc_camp_origin_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc_camp_origin_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc_camp_origin_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc_camp_origin_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc_camp_origin_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc_camp_origin_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc_camp_origin_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc_camp_origin_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +origin +name</span></p>
+        <div class="nav">
+      <a href="#loc_camp_origin">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_camp_origin_code">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to indicate what code list you are using?</h2>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
+      <ul>
+        <li><a href="#loc_camp_origin_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc_camp_origin_code_v_pcodes_000">Yes, specify P-codes</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +origin +code</span></p>
+        <div class="nav">
+      <a href="#loc_camp_origin">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp_origin_code__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_code_v_iso3_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +code +v_iso3</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_code_v_iso2_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +code +v_iso2</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_origin_code_v_pcodes_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +origin +code +v_pcodes</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_origin_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_camp_dest">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>How is the location described?</h2>
+      <ul>
+        <li><a href="#loc_camp_dest_name">By its name</a></li>
+        <li><a href="#loc_camp_dest_code">By a code</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +dest</span></p>
+        <div class="nav">
+      <a href="#loc_camp">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="loc_camp_dest_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#loc_camp_dest_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc_camp_dest_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc_camp_dest_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc_camp_dest_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc_camp_dest_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc_camp_dest_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc_camp_dest_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc_camp_dest_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +dest +name</span></p>
+        <div class="nav">
+      <a href="#loc_camp_dest">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_camp_dest_code">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to indicate what code list you are using?</h2>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
+      <ul>
+        <li><a href="#loc_camp_dest_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc_camp_dest_code_v_pcodes_000">Yes, specify P-codes</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +dest +code</span></p>
+        <div class="nav">
+      <a href="#loc_camp_dest">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp_dest_code__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_code_v_iso3_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +code +v_iso3</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_code_v_iso2_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +code +v_iso2</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_dest_code_v_pcodes_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +dest +code +v_pcodes</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_dest_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_camp_asylum">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>How is the location described?</h2>
+      <ul>
+        <li><a href="#loc_camp_asylum_name">By its name</a></li>
+        <li><a href="#loc_camp_asylum_code">By a code</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +asylum</span></p>
+        <div class="nav">
+      <a href="#loc_camp">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="loc_camp_asylum_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#loc_camp_asylum_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc_camp_asylum_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc_camp_asylum_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc_camp_asylum_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc_camp_asylum_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc_camp_asylum_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc_camp_asylum_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc_camp_asylum_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +asylum +name</span></p>
+        <div class="nav">
+      <a href="#loc_camp_asylum">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_camp_asylum_code">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to indicate what code list you are using?</h2>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
+      <ul>
+        <li><a href="#loc_camp_asylum_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc_camp_asylum_code_v_pcodes_000">Yes, specify P-codes</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +camp +asylum +code</span></p>
+        <div class="nav">
+      <a href="#loc_camp_asylum">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_code__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_code_v_iso3_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +code +v_iso3</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_code_v_iso2_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +code +v_iso2</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_camp_asylum_code_v_pcodes_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +camp +asylum +code +v_pcodes</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_camp_asylum_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_facility">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>How is the location described?</h2>
+      <ul>
+        <li><a href="#loc_facility_name">By its name</a></li>
+        <li><a href="#loc_facility_code">By a code</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +facility</span></p>
+        <div class="nav">
+      <a href="#loc">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="loc_facility_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#loc_facility_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc_facility_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc_facility_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc_facility_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc_facility_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc_facility_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc_facility_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc_facility_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +facility +name</span></p>
+        <div class="nav">
+      <a href="#loc_facility">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_facility_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_facility_code">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to indicate what code list you are using?</h2>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
+      <ul>
+        <li><a href="#loc_facility_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc_facility_code_v_pcodes_000">Yes, specify P-codes</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +facility +code</span></p>
+        <div class="nav">
+      <a href="#loc_facility">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_facility_code__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_code_v_iso3_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +code +v_iso3</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_code_v_iso2_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +code +v_iso2</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_facility_code_v_pcodes_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +facility +code +v_pcodes</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_facility_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_market">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>How is the location described?</h2>
+      <ul>
+        <li><a href="#loc_market_name">By its name</a></li>
+        <li><a href="#loc_market_code">By a code</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +market</span></p>
+        <div class="nav">
+      <a href="#loc">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="loc_market_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#loc_market_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc_market_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc_market_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc_market_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc_market_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc_market_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc_market_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc_market_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +market +name</span></p>
+        <div class="nav">
+      <a href="#loc_market">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_market_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_market_code">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to indicate what code list you are using?</h2>
+        <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
+      <ul>
+        <li><a href="#loc_market_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc_market_code_v_pcodes_000">Yes, specify P-codes</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +market +code</span></p>
+        <div class="nav">
+      <a href="#loc_market">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc_market_code__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_code_v_iso3_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +code +v_iso3</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_code_v_iso2_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +code +v_iso2</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="loc_market_code_v_pcodes_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#loc +market +code +v_pcodes</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#loc_market_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="loc_">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Is this location part of a population movement?</h2>
+      <ul>
+        <li><a href="#loc__">No, the dataset is not about population movements</a></li>
+        <li><a href="#loc__origin">Yes, it is the origin of a population movement</a></li>
+        <li><a href="#loc__dest">Yes, it is the destination of a population movement</a></li>
+        <li><a href="#loc__asylum">Yes, it is a location of asylum</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc</span></p>
         <div class="nav">
@@ -17639,28 +18841,43 @@
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="question" id="loc__name">
+    <section class="question" id="loc__">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
-      <h2>Do you want to identify the language of the content?</h2>
+      <h2>How is the location described?</h2>
       <ul>
-        <li><a href="#loc__name__000">No, I want to leave it unspecified</a></li>
-        <li><a href="#loc__name_i_en_000">Yes, the text is in English</a></li>
-        <li><a href="#loc__name_i_fr_000">Yes, the text is in French</a></li>
-        <li><a href="#loc__name_i_ar_000">Yes, the text is in Arabic</a></li>
-        <li><a href="#loc__name_i_es_000">Yes, the text is in Spanish</a></li>
-        <li><a href="#loc__name_i_ru_000">Yes, the text is in Russian</a></li>
-        <li><a href="#loc__name_i_sw_000">Yes, the text is in Swahili</a></li>
-        <li><a href="#loc__name_i_xx_000">The text is in a language not listed here</a></li>
+        <li><a href="#loc___name">By its name</a></li>
+        <li><a href="#loc___code">By a code</a></li>
       </ul>
-      <p>So far: <span class="tagspec">#loc +name</span></p>
+      <p>So far: <span class="tagspec">#loc</span></p>
         <div class="nav">
       <a href="#loc_">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc__name__000">
+    <section class="question" id="loc___name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#loc___name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc___name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc___name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc___name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc___name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc___name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc___name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc___name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#loc +name</span></p>
+        <div class="nav">
+      <a href="#loc__">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="loc___name__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17668,11 +18885,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__name_i_en_000">
+    <section class="result" id="loc___name_i_en_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17680,11 +18897,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__name_i_fr_000">
+    <section class="result" id="loc___name_i_fr_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17692,11 +18909,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__name_i_ar_000">
+    <section class="result" id="loc___name_i_ar_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17704,11 +18921,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__name_i_es_000">
+    <section class="result" id="loc___name_i_es_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17716,11 +18933,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__name_i_ru_000">
+    <section class="result" id="loc___name_i_ru_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17728,11 +18945,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__name_i_sw_000">
+    <section class="result" id="loc___name_i_sw_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17740,11 +18957,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__name_i_xx_000">
+    <section class="result" id="loc___name_i_xx_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17753,27 +18970,27 @@
        <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__name">Back a step</a>
+        <a href="#loc___name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="question" id="loc__code">
+    <section class="question" id="loc___code">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>Do you want to indicate what code list you are using?</h2>
         <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
       <ul>
-        <li><a href="#loc__code__000">No, leave it unspecified</a></li>
-        <li><a href="#loc__code_v_pcodes_000">Yes, specify P-codes</a></li>
+        <li><a href="#loc___code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc___code_v_pcodes_000">Yes, specify P-codes</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +code</span></p>
         <div class="nav">
-      <a href="#loc_">Back a step</a>
+      <a href="#loc__">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc__code__000">
+    <section class="result" id="loc___code__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17781,11 +18998,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__code">Back a step</a>
+        <a href="#loc___code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__code_v_iso3_000">
+    <section class="result" id="loc___code_v_iso3_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17793,11 +19010,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__code">Back a step</a>
+        <a href="#loc___code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__code_v_iso2_000">
+    <section class="result" id="loc___code_v_iso2_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17805,11 +19022,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__code">Back a step</a>
+        <a href="#loc___code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc__code_v_pcodes_000">
+    <section class="result" id="loc___code_v_pcodes_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17817,47 +19034,47 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc__code">Back a step</a>
+        <a href="#loc___code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="question" id="loc_origin">
+    <section class="question" id="loc__origin">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>How is the location described?</h2>
       <ul>
-        <li><a href="#loc_origin_name">By its name</a></li>
-        <li><a href="#loc_origin_code">By a code</a></li>
+        <li><a href="#loc__origin_name">By its name</a></li>
+        <li><a href="#loc__origin_code">By a code</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +origin</span></p>
         <div class="nav">
-      <a href="#loc">Back a step</a>
+      <a href="#loc_">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="question" id="loc_origin_name">
+    <section class="question" id="loc__origin_name">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>Do you want to identify the language of the content?</h2>
       <ul>
-        <li><a href="#loc_origin_name__000">No, I want to leave it unspecified</a></li>
-        <li><a href="#loc_origin_name_i_en_000">Yes, the text is in English</a></li>
-        <li><a href="#loc_origin_name_i_fr_000">Yes, the text is in French</a></li>
-        <li><a href="#loc_origin_name_i_ar_000">Yes, the text is in Arabic</a></li>
-        <li><a href="#loc_origin_name_i_es_000">Yes, the text is in Spanish</a></li>
-        <li><a href="#loc_origin_name_i_ru_000">Yes, the text is in Russian</a></li>
-        <li><a href="#loc_origin_name_i_sw_000">Yes, the text is in Swahili</a></li>
-        <li><a href="#loc_origin_name_i_xx_000">The text is in a language not listed here</a></li>
+        <li><a href="#loc__origin_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc__origin_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc__origin_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc__origin_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc__origin_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc__origin_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc__origin_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc__origin_name_i_xx_000">The text is in a language not listed here</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +origin +name</span></p>
         <div class="nav">
-      <a href="#loc_origin">Back a step</a>
+      <a href="#loc__origin">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc_origin_name__000">
+    <section class="result" id="loc__origin_name__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17865,11 +19082,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_name_i_en_000">
+    <section class="result" id="loc__origin_name_i_en_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17877,11 +19094,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_name_i_fr_000">
+    <section class="result" id="loc__origin_name_i_fr_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17889,11 +19106,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_name_i_ar_000">
+    <section class="result" id="loc__origin_name_i_ar_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17901,11 +19118,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_name_i_es_000">
+    <section class="result" id="loc__origin_name_i_es_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17913,11 +19130,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_name_i_ru_000">
+    <section class="result" id="loc__origin_name_i_ru_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17925,11 +19142,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_name_i_sw_000">
+    <section class="result" id="loc__origin_name_i_sw_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17937,11 +19154,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_name_i_xx_000">
+    <section class="result" id="loc__origin_name_i_xx_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17950,27 +19167,27 @@
        <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_name">Back a step</a>
+        <a href="#loc__origin_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="question" id="loc_origin_code">
+    <section class="question" id="loc__origin_code">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>Do you want to indicate what code list you are using?</h2>
         <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
       <ul>
-        <li><a href="#loc_origin_code__000">No, leave it unspecified</a></li>
-        <li><a href="#loc_origin_code_v_pcodes_000">Yes, specify P-codes</a></li>
+        <li><a href="#loc__origin_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc__origin_code_v_pcodes_000">Yes, specify P-codes</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +origin +code</span></p>
         <div class="nav">
-      <a href="#loc_origin">Back a step</a>
+      <a href="#loc__origin">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc_origin_code__000">
+    <section class="result" id="loc__origin_code__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17978,11 +19195,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_code">Back a step</a>
+        <a href="#loc__origin_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_code_v_iso3_000">
+    <section class="result" id="loc__origin_code_v_iso3_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -17990,11 +19207,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_code">Back a step</a>
+        <a href="#loc__origin_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_code_v_iso2_000">
+    <section class="result" id="loc__origin_code_v_iso2_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18002,11 +19219,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_code">Back a step</a>
+        <a href="#loc__origin_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_origin_code_v_pcodes_000">
+    <section class="result" id="loc__origin_code_v_pcodes_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18014,47 +19231,47 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_origin_code">Back a step</a>
+        <a href="#loc__origin_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="question" id="loc_dest">
+    <section class="question" id="loc__dest">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>How is the location described?</h2>
       <ul>
-        <li><a href="#loc_dest_name">By its name</a></li>
-        <li><a href="#loc_dest_code">By a code</a></li>
+        <li><a href="#loc__dest_name">By its name</a></li>
+        <li><a href="#loc__dest_code">By a code</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +dest</span></p>
         <div class="nav">
-      <a href="#loc">Back a step</a>
+      <a href="#loc_">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="question" id="loc_dest_name">
+    <section class="question" id="loc__dest_name">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>Do you want to identify the language of the content?</h2>
       <ul>
-        <li><a href="#loc_dest_name__000">No, I want to leave it unspecified</a></li>
-        <li><a href="#loc_dest_name_i_en_000">Yes, the text is in English</a></li>
-        <li><a href="#loc_dest_name_i_fr_000">Yes, the text is in French</a></li>
-        <li><a href="#loc_dest_name_i_ar_000">Yes, the text is in Arabic</a></li>
-        <li><a href="#loc_dest_name_i_es_000">Yes, the text is in Spanish</a></li>
-        <li><a href="#loc_dest_name_i_ru_000">Yes, the text is in Russian</a></li>
-        <li><a href="#loc_dest_name_i_sw_000">Yes, the text is in Swahili</a></li>
-        <li><a href="#loc_dest_name_i_xx_000">The text is in a language not listed here</a></li>
+        <li><a href="#loc__dest_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc__dest_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc__dest_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc__dest_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc__dest_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc__dest_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc__dest_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc__dest_name_i_xx_000">The text is in a language not listed here</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +dest +name</span></p>
         <div class="nav">
-      <a href="#loc_dest">Back a step</a>
+      <a href="#loc__dest">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc_dest_name__000">
+    <section class="result" id="loc__dest_name__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18062,11 +19279,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_name_i_en_000">
+    <section class="result" id="loc__dest_name_i_en_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18074,11 +19291,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_name_i_fr_000">
+    <section class="result" id="loc__dest_name_i_fr_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18086,11 +19303,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_name_i_ar_000">
+    <section class="result" id="loc__dest_name_i_ar_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18098,11 +19315,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_name_i_es_000">
+    <section class="result" id="loc__dest_name_i_es_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18110,11 +19327,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_name_i_ru_000">
+    <section class="result" id="loc__dest_name_i_ru_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18122,11 +19339,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_name_i_sw_000">
+    <section class="result" id="loc__dest_name_i_sw_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18134,11 +19351,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_name_i_xx_000">
+    <section class="result" id="loc__dest_name_i_xx_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18147,27 +19364,27 @@
        <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_name">Back a step</a>
+        <a href="#loc__dest_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="question" id="loc_dest_code">
+    <section class="question" id="loc__dest_code">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>Do you want to indicate what code list you are using?</h2>
         <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
       <ul>
-        <li><a href="#loc_dest_code__000">No, leave it unspecified</a></li>
-        <li><a href="#loc_dest_code_v_pcodes_000">Yes, specify P-codes</a></li>
+        <li><a href="#loc__dest_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc__dest_code_v_pcodes_000">Yes, specify P-codes</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +dest +code</span></p>
         <div class="nav">
-      <a href="#loc_dest">Back a step</a>
+      <a href="#loc__dest">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc_dest_code__000">
+    <section class="result" id="loc__dest_code__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18175,11 +19392,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_code">Back a step</a>
+        <a href="#loc__dest_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_code_v_iso3_000">
+    <section class="result" id="loc__dest_code_v_iso3_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18187,11 +19404,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_code">Back a step</a>
+        <a href="#loc__dest_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_code_v_iso2_000">
+    <section class="result" id="loc__dest_code_v_iso2_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18199,11 +19416,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_code">Back a step</a>
+        <a href="#loc__dest_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_dest_code_v_pcodes_000">
+    <section class="result" id="loc__dest_code_v_pcodes_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18211,47 +19428,47 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_dest_code">Back a step</a>
+        <a href="#loc__dest_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="question" id="loc_asylum">
+    <section class="question" id="loc__asylum">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>How is the location described?</h2>
       <ul>
-        <li><a href="#loc_asylum_name">By its name</a></li>
-        <li><a href="#loc_asylum_code">By a code</a></li>
+        <li><a href="#loc__asylum_name">By its name</a></li>
+        <li><a href="#loc__asylum_code">By a code</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +asylum</span></p>
         <div class="nav">
-      <a href="#loc">Back a step</a>
+      <a href="#loc_">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="question" id="loc_asylum_name">
+    <section class="question" id="loc__asylum_name">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>Do you want to identify the language of the content?</h2>
       <ul>
-        <li><a href="#loc_asylum_name__000">No, I want to leave it unspecified</a></li>
-        <li><a href="#loc_asylum_name_i_en_000">Yes, the text is in English</a></li>
-        <li><a href="#loc_asylum_name_i_fr_000">Yes, the text is in French</a></li>
-        <li><a href="#loc_asylum_name_i_ar_000">Yes, the text is in Arabic</a></li>
-        <li><a href="#loc_asylum_name_i_es_000">Yes, the text is in Spanish</a></li>
-        <li><a href="#loc_asylum_name_i_ru_000">Yes, the text is in Russian</a></li>
-        <li><a href="#loc_asylum_name_i_sw_000">Yes, the text is in Swahili</a></li>
-        <li><a href="#loc_asylum_name_i_xx_000">The text is in a language not listed here</a></li>
+        <li><a href="#loc__asylum_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#loc__asylum_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#loc__asylum_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#loc__asylum_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#loc__asylum_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#loc__asylum_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#loc__asylum_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#loc__asylum_name_i_xx_000">The text is in a language not listed here</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +asylum +name</span></p>
         <div class="nav">
-      <a href="#loc_asylum">Back a step</a>
+      <a href="#loc__asylum">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc_asylum_name__000">
+    <section class="result" id="loc__asylum_name__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18259,11 +19476,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_name_i_en_000">
+    <section class="result" id="loc__asylum_name_i_en_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18271,11 +19488,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_name_i_fr_000">
+    <section class="result" id="loc__asylum_name_i_fr_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18283,11 +19500,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_name_i_ar_000">
+    <section class="result" id="loc__asylum_name_i_ar_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18295,11 +19512,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_name_i_es_000">
+    <section class="result" id="loc__asylum_name_i_es_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18307,11 +19524,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_name_i_ru_000">
+    <section class="result" id="loc__asylum_name_i_ru_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18319,11 +19536,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_name_i_sw_000">
+    <section class="result" id="loc__asylum_name_i_sw_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18331,11 +19548,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_name_i_xx_000">
+    <section class="result" id="loc__asylum_name_i_xx_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18344,27 +19561,27 @@
        <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_name">Back a step</a>
+        <a href="#loc__asylum_name">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="question" id="loc_asylum_code">
+    <section class="question" id="loc__asylum_code">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
       </div>
       <h2>Do you want to indicate what code list you are using?</h2>
         <p class="pre-text">We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.</p>
       <ul>
-        <li><a href="#loc_asylum_code__000">No, leave it unspecified</a></li>
-        <li><a href="#loc_asylum_code_v_pcodes_000">Yes, specify P-codes</a></li>
+        <li><a href="#loc__asylum_code__000">No, leave it unspecified</a></li>
+        <li><a href="#loc__asylum_code_v_pcodes_000">Yes, specify P-codes</a></li>
       </ul>
       <p>So far: <span class="tagspec">#loc +asylum +code</span></p>
         <div class="nav">
-      <a href="#loc_asylum">Back a step</a>
+      <a href="#loc__asylum">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
     </section>
-    <section class="result" id="loc_asylum_code__000">
+    <section class="result" id="loc__asylum_code__000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18372,11 +19589,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_code">Back a step</a>
+        <a href="#loc__asylum_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_code_v_iso3_000">
+    <section class="result" id="loc__asylum_code_v_iso3_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18384,11 +19601,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_code">Back a step</a>
+        <a href="#loc__asylum_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_code_v_iso2_000">
+    <section class="result" id="loc__asylum_code_v_iso2_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18396,11 +19613,11 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_code">Back a step</a>
+        <a href="#loc__asylum_code">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="loc_asylum_code_v_pcodes_000">
+    <section class="result" id="loc__asylum_code_v_pcodes_000">
       <div class="nav"><a href="#_top">New hashtag</a></div>
       <h2>Use this hashtag and attributes</h2>
       <div class="tagspec-container">
@@ -18408,7 +19625,815 @@
       </div>
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
-        <a href="#loc_asylum_code">Back a step</a>
+        <a href="#loc__asylum_code">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="_survey_tags">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of survey/assessment information do you want to tag?</h2>
+      <ul>
+        <li><a href="#respondee">Individual respondees (e.g. people, households, or merchants)</a></li>
+        <li><a href="#capacity">Capacities (number of beds, maximum cargo, etc)</a></li>
+        <li><a href="#need">Needs (shelter, communications, etc)</a></li>
+        <li><a href="#service">Services (healthcare, counselling, etc)</a></li>
+        <li><a href="#item">Items (food, shelter kits, etc)</a></li>
+      </ul>
+        <p class="post-text">CAUTION: survey results are often sensitive data.</p>
+        <div class="nav">
+      <a href="#_top">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="respondee">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#respondee_name">A human-readable name</a></li>
+        <li><a href="#respondee_code_000">A unique machine code</a></li>
+        <li><a href="#respondee_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#respondee</span></p>
+        <div class="nav">
+      <a href="#_survey_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="respondee_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#respondee_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#respondee_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#respondee_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#respondee_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#respondee_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#respondee_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#respondee_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#respondee_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#respondee +name</span></p>
+        <div class="nav">
+      <a href="#respondee">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="respondee_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="respondee_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#respondee +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#respondee">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="capacity">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#capacity_name">A human-readable name</a></li>
+        <li><a href="#capacity_code_000">A unique machine code</a></li>
+        <li><a href="#capacity_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#capacity</span></p>
+        <div class="nav">
+      <a href="#_survey_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="capacity_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#capacity_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#capacity_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#capacity_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#capacity_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#capacity_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#capacity_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#capacity_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#capacity_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#capacity +name</span></p>
+        <div class="nav">
+      <a href="#capacity">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="capacity_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="capacity_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#capacity +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#capacity">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="need">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#need_name">A human-readable name</a></li>
+        <li><a href="#need_code_000">A unique machine code</a></li>
+        <li><a href="#need_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#need</span></p>
+        <div class="nav">
+      <a href="#_survey_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="need_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#need_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#need_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#need_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#need_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#need_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#need_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#need_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#need_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#need +name</span></p>
+        <div class="nav">
+      <a href="#need">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="need_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="need_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#need +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#need">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="service">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#service_name">A human-readable name</a></li>
+        <li><a href="#service_code_000">A unique machine code</a></li>
+        <li><a href="#service_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#service</span></p>
+        <div class="nav">
+      <a href="#_survey_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="service_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#service_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#service_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#service_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#service_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#service_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#service_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#service_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#service_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#service +name</span></p>
+        <div class="nav">
+      <a href="#service">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="service_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="service_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#service +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#service">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="item">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#item_name">A human-readable name</a></li>
+        <li><a href="#item_code_000">A unique machine code</a></li>
+        <li><a href="#item_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#item</span></p>
+        <div class="nav">
+      <a href="#_survey_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="item_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#item_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#item_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#item_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#item_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#item_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#item_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#item_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#item_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#item +name</span></p>
+        <div class="nav">
+      <a href="#item">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="item_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="item_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#item +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#item">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
@@ -20549,9 +22574,12 @@
       </div>
       <h2>What kind of event information do you want to tag?</h2>
       <ul>
-        <li><a href="#event">Information about a specific incident</a></li>
+        <li><a href="#crisis">A broad humanitarian crisis/emergency</a></li>
+        <li><a href="#event">A specific event incident</a></li>
         <li><a href="#group">Information about a non-humanitarian group involved an incident</a></li>
+        <li><a href="#access">Barriers or restrictions on access</a></li>
         <li><a href="#cause">The cause of an incident</a></li>
+        <li><a href="#frequency">The frequency of an incident</a></li>
         <li><a href="#severity">The severity of an incident</a></li>
         <li><a href="#impact">An impact of an incident</a></li>
       </ul>
@@ -20559,6 +22587,164 @@
       <a href="#_top">Back a step</a>
           <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
         </div>
+    </section>
+    <section class="question" id="crisis">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#crisis_name">A human-readable name</a></li>
+        <li><a href="#crisis_code_000">A unique machine code</a></li>
+        <li><a href="#crisis_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#crisis</span></p>
+        <div class="nav">
+      <a href="#_event_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="crisis_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#crisis_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#crisis_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#crisis_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#crisis_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#crisis_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#crisis_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#crisis_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#crisis_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#crisis +name</span></p>
+        <div class="nav">
+      <a href="#crisis">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="crisis_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="crisis_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#crisis +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#crisis">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
     </section>
     <section class="question" id="event">
       <div class="nav">
@@ -20876,6 +23062,164 @@
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>
+    <section class="question" id="access">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#access_name">A human-readable name</a></li>
+        <li><a href="#access_code_000">A unique machine code</a></li>
+        <li><a href="#access_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#access</span></p>
+        <div class="nav">
+      <a href="#_event_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="access_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#access_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#access_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#access_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#access_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#access_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#access_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#access_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#access_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#access +name</span></p>
+        <div class="nav">
+      <a href="#access">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="access_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="access_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#access +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#access">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
     <section class="question" id="cause">
       <div class="nav">
       <a href="#_top">Start new hashtag</a>
@@ -21031,6 +23375,164 @@
       <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#cause">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="question" id="frequency">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>What kind of information do you want to provide?</h2>
+      <ul>
+        <li><a href="#frequency_name">A human-readable name</a></li>
+        <li><a href="#frequency_code_000">A unique machine code</a></li>
+        <li><a href="#frequency_type_000">A type/classification</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#frequency</span></p>
+        <div class="nav">
+      <a href="#_event_tags">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="question" id="frequency_name">
+      <div class="nav">
+      <a href="#_top">Start new hashtag</a>
+      </div>
+      <h2>Do you want to identify the language of the content?</h2>
+      <ul>
+        <li><a href="#frequency_name__000">No, I want to leave it unspecified</a></li>
+        <li><a href="#frequency_name_i_en_000">Yes, the text is in English</a></li>
+        <li><a href="#frequency_name_i_fr_000">Yes, the text is in French</a></li>
+        <li><a href="#frequency_name_i_ar_000">Yes, the text is in Arabic</a></li>
+        <li><a href="#frequency_name_i_es_000">Yes, the text is in Spanish</a></li>
+        <li><a href="#frequency_name_i_ru_000">Yes, the text is in Russian</a></li>
+        <li><a href="#frequency_name_i_sw_000">Yes, the text is in Swahili</a></li>
+        <li><a href="#frequency_name_i_xx_000">The text is in a language not listed here</a></li>
+      </ul>
+      <p>So far: <span class="tagspec">#frequency +name</span></p>
+        <div class="nav">
+      <a href="#frequency">Back a step</a>
+          <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+        </div>
+    </section>
+    <section class="result" id="frequency_name__000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_name_i_en_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name +i_en</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_name_i_fr_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name +i_fr</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_name_i_ar_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name +i_ar</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_name_i_es_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name +i_es</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_name_i_ru_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name +i_ru</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_name_i_sw_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name +i_sw</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_name_i_xx_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +name +i_xx</div>
+      </div>
+       <p class="note">Replace the &quot;xx&quot; in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.</p>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency_name">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_code_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +code</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency">Back a step</a>
+        <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="frequency_type_000">
+      <div class="nav"><a href="#_top">New hashtag</a></div>
+      <h2>Use this hashtag and attributes</h2>
+      <div class="tagspec-container">
+        <div class="tagspec final-tagspec">#frequency +type</div>
+      </div>
+      <p>You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#frequency">Back a step</a>
         <a href="http://hxlstandard.org/standard/dictionary" target="_blank">HXL dictionary</a>
       </div>
     </section>

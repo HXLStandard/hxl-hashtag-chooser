@@ -1,14 +1,18 @@
 {
     "top": {
-        "question": "What kind of data do you want to tag in HXL?",
+        "question": "What kind of data do you have in the column?",
         "options": [
             {
-                "text": "Numbers of people (e.g. from a census or needs assessment)",
+                "text": "Numbers of people (e.g. census or needs overview)",
                 "dest": "people_tags"
             },
             {
                 "text": "Places",
                 "dest": "place_tags"
+            },
+            {
+                "text": "Survey or assessment results",
+                "dest": "survey_tags"
             },
             {
                 "text": "Humanitarian organisations",
@@ -33,7 +37,7 @@
                 "dest": "cash_tags"
             },
             {
-                "text": "Any humanitarian indicators not covered above",
+                "text": "General humanitarian indicators",
                 "hashtag": "indicator",
                 "dest": "indicator_shape"
             },
@@ -65,7 +69,7 @@
         "pre-text": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools."
     },
     "people_tags": {
-        "question": "What is the humanitarian context for the people being counted?",
+        "question": "What is the humanitarian context of the people being counted?",
         "options": [
             {
                 "text": "General population (including those not affected by the crisis)",
@@ -94,6 +98,37 @@
             }
         ]
     },
+    "survey_tags": {
+        "question": "What kind of survey/assessment information do you want to tag?",
+        "options": [
+            {
+                "text": "Individual respondees (e.g. people, households, or merchants)",
+                "hashtag": "respondee",
+                "dest": "code_atts"
+            },
+            {
+                "text": "Capacities (number of beds, maximum cargo, etc)",
+                "hashtag": "capacity",
+                "dest": "code_atts"
+            },
+            {
+                "text": "Needs (shelter, communications, etc)",
+                "hashtag": "need",
+                "dest": "code_atts"
+            },
+            {
+                "text": "Services (healthcare, counselling, etc)",
+                "hashtag": "service",
+                "dest": "code_atts"
+            },
+            {
+                "text": "Items (food, shelter kits, etc)",
+                "hashtag": "item",
+                "dest": "code_atts"
+            }
+        ],
+        "post-text": "CAUTION: survey results are often sensitive data."
+    },
     "place_tags": {
         "question": "What kind of places are in the data?",
         "options": [
@@ -109,7 +144,7 @@
             {
                 "text": "Specific locations (e.g. camps) or mixed types of locations",
                 "hashtag": "loc",
-                "dest": "movement_atts"
+                "dest": "loc_atts"
             }
         ]
     },
@@ -157,7 +192,12 @@
         "question": "What kind of event information do you want to tag?",
         "options": [
             {
-                "text": "Information about a specific incident",
+                "text": "A broad humanitarian crisis/emergency",
+                "hashtag": "crisis",
+                "dest": "code_atts"
+            },
+            {
+                "text": "A specific event incident",
                 "hashtag": "event",
                 "dest": "id_atts"
             },
@@ -167,8 +207,18 @@
                 "dest": "id_atts"
             },
             {
+                "text": "Barriers or restrictions on access",
+                "hashtag": "access",
+                "dest": "code_atts"
+            },
+            {
                 "text": "The cause of an incident",
                 "hashtag": "cause",
+                "dest": "code_atts"
+            },
+            {
+                "text": "The frequency of an incident",
+                "hashtag": "frequency",
                 "dest": "code_atts"
             },
             {
@@ -415,6 +465,30 @@
                 "text": "Yes, it is a location of asylum",
                 "attribute": "asylum",
                 "dest": "adm_atts"
+            }
+        ]
+    },
+    "loc_atts": {
+        "question": "What kind of locations are they?",
+        "options": [
+            {
+                "text": "Camps",
+                "attribute": "camp",
+                "dest": "movement_atts"
+            },
+            {
+                "text": "Facilities (health, education, etc)",
+                "attribute": "facility",
+                "dest": "adm_atts"
+            },
+            {
+                "text": "Marketplaces",
+                "attribute": "market",
+                "dest": "adm_atts"
+            },
+            {
+                "text": "None of the above",
+                "dest": "movement_atts"
             }
         ]
     },
