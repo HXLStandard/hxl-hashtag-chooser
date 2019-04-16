@@ -69,7 +69,7 @@
         "pre-text": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools."
     },
     "people_tags": {
-        "question": "What is the humanitarian context of the people being counted?",
+        "question": "What is the humanitarian context?",
         "options": [
             {
                 "text": "General population (including those not affected by the crisis)",
@@ -77,29 +77,57 @@
                 "hashtag": "population"
             },
             {
-                "text": "People affected by the crisis (including those not in need of assistance)",
-                "dest": "impact_atts",
-                "hashtag": "affected"
+                "text": "All individuals affected by the crisis",
+                "hashtag": "affected",
+                "attribute": "ind",
+                "dest": "impact_atts"
             },
             {
-                "text": "People in need of humanitarian assistance (including those not targeted by the response)",
-                "dest": "impact_atts",
-                "hashtag": "inneed"
+                "text": "All households affected by the crisis",
+                "hashtag": "affected",
+                "attribute": "hh",
+                "dest": "impact_atts"
             },
             {
-                "text": "People targeted for humanitarian assistance (including those not yet reached)",
-                "dest": "impact_atts",
-                "hashtag": "targeted"
+                "text": "All individuals in need of humanitarian assistance",
+                "hashtag": "inneed",
+                "attribute": "ind",
+                "dest": "impact_atts"
             },
             {
-                "text": "People already reached with humanitarian assistance",
-                "dest": "impact_atts",
-                "hashtag": "reached"
+                "text": "All households in need of humanitarian assistance",
+                "hashtag": "inneed",
+                "attribute": "hh",
+                "dest": "impact_atts"
+            },
+            {
+                "text": "All individuals targeted for humanitarian assistance",
+                "hashtag": "targeted",
+                "attribute": "ind",
+                "dest": "impact_atts"
+            },
+            {
+                "text": "All households targeted for humanitarian assistance",
+                "hashtag": "targeted",
+                "attribute": "hh",
+                "dest": "impact_atts"
+            },
+            {
+                "text": "Only individuals actually reached with humanitarian assistance",
+                "hashtag": "reached",
+                "attribute": "ind",
+                "dest": "impact_atts"
+            },
+            {
+                "text": "Only households actually reached with humanitarian assistance",
+                "hashtag": "reached",
+                "attribute": "hh",
+                "dest": "impact_atts"
             }
         ]
     },
     "survey_tags": {
-        "question": "What kind of survey/assessment information do you want to tag?",
+        "question": "What kind of survey/assessment information?",
         "options": [
             {
                 "text": "Individual respondees (e.g. people, households, or merchants)",
@@ -125,12 +153,18 @@
                 "text": "Items (food, shelter kits, etc)",
                 "hashtag": "item",
                 "dest": "code_atts"
+            },
+            {
+                "text": "Some other kind of indicator",
+                "hashtag": "indicator",
+                "attribute": "MY_CUSTOM_ATTRIBUTE",
+                "dest": "datatype_atts"
             }
         ],
         "post-text": "CAUTION: survey results are often sensitive data."
     },
     "place_tags": {
-        "question": "What kind of places are in the data?",
+        "question": "What kind of places?",
         "options": [
             {
                 "text": "Administrative subdivisions (region, country, province, district, etc)",
@@ -149,7 +183,7 @@
         ]
     },
     "response_tags": {
-        "question": "What kind of response information do you want to tag?",
+        "question": "What kind of response information?",
         "options": [
             {
                 "text": "A cluster or sector",
@@ -189,7 +223,7 @@
         ]
     },
     "event_tags": {
-        "question": "What kind of event information do you want to tag?",
+        "question": "What kind of crisis or event?",
         "options": [
             {
                 "text": "A broad humanitarian crisis/emergency",
@@ -234,7 +268,7 @@
         ]
     },
     "admin_tags": {
-        "question": "What admin level do you want to tag?",
+        "question": "What administrative level?",
         "options": [
             {
                 "text": "A multi-country region, like West Africa or the Caribbean",
@@ -274,7 +308,7 @@
         ]
     },
     "sector_tags": {
-        "question": "What kind of sector do you want to describe?",
+        "question": "What kind of sector?",
         "options": [
             {
                 "text": "A humanitarian cluster",
@@ -296,7 +330,7 @@
         ]
     },
     "cash_tags": {
-        "question": "What kind of cash/finance information does the column contain?",
+        "question": "What kind of cash/finance information?",
         "options": [
             {
                 "text": "An amount of money",
@@ -322,7 +356,7 @@
         ]
     },
     "impact_atts": {
-        "question": "Do the numbers apply only to a specific humanitarian situation?",
+        "question": "What is the humanitarian situation?",
         "options": [
             {
                 "text": "No, the situation is unspecified",
@@ -362,7 +396,7 @@
         ]
     },
     "gender_atts": {
-        "question": "Do the numbers apply only to a specific gender?",
+        "question": "What is the gender specific gender?",
         "options": [
             {
                 "text": "All genders are included",
