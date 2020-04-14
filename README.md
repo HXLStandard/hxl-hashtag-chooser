@@ -15,7 +15,7 @@ Generate the HTML in the docs/ folder via the Makefile provided:
     
 Generate the HTML manually:
 
-    $ python generate-tag-assist.py > docs/index.html
+    $ python gen-chooser.py > docs/index.html
     $ cp style.css docs/style.css
     
 # Knowledge base
