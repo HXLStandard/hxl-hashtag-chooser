@@ -45,7 +45,7 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     if previous_id is not None:
         print("      <a href=\"#{}\">Back a step</a>".format(esc(previous_id)))
     else:
-        print("      <a>&nbsp</a>")
+        print("      <a>&nbsp;</a>")
     print("          <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">HXL dictionary</a>")
     print("        </div>")
     print("    </section>")
@@ -110,16 +110,16 @@ def display_result(option, hashtag, attributes, previous_id):
     print("    </section>")
 
 print("<!DOCTYPE html>")
-print("<html>")
+print("<html lang=\"en\">")
 print("  <head>")
+print("    <meta charset=\"utf-8\"/>")
 print("    <title>HXL hashtag chooser</title>")
 print("    <link rel=\"stylesheet\" href=\"style.css\"/>")
 print("    <link rel=\"icon\" href=\"icon.png\"/>")
-print("    <meta charset=\"utf-8\"/>")
 print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>")
 print("  </head>")
 print("  <body>")
 display_question("top")
+print("    <script src=\"script.js\"></script>")
 print("  </body>")
-print("  <script src=\"script.js\"></script>")
 print("</html>")
