@@ -1,10 +1,29 @@
-import json, re
+""" Generate a static HTML expert-system site based on hxl-knowledge-base.json 
 
+Requires Python3.
+
+Usage:
+
+    python generate-tag-assist.py > docs/index.html
+
+Started 2019-04-16 by David Megginson
+
+"""
+
+import json, re, sys
+
+# Requires Python3 or higher
+if sys.version_info < (3, ):
+    raise Exception("Requires Python3 or higher")
+
+# TODO: specify file on command line
 with open("hxl-knowledge-base.json", "r") as input:
     base = json.load(input)
 
 def esc(s):
+    """ Escape HTML special characters """
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;").replace("'", "&apos;")
+
 
 def make_tagspec(hashtag, attributes):
     attributes = [attribute for attribute in attributes if attribute]
