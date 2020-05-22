@@ -5,7 +5,8 @@ body {
 section {
     padding: 1em;
     min-height: 500ex; /* fallback for ancient browsers */
-    min-height: 100vh; 
+    min-height: 100vh;
+    max-width: 640px;
 }
 
 .tagspec {
