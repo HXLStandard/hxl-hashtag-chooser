@@ -9,6 +9,8 @@ The [Humanitarian Exchange Language](http://hxlstandard.org) (HXL) is a simple, 
 The latest chooser is available online at https://hxlstandard.github.io/hxl-hashtag-chooser/index.html
 
 # Usage
+Requires Python3.
+
 Generate the HTML in the docs/ folder via the Makefile provided:
 
     $ make
