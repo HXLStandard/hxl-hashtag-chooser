@@ -8,6 +8,11 @@ The [Humanitarian Exchange Language](http://hxlstandard.org) (HXL) is a simple, 
 
 The latest chooser is available online at https://hxlstandard.github.io/hxl-hashtag-chooser/index.html
 
+# Requirements
+
+* Python3
+* The Python3 virtualenv package (if using the Makefile)
+
 # Usage
 Requires Python3.
 
