@@ -27,11 +27,14 @@ def validate (data):
     """
 
     error_count = 0
+    linked = set()
 
     def check (key, question, history=[]):
         """ Recursively check the whole tree """
 
-        nonlocal error_count
+        nonlocal error_count, linked
+
+        linked.add(key)
 
         # Check for circular references
         if key in history:
@@ -40,10 +43,7 @@ def validate (data):
 
         # Check each option
         for option in question["options"]:
-            if "hashtag" in option:
-                # terminal node
-                return
-            elif "dest" in option:
+            if "dest" in option:
                 # non-terminal node: check linked question recursively
                 newkey = option["dest"]
                 if newkey in data:
@@ -51,16 +51,18 @@ def validate (data):
                 else:
                     logger.error("Destination question %s (from %s) does not exist", newkey, key)
                     error_count += 1
-            else:
-                # node has neither terminal nor non-terminal attributes
-                logger.error("Option has neither dest nor hashtag in question %s: %s", key, str(option))
-                error_count += 1
 
     if "top" in data:
         # Start at the top node
         check("top", data["top"], [])
     else:
         logger.error("No question marked \"top\" in data")
+        error_count += 1
+
+    # check for orphans
+    orphans = set(data.keys()).difference(linked)
+    for orphan in orphans:
+        logger.error("Question \"%s\" is unreachable", orphan)
         error_count += 1
 
     return error_count
