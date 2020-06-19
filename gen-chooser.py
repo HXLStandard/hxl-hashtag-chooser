@@ -63,14 +63,14 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     # navigation
     print("      <div class=\"nav\">")
     if previous_id is not None:
-        print("      <a href=\"#{}\">Back</a>".format(esc(previous_id)))
+        print("      <a href=\"#{}\">◀️ Back</a>".format(esc(previous_id)))
     else:
         print("      <a>&nbsp</a>")
     if id == "top":
         print("      <a>HXL hashtag chooser</a>")
     else:
-        print("      <a href=\"#_top\">New</a>")
-    print("          <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">Dictionary</a>")
+        print("      <a href=\"#_top\"># New</a>")
+    print("          <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">📖 Dictionary</a>")
     print("        </div>")
 
     # end of question
@@ -129,9 +129,9 @@ def display_result(option, hashtag, attributes, previous_id):
         print("       <p class=\"note\">{}</p>".format(esc(option["note"])))
     print("      <p class=\"post-text\">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>")
     print("      <div class=\"nav\">")
-    print("        <a href=\"#{}\">Back a step</a>".format(esc(previous_id)))
-    print("        <a href=\"#_top\">New hashtag</a>")
-    print("        <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">HXL dictionary</a>")
+    print("        <a href=\"#{}\">◀️ Back</a>".format(esc(previous_id)))
+    print("        <a href=\"#_top\"># New</a>")
+    print("        <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">📖 Dictionary</a>")
     print("      </div>")
     print("    </section>")
 
