@@ -33,16 +33,19 @@ function addCopyButtons() {
         buttonNode.onclick = (ev) => {
             // to copy, temporarily create an <input> element
             var buttonNode = ev.target;
-            var tagspecNode = buttonNode.previousSibling;
+            var tagspecNode = buttonNode.nextSibling;
             var inputNode = document.createElement("input");
+            var tagspec = tagspecNode.innerHTML;
             tagspecNode.parentNode.insertBefore(inputNode, tagspecNode.nextSibling);
-            inputNode.value = tagspecNode.innerHTML;
+            inputNode.value = tagspec;
             inputNode.focus();
             inputNode.select();
             document.execCommand("copy");
             tagspecNode.parentNode.removeChild(inputNode);
+            alert(tagspec + "\n\ncopied to clipboard");
+            return true;
         };
-        tagspecNode.parentNode.insertBefore(buttonNode, tagspecNode.nextSibling);
+        tagspecNode.parentNode.insertBefore(buttonNode, tagspecNode);
     }
 }
 

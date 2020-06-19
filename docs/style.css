@@ -11,24 +11,7 @@ section {
     max-width: 640px;
 }
 
-.tagspec {
-    font-family: Courier, fixed;
-    color: #660000;
-}
-
-section.question, section.result {
-    display: block;
-}
-
-li {
-    margin: 1ex 0;
-}
-
-li a {
-    text-decoration: none;
-}
-
-div.nav {
+.nav {
     margin-top: 2em;
     display: flex;
     flex-direction: row;
@@ -36,24 +19,66 @@ div.nav {
     justify-content: space-between;
 }
 
-div.nav a {
-    text-decoration: none;
+.nav a {
     font-size: 83.333333%;
+}
+
+.tagspec {
+    font-family: Courier, fixed;
+    font-size: 120%;
+    color: #660000;
+}
+
+section.question, section.result {
+    display: block;
+}
+
+.option a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.option a:link, .option a:visited {
+    background: #ccccff;
+}
+
+.option a:hover {
+    background: #8888ff;
+}
+
+.option a:active {
+    background: #ff8888;
 }
 
 .tagspec-container {
     display: block;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3ex 0;
-    font-size: 172.8%;
 }
 
 .final-tagspec {
     display: inline-block;
-    margin-right: 1em;
 }
 
 .copy-button {
-    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0 1em 0 0;
+    color: black;
+    text-align: center;
+}
+
+.copy-button:hover {
+    background: yellow;
+}
+
+.copy-button:active {
+    background: red;
+}
+
+.post-text {
+    font-style: italic;
+    margin-top: 2ex;
 }

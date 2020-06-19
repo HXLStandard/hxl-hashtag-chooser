@@ -359,7 +359,7 @@
         "question": "What is the humanitarian situation?",
         "options": [
             {
-                "text": "No, the situation is unspecified",
+                "text": "The situation is unspecified",
                 "dest": "gender_atts"
             },
             {
