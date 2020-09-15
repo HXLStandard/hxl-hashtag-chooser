@@ -3,7 +3,7 @@
         "question": "What kind of data do you have in the column?",
         "options": [
             {
-                "text": "Numbers of people (e.g. census, caseload, needs overview)",
+                "text": "Numbers of people (e.g. census, assessment)",
                 "dest": "people_tags"
             },
             {
