@@ -1,0 +1,15 @@
+{
+    "name": "HXL hashtag chooser",
+    "short_name": "HXL hashtags",
+    "description": "Expert system for choosing HXL hashtags",
+    "display": "standalone",
+    "start_url": "/",
+    "background_color": "white",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        }
+    ]
+}
