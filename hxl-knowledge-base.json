@@ -130,7 +130,7 @@
         "question": "What kind of survey/assessment information?",
         "options": [
             {
-                "text": "Individual respondees (e.g. people, households, or merchants)",
+                "text": "One respondent (person, household, etc) per row",
                 "hashtag": "respondee",
                 "dest": "code_atts"
             },
