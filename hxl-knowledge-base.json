@@ -193,7 +193,7 @@
             {
                 "text": "A programme, project, or activity",
                 "hashtag": "activity",
-                "dest": "id_atts"
+                "dest": "activity_atts"
             },
             {
                 "text": "A longer description of an activity, project, etc",
@@ -311,11 +311,14 @@
         "question": "What kind of sector?",
         "options": [
             {
+                "text": "I don't need to specify",
+                "dest": "code_atts"
+            },
+            {
                 "text": "A humanitarian cluster",
                 "hashtag": "sector",
                 "attribute": "cluster",
                 "dest": "code_atts"
-               
             },
             {
                 "text": "Another kind of top-level sector",
@@ -527,8 +530,11 @@
         ]
     },
     "id_atts": {
-        "question": "What kind of information do you want to provide?",
+        "question": "What kind of content is in the column?",
         "options": [
+            {
+                "text": "I don't need to specify"
+            },
             {
                 "text": "A human-readable name",
                 "attribute": "name",
@@ -545,15 +551,18 @@
         ]
     },
     "code_atts": {
-        "question": "What kind of information do you want to provide?",
+        "question": "What kind of content is in the column?",
         "options": [
+            {
+                "text": "I don't need to specify"
+            },
             {
                 "text": "A human-readable name",
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
-                "text": "A unique machine code",
+                "text": "A unique machine code (like a P-code)",
                 "attribute": "code"
             },
             {
@@ -567,7 +576,7 @@
         "question": "What kind of a date is this?",
         "options": [
             {
-                "text": "Unspecified",
+                "text": "I don't need to specify",
                 "note": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
             },
             {
@@ -850,6 +859,30 @@
                 "text": "Metadata not listed above",
                 "attribute": "XXX",
                 "note": "You can invent any custom attribute you need to describe your metadata, e.g. +certainty"
+            }
+        ]
+    },
+    "activity_atts": {
+        "question": "What kind of aid activity/etc. is this?",
+        "options": [
+            {
+                "text": "I don't need to specify",
+                "dest": "id_atts"
+            },
+            {
+                "text": "A programme",
+                "attribute": "programme",
+                "dest": "id_atts"
+            },
+            {
+                "text": "A project",
+                "attribute": "project",
+                "dest": "id_atts"
+            },
+            {
+                "text": "An activity",
+                "attribute": "activity",
+                "dest": "id_atts"
             }
         ]
     }

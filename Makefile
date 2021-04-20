@@ -3,6 +3,9 @@ VENV=venv/bin/activate
 
 all: docs/index.html
 
+view: docs/index.html
+	firefox $<
+
 validate: $(VENV)
 	. $(VENV) && python validate-base.py
 
