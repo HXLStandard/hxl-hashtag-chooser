@@ -1,9 +1,10 @@
 # activation script for the Python virtual environment
 VENV=venv/bin/activate
+OUTPUTS=docs/en/index.html docs/fr/index.html
 
-all: docs/en/index.html docs/fr/index.html
+all: $(OUTPUTS)
 
-view: docs/en/index.html docs/fr/index.html
+view: $(OUTPUTS)
 	firefox docs/en/index.html docs/fr/index.html
 
 validate: $(VENV)
@@ -24,11 +25,11 @@ docs/en/index.html: $(VENV) validate hxl-knowledge-base.json gen-chooser.py docs
 docs/fr/index.html: $(VENV) validate hxl-knowledge-base.json gen-chooser.py docs/style.css docs/script.js docs/icon.png
 	. $(VENV) && mkdir -p docs/fr && python gen-chooser.py fr > $@ || rm -f $@
 
-push:
+push: $(OUTPUTS)
 	git push
 
 clean:
-	rm -rf venv docs/en docs/fr
+	rm -rf venv $(OUTPUTS)
 
 # (re)build the virtual environment if it's missing, or whenever setup.py changes
 # requires that Python3 virtualenv package be installed

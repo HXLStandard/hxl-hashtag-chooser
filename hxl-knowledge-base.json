@@ -254,25 +254,29 @@
     },
     "place_tags": {
         "question": {
-            "en": "What kind of places?"
+            "en": "What kind of places?",
+            "fr": "Quel genre d'endroits ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "Administrative subdivisions (region, country, province, district, etc)"
+                    "en": "Administrative subdivisions (region, country, province, district, etc)",
+                    "fr": "Subdivisions administratives (région, pays, province, département, etc.)"
                 },
                 "dest": "admin_tags"
             },
             {
                 "text": {
-                    "en": "Latitude and/or longitude"
+                    "en": "Latitude and/or longitude",
+                    "fr": "Latitude et / ou longitude"
                 },
                 "hashtag": "geo",
                 "dest": "geo_atts"
             },
             {
                 "text": {
-                    "en": "Specific locations (e.g. camps) or mixed types of locations"
+                    "en": "Specific locations (e.g. camps) or mixed types of locations",
+                    "fr": "Emplacements spécifiques (par exemple, camps) ou niveaux mixtes"
                 },
                 "hashtag": "loc",
                 "dest": "loc_atts"
@@ -281,54 +285,62 @@
     },
     "response_tags": {
         "question": {
-            "en": "What kind of response information?"
+            "en": "What kind of response information?",
+            "fr": "Quel genre d'infos sur la réponse ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "A cluster or sector"
+                    "en": "A cluster or sector",
+                    "fr": "Un cluster ou un secteur"
                 },
                 "hashtag": "sector",
                 "dest": "sector_tags"
             },
             {
                 "text": {
-                    "en": "A programme, project, or activity"
+                    "en": "A programme, project, or activity",
+                    "fr": "Un programme, un projet ou une activité"
                 },
                 "hashtag": "activity",
                 "dest": "activity_atts"
             },
             {
                 "text": {
-                    "en": "A longer description of an activity, project, etc"
+                    "en": "A longer description of what the row represents",
+                    "fr": "Une description plus longue de ce que représente la ligne"
                 },
                 "hashtag": "description",
                 "dest": "lang_atts"
             },
             {
                 "text": {
-                    "en": "The output or outcome of a humanitarian activity"
+                    "en": "The output or outcome of a humanitarian activity",
+                    "fr": "Le produit ou le résultat d'une activité humanitaire"
                 },
                 "hashtag": "output",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "The intended beneficiary/ies"
+                    "en": "The intended beneficiary/ies",
+                    "fr": "Le groupe de bénéficiaires prévu"
                 },
                 "hashtag": "beneficiary",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "The current status of an activity, project, etc."
+                    "en": "The current status of an activity, project, etc.",
+                    "fr": "L'état actuel d'une activité, d'un projet, etc."
                 },
                 "hashtag": "status",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "Contact information"
+                    "en": "Contact information",
+                    "fr": "Infos de contact"
                 },
                 "hashtag": "contact",
                 "dest": "contact_atts"
