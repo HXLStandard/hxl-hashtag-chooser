@@ -95,7 +95,7 @@
     "counting_atts": {
         "question": {
             "en": "What are you counting?",
-            "fr": ""
+            "fr": "Vous comptez quoi ?"
         },
         "options": [
             {
@@ -193,47 +193,54 @@
     },
     "survey_tags": {
         "question": {
-            "en": "What kind of survey/assessment information?"
+            "en": "What kind of survey/assessment information?",
+            "fr": "Quel type d'information d'enquête ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "One respondent (person, household, etc) per row"
+                    "en": "One respondent (person, household, etc) per row",
+                    "fr": "Infos sur un répondant sur chaque ligne"
                 },
                 "hashtag": "respondee",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "Capacities (number of beds, maximum cargo, etc)"
+                    "en": "Capacities (number of beds, maximum cargo, etc)",
+                    "fr": "Capacités (nombre de lits, chargement maximum, etc.)"
                 },
                 "hashtag": "capacity",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "Needs (shelter, communications, etc)"
+                    "en": "Needs (shelter, communications, etc)",
+                    "fr": "Besoins (abri, communications, etc)"
                 },
                 "hashtag": "need",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "Services (healthcare, counselling, etc)"
+                    "en": "Services (healthcare, counselling, etc)",
+                    "fr": "Services (soins de santé, conseils, etc)"
                 },
                 "hashtag": "service",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "Items (food, shelter kits, etc)"
+                    "en": "Items (food, shelter kits, etc)",
+                    "fr": "Articles (nourriture, kits d'abris, etc.)"
                 },
                 "hashtag": "item",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "Some other kind of indicator"
+                    "en": "Some other kind of indicator",
+                    "fr": "Un autre type d'indicateur"
                 },
                 "hashtag": "indicator",
                 "attribute": "MY_CUSTOM_ATTRIBUTE",
@@ -241,7 +248,8 @@
             }
         ],
         "post-text": {
-            "en": "CAUTION: survey results are often sensitive data."
+            "en": "CAUTION: survey results are often sensitive data.",
+            "fr": "ATTENTION : les résultats des enquêtes sont souvent des données sensibles."
         }
     },
     "place_tags": {

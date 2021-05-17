@@ -24,6 +24,9 @@ docs/en/index.html: $(VENV) validate hxl-knowledge-base.json gen-chooser.py docs
 docs/fr/index.html: $(VENV) validate hxl-knowledge-base.json gen-chooser.py docs/style.css docs/script.js docs/icon.png
 	. $(VENV) && mkdir -p docs/fr && python gen-chooser.py fr > $@ || rm -f $@
 
+push:
+	git push
+
 clean:
 	rm -rf venv docs/en docs/fr
 
