@@ -485,18 +485,21 @@
     },
     "sector_tags": {
         "question": {
-            "en": "What kind of sector?"
+            "en": "What kind of sector or cluster?",
+            "fr": "Quel type de cluster ou de secteur ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "I don't need to specify"
+                    "en": "I don't need to specify",
+                    "fr": "C'est sans importance"
                 },
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "A humanitarian cluster"
+                    "en": "A humanitarian cluster",
+                    "fr": "Un clusteur humanitaire"
                 },
                 "hashtag": "sector",
                 "attribute": "cluster",
@@ -504,14 +507,16 @@
             },
             {
                 "text": {
-                    "en": "Another kind of top-level sector"
+                    "en": "Another kind of top-level sector",
+                    "fr": "Un autre genre de secteur de premier niveau"
                 },
                 "hashtag": "sector",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "A subsector"
+                    "en": "A subsector",
+                    "fr": "Un sous-secteur"
                 },
                 "hashtag": "subsector",
                 "dest": "code_atts"
@@ -520,19 +525,22 @@
     },
     "cash_tags": {
         "question": {
-            "en": "What kind of cash/finance information?"
+            "en": "What kind of cash/finance information?",
+            "fr": "Quel type de données de cash ou financières ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "An amount of money"
+                    "en": "Amounts of money",
+                    "fr": "Valeurs monétaires"
                 },
                 "hashtag": "value",
                 "dest": "value_atts"
             },
             {
                 "text": {
-                    "en": "A monetary currency"
+                    "en": "Currencies",
+                    "fr": "Devises"
                 },
                 "hashtag": "currency",
                 "attribute": "code",
@@ -542,14 +550,16 @@
             },
             {
                 "text": {
-                    "en": "A modality/method of cash transfer"
+                    "en": "Modalities or methods of cash transfer",
+                    "fr": "Modalités ou méthodes de transfert de cash"
                 },
                 "hashtag": "modality",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "The channel through which money is transferred"
+                    "en": "Channels through which money is transferred",
+                    "fr": "Canaux par lesquels l'argent est transféré (channels)"
                 },
                 "hashtag": "channel",
                 "dest": "code_atts"
@@ -558,18 +568,21 @@
     },
     "impact_atts": {
         "question": {
-            "en": "What is the humanitarian situation?"
+            "en": "What is impact on people or households?",
+            "fr": "Quel est l'impact sur les personnes ou les ménages"
         },
         "options": [
             {
                 "text": {
-                    "en": "The situation is unspecified"
+                    "en": "No impact specified",
+                    "fr": "Aucun impact spécifié"
                 },
                 "dest": "gender_atts"
             },
             {
                 "text": {
-                    "en": "People killed"
+                    "en": "Killed",
+                    "fr": "Tués"
                 },
                 "dest": "gender_atts",
                 "attribute": "killed",
@@ -581,35 +594,41 @@
             },
             {
                 "text": {
-                    "en": "People injured"
+                    "en": "Injured",
+                    "fr": "Blessés"
                 },
                 "dest": "gender_atts",
                 "attribute": "injured"
             },
             {
                 "text": {
-                    "en": "People abducted"
+                    "en": "Abducted",
+                    "fr": "Enlevés"
+                   
                 },
                 "dest": "gender_atts",
                 "attribute": "abducted"
             },
             {
                 "text": {
-                    "en": "All displaced people (internal or external)"
+                    "en": "Displaced (internal and external)",
+                    "fr": "Déplacés (à l'intérieur et à l'extérieur)"
                 },
                 "dest": "gender_atts",
                 "attribute": "displaced"
             },
             {
                 "text": {
-                    "en": "Internally-displaced people (IDPs)"
+                    "en": "Internally-displaced (IDPs)",
+                    "fr": "Personnes déplacées à l'intérieur (PDI, IDP)"
                 },
                 "dest": "gender_atts",
                 "attribute": "idps"
             },
             {
                 "text": {
-                    "en": "Refugees"
+                    "en": "Refugees",
+                    "fr": "Réfugiés"
                 },
                 "dest": "gender_atts",
                 "attribute": "refugees"
@@ -618,32 +637,37 @@
     },
     "gender_atts": {
         "question": {
-            "en": "What is the gender specific gender?"
+            "en": "Does the data apply to a single gender?",
+            "fr": "Les données s'appliquent-elles à un seul genre ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "All genders are included"
+                    "en": "No, all genders are included",
+                    "fr": "Non, tous les genres sont inclus"
                 },
                 "dest": "age_atts"
             },
             {
                 "text": {
-                    "en": "Female people only"
+                    "en": "Female people only",
+                    "fr": "Femmes ou filles uniquement"
                 },
                 "dest": "age_atts",
                 "attribute": "f"
             },
             {
                 "text": {
-                    "en": "Male people only"
+                    "en": "Male people only",
+                    "fr": "Hommes ou garçons uniquement"
                 },
                 "dest": "age_atts",
                 "attribute": "m"
             },
             {
                 "text": {
-                    "en": "Non-gender-binary people only"
+                    "en": "Non-gender-binary people only",
+                    "fr": "Personnes non binaires uniquement"
                 },
                 "dest": "age_atts",
                 "attribute": "i"
@@ -652,60 +676,73 @@
     },
     "age_atts": {
         "question": {
-            "en": "Do the numbers apply only to a specific age group?"
+            "en": "Does the data apply to a specific age group?",
+            "fr": "Les données s'appliquent-elles à un seul groupe d'âge ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "All ages are included"
+                    "en": "All ages are included",
+                    "fr": "Non, tous âges"
                 },
                 "note": {
-                    "en": "The values should always be numbers"
+                    "en": "The values below should always be numbers",
+                    "fr": "Les valeurs ci-dessous doivent toujours être numériques."
                 }
             },
             {
                 "text": {
-                    "en": "Any children (might include infants or adolescents)"
+                    "en": "Any children (might include infants or adolescents)",
+                    "fr": "Enfants (peut inclure nourrissons et adolescents)"
                 },
                 "attribute": "children",
                 "note": {
-                    "en": "The values should always be numbers. You may also add a custom attribute like +age_5_12 to give a specific range."
+                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_5_12 to give a specific range.",
+                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_5_12 pour donner une plage spécifique."
                 }
             },
             {
                 "text": {
-                    "en": "Infants only"
+                    "en": "Infants only",
+                    "fr": "Nourrissons uniquement"
                 },
                 "attribute": "infants",
                 "note": {
-                    "en": "The values should always be numbers. You may also add a custom attribute like +age_0_2 to give a specific range."
+                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_0_2 to give a specific range.",
+                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_0_15 pour donner une plage spécifique."
                 }
             },
             {
                 "text": {
-                    "en": "Adolescents only"
+                    "en": "Adolescents only",
+                    "fr": "Adolescents uniquement"
                 },
                 "attribute": "adolescents",
                 "note": {
-                    "en": "The values should always be numbers. You may also add a custom attribute like +age_12_17 to give a specific range."
+                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_12_17 to give a specific range.",
+                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_12_17 pour donner une plage spécifique."
                 }
             },
             {
                 "text": {
-                    "en": "Any adults (might include adolescents or elderly people"
+                    "en": "Any adults (might include adolescents or elderly people",
+                    "fr": "Adultes (peut inclure des adolescents et des âgées)"
                 },
                 "attribute": "adults",
                 "note": {
-                    "en": "The values should always be numbers. You may also add a custom attribute like +age_18_64 to give a specific range."
+                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_18_64 to give a specific range.",
+                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_18_64 pour donner une plage spécifique."
                 }
             },
             {
                 "text": {
-                    "en": "Elderly people only"
+                    "en": "Elderly people only",
+                    "fr": "Personnes âgés uniquement"
                 },
                 "attribute": "elderly",
                 "note": {
-                    "en": "The values should always be numbers. You may also add a custom attribute like +age_65_ to give a specific range."
+                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_65_ to give a specific range.",
+                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_65_ pour donner une plage spécifique."
                 }
             }
         ]
