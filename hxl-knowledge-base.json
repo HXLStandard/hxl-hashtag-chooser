@@ -92,6 +92,30 @@
             }
         ]
     },
+    "counting_atts": {
+        "question": {
+            "en": "What are you counting?",
+            "fr": ""
+        },
+        "options": [
+            {
+                "text": {
+                    "en": "People",
+                    "fr": "Personnes"
+                },
+                "attribute": "ind",
+                "dest": "impact_atts"
+            },
+            {
+                "text": {
+                    "en": "Households",
+                    "fr": "Ménages"
+                },
+                "attribute": "hh",
+                "dest": "impact_atts"
+            }
+        ]
+    },
     "indicator_shape": {
         "question": {
             "en": "How is your overall dataset shaped?",
@@ -135,75 +159,35 @@
             },
             {
                 "text": {
-                    "en": "All individuals affected by the crisis (including those not in need of assistance)",
-                    "fr": "Toutes les personnes touchées par la crise (y compris celles qui n'ont pas besoin d'assistance)"
+                    "en": "Affected by the crisis (including those not in need of assistance)",
+                    "fr": "Touchées par la crise (y compris ceux qui n'ont pas besoin d'assistance)"
                 },
                 "hashtag": "affected",
-                "attribute": "ind",
-                "dest": "impact_atts"
+                "dest": "counting_atts"
             },
             {
                 "text": {
-                    "en": "All households affected by the crisis (including those not in need of assistance)",
-                    "fr": "Tous les ménages touchés par la crise (y compris ceux qui n'ont pas besoin d'assistance)"
-                },
-                "hashtag": "affected",
-                "attribute": "hh",
-                "dest": "impact_atts"
-            },
-            {
-                "text": {
-                    "en": "All individuals in need of humanitarian assistance (including those not targeted)",
-                    "fr": "Toutes les personnes ayant besoin d'une assistance humanitaire (y compris celles qui ne sont pas ciblées)"
+                    "en": "In need of humanitarian assistance (including those not targeted)",
+                    "fr": "Besoin d'une assistance humanitaire (y compris ceux qui ne sont pas ciblés)"
                 },
                 "hashtag": "inneed",
-                "attribute": "ind",
-                "dest": "impact_atts"
+                "dest": "counting_atts"
             },
             {
                 "text": {
-                    "en": "All households in need of humanitarian assistance (including those not targeted)",
-                    "fr": "Tous les ménages ayant besoin d'une assistance humanitaire (y compris ceux qui ne sont pas ciblées)"
-                },
-                "hashtag": "inneed",
-                "attribute": "hh",
-                "dest": "impact_atts"
-            },
-            {
-                "text": {
-                    "en": "All individuals targeted for humanitarian assistance (including those not yet reached)",
-                    "fr": "Toutes les personnes ciblées pour l'aide humanitaire (y compris celles qui ne sont pas encore atteintes)"
+                    "en": "Targeted for humanitarian assistance (including those not yet reached)",
+                    "fr": "Ciblés pour l'aide humanitaire (y compris ceux qui ne sont pas encore atteints)"
                 },
                 "hashtag": "targeted",
-                "attribute": "ind",
-                "dest": "impact_atts"
+                "dest": "counting_atts"
             },
             {
                 "text": {
-                    "en": "All households targeted for humanitarian assistance",
-                    "fr": "Tous les ménages ciblés pour l'aide humanitaire (y compris ceux qui ne sont pas encore atteintes)"
-                },
-                "hashtag": "targeted",
-                "attribute": "hh",
-                "dest": "impact_atts"
-            },
-            {
-                "text": {
-                    "en": "Only individuals actually reached with humanitarian assistance",
-                    "fr": "Seulement les personnes effectivement touchées par une aide humanitaire"
+                    "en": "Actually reached with humanitarian assistance",
+                    "fr": "Effectivement touchés par une aide humanitaire"
                 },
                 "hashtag": "reached",
-                "attribute": "ind",
-                "dest": "impact_atts"
-            },
-            {
-                "text": {
-                    "en": "Only households actually reached with humanitarian assistance",
-                    "fr": "Seulement les ménages effectivement touchés par une aide humanitaire"
-                },
-                "hashtag": "reached",
-                "attribute": "hh",
-                "dest": "impact_atts"
+                "dest": "counting_atts"
             }
         ]
     },
