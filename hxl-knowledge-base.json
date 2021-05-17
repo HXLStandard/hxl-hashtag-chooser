@@ -1,7 +1,8 @@
 {
     "top": {
         "question": {
-            "en": "What kind of data do you have in the column?"
+            "en": "What kind of data do you have in the column?",
+            "fr": "FR What kind of data do you have in the column?"
         },
         "options": [
             {

@@ -4,13 +4,16 @@ Requires Python3.
 
 Usage:
 
-    python generate-tag-assist.py > docs/index.html
+    python generate-tag-assist.py [lang] > docs/index.html
 
 Started 2019-04-16 by David Megginson
 
 """
 
 import json, re, sys
+
+DEFAULT_LANG = "en"
+""" Default language to generate """
 
 # Requires Python3 or higher
 if sys.version_info < (3, ):
@@ -19,6 +22,13 @@ if sys.version_info < (3, ):
 # TODO: specify file on command line
 with open("hxl-knowledge-base.json", "r") as input:
     base = json.load(input)
+
+if len(sys.argv) == 2:
+    lang = sys.argv[1].lower()
+else:
+    lang = DEFAULT_LANG
+
+print("Generating in {}".format(lang), file=sys.stderr)
 
 def esc(s):
     """ Escape HTML special characters """
@@ -36,6 +46,14 @@ def make_html_id(id, hashtag, attributes):
     else:
         return "_".join([hashtag] + attributes)
 
+def text (info):
+    if lang in info:
+        return esc(info[lang])
+    elif DEFAULT_LANG in info:
+        return esc(info[DEFAULT_LANG])
+    else:
+        raise Exception("No text in {}".format(DEFAULT_LANG))
+
 def display_question(id, hashtag=None, attributes=[], previous_id=None):
     question = base[id]
     html_id = make_html_id(id, hashtag, attributes)
@@ -44,21 +62,21 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     print("    <section class=\"question\" id=\"{}\">".format(esc(html_id)))
 
 
-    print("      <h2>{}</h2>".format(esc(question["question"])))
+    print("      <h2>{}</h2>".format(text(question["question"])))
 
     # progress so far
     if hashtag is not None:
         print("      <p class=\"progress\"><span class=\"tagspec\">{}</span></p>".format(esc(make_tagspec(hashtag, attributes))))
 
     if "pre-text" in question:
-        print("        <p class=\"pre-text\">{}</p>".format(esc(question["pre-text"])))
+        print("        <p class=\"pre-text\">{}</p>".format(text(question["pre-text"])))
 
     # Display next options
     for option in question["options"]:
         display_option(option, hashtag, attributes)
 
     if "post-text" in question:
-        print("        <p class=\"post-text\">{}</p>".format(esc(question["post-text"])))
+        print("        <p class=\"post-text\">{}</p>".format(text(question["post-text"])))
 
     # navigation
     print("      <div class=\"nav\">")
@@ -113,7 +131,7 @@ def display_option(option, hashtag, attributes):
         link = link + "_000"
     print("        <p class=\"option\"><a href=\"#{}\">{}</a></p>".format(
         esc(link),
-        esc(option["text"])
+        text(option["text"])
     ))
 
 def display_result(option, hashtag, attributes, previous_id):
@@ -126,7 +144,7 @@ def display_result(option, hashtag, attributes, previous_id):
         if re.match(r"[A-Z]", attribute):
             print("        <p>Don't forget to replace <b><code>+{}</code></b> with your own attribute.</p>".format(esc(attribute)))
     if "note" in option:
-        print("       <p class=\"note\">{}</p>".format(esc(option["note"])))
+        print("       <p class=\"note\">{}</p>".format(text(option["note"])))
     print("      <p class=\"post-text\">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>")
     print("      <div class=\"nav\">")
     print("        <a href=\"#{}\">◀️ Back</a>".format(esc(previous_id)))
@@ -139,14 +157,14 @@ print("<!DOCTYPE html>")
 print("<html>")
 print("  <head>")
 print("    <title>HXL hashtag chooser</title>")
-print("    <link rel=\"stylesheet\" href=\"style.css\"/>")
-print("    <link rel=\"icon\" href=\"icon.png\"/>")
-print("    <link rel=\"manifest\" href=\"manifest.webmanifest\"/>")
+print("    <link rel=\"stylesheet\" href=\"../style.css\"/>")
+print("    <link rel=\"icon\" href=\"../icon.png\"/>")
+print("    <link rel=\"manifest\" href=\"../manifest.webmanifest\"/>")
 print("    <meta charset=\"utf-8\"/>")
 print("    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>")
 print("  </head>")
 print("  <body>")
 display_question("top")
 print("  </body>")
-print("  <script src=\"script.js\"></script>")
+print("  <script src=\"../script.js\"></script>")
 print("</html>")
