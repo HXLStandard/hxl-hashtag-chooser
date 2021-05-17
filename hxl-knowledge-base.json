@@ -749,75 +749,89 @@
     },
     "geo_atts": {
         "question": {
-            "en": "What kind of geographic information do you want to tag?"
+            "en": "What kind of geographic information?",
+            "fr": "Quel genre d'informations géographiques ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "Latitude only"
+                    "en": "Latitudes only",
+                    "fr": "Latitudes uniquement"
                 },
                 "attribute": "lat",
                 "note": {
-                    "en": "The preferred format for latitude is a decimal value, e.g. \"8.5\" instead of \"8 30.0N\"."
+                    "en": "The preferred format for latitude is a decimal value, e.g. \"8.5\" instead of \"8 30.0N\".",
+                    "fr": "Le format préféré pour la latitude est une valeur décimale avec \".\", par ex. \"8.5 \" au lieu de \"8 30,0N \"."
                 }
             },
             {
                 "text": {
-                    "en": "Longitude only"
+                    "en": "Longitudes only",
+                    "fr": "Longitudes uniquement"
                 },
                 "attribute": "lon",
                 "note": {
-                    "en": "The preferred format for longitude is a decimal value, e.g. \"-75.5\" instead of \"75 30.0W\"."
+                    "en": "The preferred format for longitude is a decimal value, e.g. \"-75.5\" instead of \"75 30.0W\".",
+                    "fr": "Le format préféré pour la longitude est une valeur décimale avec \".\", par ex. \"-75.5\" au lieu de \"75 30,0W \"."
                 }
             },
             {
                 "text": {
-                    "en": "Latitude and longitude together in one field"
+                    "en": "Latitude and longitude together in one field",
+                    "fr": "Latitudes et longitudes ensemble"
                 },
                 "attribute": "latlon",
                 "note": {
-                    "en": "The preferred format is the decimal latitude separated by a comma from the decimal longitude, e.g. \"8.5, -75.5\"."
+                    "en": "The preferred format is the decimal latitude separated by a comma from the decimal longitude, e.g. \"8.5, -75.5\".",
+                    "fr": "Le format préféré est la latitude décimale séparée par une virgule de la longitude décimale, par ex. \"8.5, -75.5\"."
                 }
             },
             {
                 "text": {
-                    "en": "Elevation above sea level"
+                    "en": "Elevation above sea level",
+                    "fr": "Élévation au-dessus du niveau de la mer"
                 },
                 "attribute": "elev",
                 "note": {
-                    "en": "The preferred unit is metres above sea level."
+                    "en": "The preferred unit is metres above sea level.",
+                    "fr": "L'unité préférée est le mètre"
                 }
             }
         ]
     },
     "movement_atts": {
         "question": {
-            "en": "Is this location part of a population movement?"
+            "en": "Is this location part of a population movement?",
+            "fr": "Cet emplacement fait-il partie d'un mouvement de population ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "No, the dataset is not about population movements"
+                    "en": "No, the locations are not related to population movements",
+                    "fr": "Non, les lieux ne sont pas liés aux mouvements de population"
                 },
                 "dest": "adm_atts"
             },
             {
                 "text": {
-                    "en": "Yes, it is the origin of a population movement"
+                    "en": "Yes, they are the places of origin",
+                    "fr": "Oui, ce sont les lieux d'origine"
                 },
                 "attribute": "origin",
                 "dest": "adm_atts"
             },
             {
                 "text": {
-                    "en": "Yes, it is the destination of a population movement"
+                    "en": "Yes, they are the destinations",
+                    "fr": "Oui, ce sont les destinations"
                 },
                 "attribute": "dest",
                 "dest": "adm_atts"
             },
             {
                 "text": {
-                    "en": "Yes, it is a location of asylum"
+                    "en": "Yes, they are the places of asylum",
+                    "fr": "Oui, ce sont les lieux d'asile"
                 },
                 "attribute": "asylum",
                 "dest": "adm_atts"
@@ -826,33 +840,38 @@
     },
     "loc_atts": {
         "question": {
-            "en": "What kind of locations are they?"
+            "en": "What kind of locations are they?",
+            "fr": "Quels types d'lieux sont-ils ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "Camps"
+                    "en": "Camps",
+                    "fr": "Camps"
                 },
                 "attribute": "camp",
                 "dest": "movement_atts"
             },
             {
                 "text": {
-                    "en": "Facilities (health, education, etc)"
+                    "en": "Facilities (health, education, etc)",
+                    "fr": "Installations (santé, éducation, etc.)"
                 },
                 "attribute": "facility",
                 "dest": "adm_atts"
             },
             {
                 "text": {
-                    "en": "Marketplaces"
+                    "en": "Marketplaces",
+                    "fr": "Marchés"
                 },
                 "attribute": "market",
                 "dest": "adm_atts"
             },
             {
                 "text": {
-                    "en": "None of the above"
+                    "en": "None of the above",
+                    "fr": "Aucune de ces réponses"
                 },
                 "dest": "movement_atts"
             }
@@ -860,30 +879,35 @@
     },
     "id_atts": {
         "question": {
-            "en": "What kind of content is in the column?"
+            "en": "What kind of names or identifiers are in the column?",
+            "fr": "Quels types de noms ou d'identifiants se trouvent dans la colonne?"
         },
         "options": [
             {
                 "text": {
-                    "en": "I don't need to specify"
+                    "en": "I don't need to specify",
+                    "fr": "Ça n'a pas d'importance"
                 }
             },
             {
                 "text": {
-                    "en": "A human-readable name"
+                    "en": "A name or title",
+                    "fr": "Un nom ou un titre"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
                 "text": {
-                    "en": "A unique identifier"
+                    "en": "A unique identifier",
+                    "fr": "Un identifiant unique"
                 },
                 "attribute": "id"
             },
             {
                 "text": {
-                    "en": "A type/classification"
+                    "en": "A type or classification",
+                    "fr": "Un type ou une classification"
                 },
                 "attribute": "type"
             }
@@ -891,30 +915,34 @@
     },
     "code_atts": {
         "question": {
-            "en": "What kind of content is in the column?"
+            "en": "What kinds of names or codes are in the column?"
         },
         "options": [
             {
                 "text": {
-                    "en": "I don't need to specify"
+                    "en": "I don't need to specify",
+                    "fr": "Ça n'a pas d'importance"
                 }
             },
             {
                 "text": {
-                    "en": "A human-readable name"
+                    "en": "Names or titles",
+                    "fr": "Noms ou titres"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
                 "text": {
-                    "en": "A unique machine code (like a P-code)"
+                    "en": "Unique codes (like P-codes)",
+                    "fr": "Codes uniques (comme des P-codes)"
                 },
                 "attribute": "code"
             },
             {
                 "text": {
-                    "en": "A type/classification"
+                    "en": "A type or classification",
+                    "fr": "Un type ou une classification"
                 },
                 "attribute": "type",
                 "exclude": [
@@ -925,70 +953,85 @@
     },
     "date_atts": {
         "question": {
-            "en": "What kind of a date is this?"
+            "en": "What kinds of dates are in the column?",
+            "fr": "Quels types de dates figurent dans la colonne ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "I don't need to specify"
+                    "en": "I don't need to specify",
+                    "fr": "Ça n'a pas d'importance"
                 },
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
                 }
             },
             {
                 "text": {
-                    "en": "A start date"
+                    "en": "Start dates",
+                    "fr": "Dates de début"
                 },
                 "attribute": "start",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
                 }
             },
             {
                 "text": {
-                    "en": "An end date"
+                    "en": "End dates",
+                    "fr": "Dates de fin"
                 },
                 "attribute": "end",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
                 }
             },
             {
                 "text": {
-                    "en": "A specific date when something happened"
+                    "en": "The dates when something happened",
+                    "fr": "Les dates aux lesquelles quelque chose s'est passé"
                 },
                 "attribute": "occurred",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."                    
                 }
             },
             {
                 "text": {
-                    "en": "A specific date when something was reported"
+                    "en": "Reporting dates",
+                    "fr": "Dates de rapport"
                 },
                 "attribute": "reported",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\")."
+                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
+                    
                 }
             }
         ]
     },
     "adm_atts": {
         "question": {
-            "en": "How is the location described?"
+            "en": "What kinds of names or codes does the column contain?",
+            "fr": "Quels types de noms ou de codes la colonne contient-elle ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "By its name"
+                    "en": "Names or titles",
+                    "fr": "Noms ou titres"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
                 "text": {
-                    "en": "By a code"
+                    "en": "Unique codes (like P-codes)",
+                    "fr": "Codes uniques (comme des P-codes)"
                 },
                 "attribute": "code",
                 "dest": "geocode_atts"
@@ -997,57 +1040,67 @@
     },
     "lang_atts": {
         "question": {
-            "en": "Do you want to identify the language of the content?"
+            "en": "Do you want to identify the language of the text in the column?",
+            "fr": "Voulez-vous identifier la langue du texte dans la colonne?"
         },
         "options": [
             {
                 "text": {
-                    "en": "No, I want to leave it unspecified"
+                    "en": "No, I want to leave it unspecified",
+                    "fr": "Non, ça n'a pas d'importance"
                 }
             },
             {
                 "text": {
-                    "en": "Yes, the text is in English"
+                    "en": "Yes, it's all in English",
+                    "fr": "Oui, c'est tout en anglais"
                 },
                 "attribute": "i_en"
             },
             {
                 "text": {
-                    "en": "Yes, the text is in French"
+                    "en": "Yes, it's all in French",
+                    "fr": "Oui, c'est tout en français"
                 },
                 "attribute": "i_fr"
             },
             {
                 "text": {
-                    "en": "Yes, the text is in Arabic"
+                    "en": "Yes, it's all in Arabic",
+                    "fr": "Oui, c'est tout en arabe"
                 },
                 "attribute": "i_ar"
             },
             {
                 "text": {
-                    "en": "Yes, the text is in Spanish"
+                    "en": "Yes, it's all in Spanish",
+                    "fr": "Oui, c'est tout en espagnol"
                 },
                 "attribute": "i_es"
             },
             {
                 "text": {
-                    "en": "Yes, the text is in Russian"
+                    "en": "Yes, it's all in Russian",
+                    "fr": "Oui, c'est tout en russe"
                 },
                 "attribute": "i_ru"
             },
             {
                 "text": {
-                    "en": "Yes, the text is in Swahili"
+                    "en": "Yes, it's all in Swahili",
+                    "fr": "Oui, c'est tout en swahili"
                 },
                 "attribute": "i_sw"
             },
             {
                 "text": {
-                    "en": "The text is in a language not listed here"
+                    "en": "Yes, but the text is in a language not listed here",
+                    "fr": "Oui, mais le texte est dans une langue non répertoriée ici"
                 },
                 "attribute": "i_xx",
                 "note": {
-                    "en": "Replace the \"xx\" in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog."
+                    "en": "Replace the \"xx\" in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.",
+                    "fr": "Remplacez le \"xx\" dans +i_xx par le code ISO 639 à deux lettres de votre langue, par exemple +i_tl pour le tagalog."
                 }
             }
         ]

@@ -26,7 +26,7 @@ docs/fr/index.html: $(VENV) validate hxl-knowledge-base.json gen-chooser.py docs
 	. $(VENV) && mkdir -p docs/fr && python gen-chooser.py fr > $@ || rm -f $@
 
 push: $(OUTPUTS)
-	git push
+	git add . && git commit -m 'Update' && git push
 
 clean:
 	rm -rf venv $(OUTPUTS)
