@@ -94,42 +94,49 @@
     },
     "indicator_shape": {
         "question": {
-            "en": "How is your overall dataset shaped?"
+            "en": "How is your overall dataset shaped?",
+            "fr": "Quelle est la forme de votre jeu de données ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "It is wide, with multiple columns of indicator values in each row"
+                    "en": "It is wide, with multiple columns of indicator values in each row",
+                    "fr": "C'est large, avec de nombreuses colonnes de valeurs d'indicateur dans chaque ligne"
                 },
                 "attribute": "MY_CUSTOM_ATTRIBUTE",
                 "dest": "datatype_atts"
             },
             {
                 "text": {
-                    "en": "It is narrow and long, with one indicator value in each row, together with the indicator's name or code"
+                    "en": "It is narrow and long, with one indicator value in each row, together with the indicator's name or code",
+                    "fr": "C'est étroit et long, avec une valeur d'indicateur dans chaque ligne, ainsi que le nom ou le code de l'indicateur"
                 },
                 "dest": "indicator_atts"
             }
         ],
         "pre-text": {
-            "en": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools."
+            "en": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools.",
+            "fr": "Notez que si votre ensemble de données contient de nombreuses colonnes d'indicateurs, vous n'avez pas à les baliser toutes. Ajoutez des hashtags uniquement aux colonnes sur lesquelles les utilisateurs peuvent souhaiter travailler à l'aide d'outils prenant en charge HXL."
         }
     },
     "people_tags": {
         "question": {
-            "en": "What is the humanitarian context?"
+            "en": "What is the humanitarian context?",
+            "fr": "Quel est le contexte humanitaire?"
         },
         "options": [
             {
                 "text": {
-                    "en": "General population (including those not affected by the crisis)"
+                    "en": "General population (including those not affected by the crisis)",
+                    "fr": "Population générale (y compris ceux qui n'ont pas été touchés par la crise)"
                 },
                 "dest": "gender_atts",
                 "hashtag": "population"
             },
             {
                 "text": {
-                    "en": "All individuals affected by the crisis"
+                    "en": "All individuals affected by the crisis (including those not in need of assistance)",
+                    "fr": "Toutes les personnes touchées par la crise (y compris celles qui n'ont pas besoin d'assistance)"
                 },
                 "hashtag": "affected",
                 "attribute": "ind",
@@ -137,7 +144,8 @@
             },
             {
                 "text": {
-                    "en": "All households affected by the crisis"
+                    "en": "All households affected by the crisis (including those not in need of assistance)",
+                    "fr": "Tous les ménages touchés par la crise (y compris ceux qui n'ont pas besoin d'assistance)"
                 },
                 "hashtag": "affected",
                 "attribute": "hh",
@@ -145,7 +153,8 @@
             },
             {
                 "text": {
-                    "en": "All individuals in need of humanitarian assistance"
+                    "en": "All individuals in need of humanitarian assistance (including those not targeted)",
+                    "fr": "Toutes les personnes ayant besoin d'une assistance humanitaire (y compris celles qui ne sont pas ciblées)"
                 },
                 "hashtag": "inneed",
                 "attribute": "ind",
@@ -153,7 +162,8 @@
             },
             {
                 "text": {
-                    "en": "All households in need of humanitarian assistance"
+                    "en": "All households in need of humanitarian assistance (including those not targeted)",
+                    "fr": "Tous les ménages ayant besoin d'une assistance humanitaire (y compris ceux qui ne sont pas ciblées)"
                 },
                 "hashtag": "inneed",
                 "attribute": "hh",
@@ -161,7 +171,8 @@
             },
             {
                 "text": {
-                    "en": "All individuals targeted for humanitarian assistance"
+                    "en": "All individuals targeted for humanitarian assistance (including those not yet reached)",
+                    "fr": "Toutes les personnes ciblées pour l'aide humanitaire (y compris celles qui ne sont pas encore atteintes)"
                 },
                 "hashtag": "targeted",
                 "attribute": "ind",
@@ -169,7 +180,8 @@
             },
             {
                 "text": {
-                    "en": "All households targeted for humanitarian assistance"
+                    "en": "All households targeted for humanitarian assistance",
+                    "fr": "Tous les ménages ciblés pour l'aide humanitaire (y compris ceux qui ne sont pas encore atteintes)"
                 },
                 "hashtag": "targeted",
                 "attribute": "hh",
@@ -177,7 +189,8 @@
             },
             {
                 "text": {
-                    "en": "Only individuals actually reached with humanitarian assistance"
+                    "en": "Only individuals actually reached with humanitarian assistance",
+                    "fr": "Seulement les personnes effectivement touchées par une aide humanitaire"
                 },
                 "hashtag": "reached",
                 "attribute": "ind",
@@ -185,7 +198,8 @@
             },
             {
                 "text": {
-                    "en": "Only households actually reached with humanitarian assistance"
+                    "en": "Only households actually reached with humanitarian assistance",
+                    "fr": "Seulement les ménages effectivement touchés par une aide humanitaire"
                 },
                 "hashtag": "reached",
                 "attribute": "hh",
