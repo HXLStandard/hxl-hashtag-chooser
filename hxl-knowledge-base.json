@@ -349,61 +349,70 @@
     },
     "event_tags": {
         "question": {
-            "en": "What kind of crisis or event?"
+            "en": "What kind of crisis or event information?",
+            "fr": "Quel genre d'infos sur un crise ou une événement ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "A broad humanitarian crisis/emergency"
+                    "en": "A major humanitarian crisis/emergency",
+                    "fr": "Une crise humanitaire majeure"
                 },
                 "hashtag": "crisis",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "A specific event incident"
+                    "en": "A specific event or incident",
+                    "fr": "Un événement ou un incident"
                 },
                 "hashtag": "event",
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "Information about a non-humanitarian group involved an incident"
+                    "en": "A non-humanitarian actor, such as a militia",
+                    "fr": "Un acteur non humanitaire, comme une milice"
                 },
                 "hashtag": "group",
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "Barriers or restrictions on access"
+                    "en": "Barriers or restrictions on humanitarian access",
+                    "fr": "Obstacles ou restrictions à l'accès humanitaire"
                 },
                 "hashtag": "access",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "The cause of an incident"
+                    "en": "The cause of something",
+                    "fr": "La cause de quelque chose"
                 },
                 "hashtag": "cause",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "The frequency of an incident"
+                    "en": "The frequency of something",
+                    "fr": "La fréquence de quelque chose"
                 },
                 "hashtag": "frequency",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "The severity of an incident"
+                    "en": "The severity of something",
+                    "fr": "La gravité de quelque chose"
                 },
                 "hashtag": "severity",
                 "dest": "code_atts"
             },
             {
                 "text": {
-                    "en": "An impact of an incident"
+                    "en": "An impact of something",
+                    "fr": "L'impact de quelque chose"
                 },
                 "hashtag": "impact",
                 "dest": "code_atts"
