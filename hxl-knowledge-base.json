@@ -421,54 +421,62 @@
     },
     "admin_tags": {
         "question": {
-            "en": "What administrative level?"
+            "en": "What administrative level?",
+            "fr": "Quel niveau administratif ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "A multi-country region, like West Africa or the Caribbean"
+                    "en": "A multi-country region, like West Africa or the Caribbean",
+                    "fr": "Une région multi-pays, comme l'Afrique occidentale ou les Caraïbes"
                 },
                 "hashtag": "region",
                 "dest": "movement_atts"
             },
             {
                 "text": {
-                    "en": "A country or country-like (admin0) entity"
+                    "en": "A country or country-like (admin0) entity",
+                    "fr": "Un pays ou quasi-pays (admin0)"
                 },
                 "hashtag": "country",
                 "dest": "movement_atts"
             },
             {
                 "text": {
-                    "en": "A top-level (admin1) subdivision"
+                    "en": "A top-level administrative subdivision (admin1)",
+                    "fr": "Une subdivision administrative de premier niveau (admin1)"
                 },
                 "hashtag": "adm1",
                 "dest": "movement_atts"
             },
             {
                 "text": {
-                    "en": "A second-level (admin2) subdivision"
+                    "en": "A second-level administrative subdivision (admin2)",
+                    "fr": "Une subdivision administrative de deuxième niveau (admin2)"
                 },
                 "hashtag": "adm2",
                 "dest": "movement_atts"
             },
             {
                 "text": {
-                    "en": "A third-level (admin3) subdivision"
+                    "en": "A third-level administrative subdivision (admin3)",
+                    "fr": "Une subdivision administrative de troisième niveau (admin3)"
                 },
                 "hashtag": "adm3",
                 "dest": "movement_atts"
             },
             {
                 "text": {
-                    "en": "A fourth-level (admin4) subdivision"
+                    "en": "A fourth-level administrative subdivision (admin4)",
+                    "fr": "Une subdivision administrative de quatrième niveau (admin4)"
                 },
                 "hashtag": "adm4",
                 "dest": "movement_atts"
             },
             {
                 "text": {
-                    "en": "A fifth-level (admin5) subdivision"
+                    "en": "A fifth-level administrative subdivision (admin5)",
+                    "fr": "Une subdivision administrative de cinqième niveau (admin5)"
                 },
                 "hashtag": "adm5",
                 "dest": "movement_atts"
