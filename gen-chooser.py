@@ -81,14 +81,18 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     # navigation
     print("      <div class=\"nav\">")
     if previous_id is not None:
-        print("      <a href=\"#{}\">◀️ Back</a>".format(esc(previous_id)))
+        print("      <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc("Retour" if lang == "fr" else "Back")))
     else:
         print("      <a>&nbsp</a>")
     if id == "top":
-        print("      <a>HXL hashtag chooser</a>")
+        print("          <a>{}</a>".format(esc("Sélecteur de hashtags HXL" if lang=="fr" else "HXL hashtag chooser")))
     else:
-        print("      <a href=\"#_top\"># New</a>")
-    print("          <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">📖 Dictionary</a>")
+        print("          <a href=\"#_top\">{}</a>".format(esc("Recommencer" if lang=="fr" else "Restart")))
+    if lang == "en":
+        print("          <a href=\"../fr/index.html\">fr</a>")
+    else:
+        print("          <a href=\"../en/index.html\">en</a>")
+    print("          <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc("Dictionnaire de HXL" if lang=="fr" else "HXL Dictionary")))
     print("        </div>")
 
     # end of question
@@ -147,9 +151,9 @@ def display_result(option, hashtag, attributes, previous_id):
         print("       <p class=\"note\">{}</p>".format(text(option["note"])))
     print("      <p class=\"post-text\">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>")
     print("      <div class=\"nav\">")
-    print("        <a href=\"#{}\">◀️ Back</a>".format(esc(previous_id)))
-    print("        <a href=\"#_top\"># New</a>")
-    print("        <a href=\"http://hxlstandard.org/standard/dictionary\" target=\"_blank\">📖 Dictionary</a>")
+    print("        <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc("Retour" if lang=="fr" else "Back")))
+    print("        <a href=\"#_top\">{}</a>".format(esc("Recommencer" if lang=="fr" else "Restart")))
+    print("        <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc("Dicionnaire de HXL" if lang == "fr" else "HXL dictionary")))
     print("      </div>")
     print("    </section>")
 
