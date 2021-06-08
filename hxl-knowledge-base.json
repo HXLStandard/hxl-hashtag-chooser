@@ -604,7 +604,6 @@
                 "text": {
                     "en": "Abducted",
                     "fr": "Enlevés"
-                   
                 },
                 "dest": "gender_atts",
                 "attribute": "abducted"
@@ -997,7 +996,7 @@
                 "attribute": "occurred",
                 "note": {
                     "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
-                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."                    
+                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
                 }
             },
             {
@@ -1009,7 +1008,6 @@
                 "note": {
                     "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
                     "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
-                    
                 }
             }
         ]
@@ -1107,20 +1105,24 @@
     },
     "geocode_atts": {
         "question": {
-            "en": "Do you want to indicate what code list you are using?"
+            "en": "Do you want to indicate what code list you are using?",
+            "fr": "Voulez-vous indiquez le système de code que vous utilisez?"
         },
         "pre-text": {
-            "en": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified."
+            "en": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
+            "fr": "Si rien n'est spécifié, nous utiliserons pour les pays le code ISO3 et les P-codes pour les subdivisions administratives."
         },
         "options": [
             {
                 "text": {
-                    "en": "No, leave it unspecified"
+                    "en": "No, leave it unspecified",
+                    "fr": "Non, aucune spécification"
                 }
             },
             {
                 "text": {
-                    "en": "Yes, specify ISO3 country codes (like \"SYR\" for Syria)"
+                    "en": "Yes, specify ISO3 country codes (like \"SYR\" for Syria)",
+                    "fr": "Oui, utiliser le code ISO3 pour les pays (exemple \"SYR\" pour la Syrie)"
                 },
                 "attribute": "v_iso3",
                 "include": [
@@ -1129,7 +1131,8 @@
             },
             {
                 "text": {
-                    "en": "Yes, specify ISO2 country codes (like \"SY\" for Syria)"
+                    "en": "Yes, specify ISO2 country codes (like \"SY\" for Syria)",
+                    "fr": "Oui, utiliser le code ISO2 pour les pays (exemple \"SY\" pour la Syrie)"
                 },
                 "attribute": "v_iso2",
                 "include": [
@@ -1138,7 +1141,8 @@
             },
             {
                 "text": {
-                    "en": "Yes, specify P-codes"
+                    "en": "Yes, specify P-codes",
+                    "fr": "Oui, utiliser les P-codes"
                 },
                 "attribute": "v_pcodes",
                 "exclude": [
@@ -1150,31 +1154,36 @@
     },
     "indicator_atts": {
         "question": {
-            "en": "What do these values tell about the indicator (one indicator per row)?"
+            "en": "What do these values tell about the indicator (one indicator per row)?",
+            "fr": "Qu'est ce que ces données renseignent sur les indicateurs (un indicateur par ligne)?"
         },
         "options": [
             {
                 "text": {
-                    "en": "The indicator's name"
+                    "en": "The indicator's name",
+                    "fr": "Le nom de l'indicateur"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
             },
             {
                 "text": {
-                    "en": "The indicator's identifier or code"
+                    "en": "The indicator's identifier or code",
+                    "fr": "L'identifiant ou le code de l'indicateur"
                 },
                 "attribute": "code"
             },
             {
                 "text": {
-                    "en": "The indicators type/classification"
+                    "en": "The indicators type/classification",
+                    "fr": "Le type/classe de l'indicateur"
                 },
                 "attribute": "type"
             },
             {
                 "text": {
-                    "en": "The indicator's value"
+                    "en": "The indicator's value",
+                    "fr": "La valeur de l'indicateur"
                 },
                 "attribute": "value",
                 "dest": "datatype_atts"
@@ -1183,35 +1192,41 @@
     },
     "datatype_atts": {
         "question": {
-            "en": "What is the most-specific data type that applies to every indicator value?"
+            "en": "What is the most-specific data type that applies to every indicator value?",
+            "fr": "Quel est le type de donnée le plus spécifique pour chaque valeur d'indicateur?"
         },
         "options": [
             {
                 "text": {
-                    "en": "Mixed types, or all text"
+                    "en": "Mixed types, or all text",
+                    "fr": "Types mixtes, ou texte"
                 }
             },
             {
                 "text": {
-                    "en": "A boolean (true/false or yes/no-style) value"
+                    "en": "A boolean (true/false or yes/no-style) value",
+                    "fr": "Un booléen (vrai/faux ou oui/non)"
                 },
                 "attribute": "bool"
             },
             {
                 "text": {
-                    "en": "A percentage"
+                    "en": "A percentage",
+                    "fr": "Un pourcentage"
                 },
                 "attribute": "pct"
             },
             {
                 "text": {
-                    "en": "Any other numeric value"
+                    "en": "Any other numeric value",
+                    "fr": "Toute autre valeur numérique"
                 },
                 "attribute": "num"
             },
             {
                 "text": {
-                    "en": "A web link"
+                    "en": "A web link",
+                    "fr": "Un lien de page internet"
                 },
                 "attribute": "url"
             }
@@ -1219,39 +1234,45 @@
     },
     "org_atts": {
         "question": {
-            "en": "Are all the organisations tagged playing a specific role?"
+            "en": "Are all the organisations tagged playing a specific role?",
+            "fr": "Est ce que toutes les organisations listées jouent un rôle spécifique?"
         },
         "options": [
             {
                 "text": {
-                    "en": "No, there are different roles mixed in the column"
+                    "en": "No, there are different roles mixed in the column",
+                    "fr": "Non, il y a divers rôles par colonne"
                 },
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "Yes, they are all donor organisations"
+                    "en": "Yes, they are all donor organisations",
+                    "fr": "Oui, toutes sont des organisations donatrices"
                 },
                 "attribute": "funding",
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "Yes, they are all programming/extending organisations"
+                    "en": "Yes, they are all programming/extending organisations",
+                    "fr": "Oui, toutes sont des organisations de programmation"
                 },
                 "attribute": "prog",
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "Yes, they are all implementing partners"
+                    "en": "Yes, they are all implementing partners",
+                    "fr": "Oui, toutes sont des partenaires d'implémentation"
                 },
                 "attribute": "impl",
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "Yes, they are all organisations making a report"
+                    "en": "Yes, they are all organisations making a report",
+                    "fr": "Oui, toutes sont des organisatons faisant des rapports"
                 },
                 "attribute": "reporting",
                 "dest": "id_atts"
@@ -1260,53 +1281,61 @@
     },
     "value_atts": {
         "question": {
-            "en": "What type of monetary value is this?"
+            "en": "What type of monetary value is this?",
+            "fr": "Quelle type de valeur monétaire est ce?"
         },
         "options": [
             {
                 "text": {
-                    "en": "Not specified"
+                    "en": "Not specified",
+                    "fr": "Aucune"
                 },
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "A cash transfer"
+                    "en": "A cash transfer",
+                    "fr": "Transfert monétaire"
                 },
                 "attribute": "transfer",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "An incoming funding commitment"
+                    "en": "An incoming funding commitment",
+                    "fr": "Un engagement de financement entrant"
                 },
                 "attribute": "incoming",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "An outgoing funding commitment"
+                    "en": "An outgoing funding commitment",
+                    "fr": "Un engagement de financement sortant"
                 },
                 "attribute": "outgoing",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "A budget"
+                    "en": "A budget",
+                    "fr": "Un budget"
                 },
                 "attribute": "budget",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "A disbursement"
+                    "en": "A disbursement",
+                    "fr": "Un decaissement"
                 },
                 "attribute": "disbursement",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "An expenditure"
+                    "en": "An expenditure",
+                    "fr": "Une dépense"
                 },
                 "attribute": "expenditure",
                 "dest": "currency_atts"
@@ -1315,72 +1344,85 @@
     },
     "currency_atts": {
         "question": {
-            "en": "What currency do the monetary values represent?"
+            "en": "What currency do the monetary values represent?",
+            "fr": "Quelle devise la valeur monétaire représente elle ?"
         },
         "options": [
             {
                 "text": {
-                    "en": "A mixture of different currencies"
+                    "en": "A mixture of different currencies",
+                    "fr": "Diverses devises"
                 },
                 "note": {
-                    "en": "there should be another column tagged with #currency"
+                    "en": "there should be another column tagged with #currency",
+                    "fr": "Il doit y avoir une autre colonne tagguée avec #currency"
                 }
             },
             {
                 "text": {
-                    "en": "Us dollars"
+                    "en": "Us dollars",
+                    "fr": "Dollar américain"
                 },
                 "attribute": "usd"
             },
             {
                 "text": {
-                    "en": "Euros"
+                    "en": "Euros",
+                    "fr": "Euros"
                 },
                 "attribute": "eur"
             },
             {
                 "text": {
-                    "en": "Pounds Sterling"
+                    "en": "Pounds Sterling",
+                    "fr": "Livres Sterling"
                 },
                 "attribute": "gbp"
             },
             {
                 "text": {
-                    "en": "A currency not listed here"
+                    "en": "A currency not listed here",
+                    "fr": "La devise n'est pas listée"
                 },
                 "attribute": "xxx",
                 "note": {
-                    "en": "Replace +xxx with your currency code, e.g. +caf for West African francs"
+                    "en": "Replace +xxx with your currency code, e.g. +xof for West African francs",
+                    "fr": "Remplacer +xxx avec le code de la devise correspondante, exemple +xof pour les pays de la zone UEMOA "
                 }
             }
         ]
     },
     "contact_atts": {
         "question": {
-            "en": "What kind of contact information?"
+            "en": "What kind of contact information?",
+            "fr": "Quelles d'informations de contact?"
         },
         "options": [
             {
                 "text": {
-                    "en": "Name of a contact person"
+                    "en": "Name of a contact person",
+                    "fr": "Le nom de la personne contact"
                 },
                 "attribute": "name"
             },
             {
                 "text": {
-                    "en": "Email address"
+                    "en": "Email address",
+                    "fr": "L'adresse email"
                 },
                 "attribute": "email"
             },
             {
                 "text": {
-                    "en": "Phone number"
+                    "en": "Phone number",
+                    "fr": "Le numéro de téléphone"
                 },
                 "attribute": "phone"
             },
             {
                 "text": {
-                    "en": "Web site"
+                    "en": "Web site",
+                    "fr": "Site web"
                 },
                 "attribute": "url"
             }
@@ -1388,69 +1430,81 @@
     },
     "meta_atts": {
         "question": {
-            "en": "What kind of row metadata?"
+            "en": "What kind of row metadata?",
+            "fr": "Quels genres de métadonnées?"
         },
         "options": [
             {
                 "text": {
-                    "en": "A unique identifier for the record/row"
+                    "en": "A unique identifier for the record/row",
+                    "fr": "Un identifiant unique par enregistrement/ligne"
                 },
                 "attribute": "id",
                 "note": {
-                    "en": "Assumed to be unique only within the dataset, not globally."
+                    "en": "Assumed to be unique only within the dataset, not globally.",
+                    "fr": "Supposé unique seulement dans l'ensemble de données, et non global"
                 }
             },
             {
                 "text": {
-                    "en": "The source of the data"
+                    "en": "The source of the data",
+                    "fr": "La source des données"
                 },
                 "attribute": "source"
             },
             {
                 "text": {
-                    "en": "A URL for the data in the row"
+                    "en": "A URL for the data in the row",
+                    "fr": "Une URL pour les données de la ligne"
                 },
                 "attribute": "url"
             },
             {
                 "text": {
-                    "en": "Metadata not listed above"
+                    "en": "Metadata not listed above",
+                    "fr": "La métadonnée n'est pas listée en-dessus"
                 },
                 "attribute": "XXX",
                 "note": {
-                    "en": "You can invent any custom attribute you need to describe your metadata, e.g. +certainty"
+                    "en": "You can invent any custom attribute you need to describe your metadata, e.g. +certainty",
+                    "fr": "Vous pouvez créer l'attribut, quelconque dont vous avez besoin pour décrire la métadonnée, exemple +certainty"
                 }
             }
         ]
     },
     "activity_atts": {
         "question": {
-            "en": "What kind of aid activity/etc. is this?"
+            "en": "What kind of aid activity/etc. is this?",
+            "fr": "Quelle genre d'activité/etc d'aide est-ce?"
         },
         "options": [
             {
                 "text": {
-                    "en": "I don't need to specify"
+                    "en": "I don't need to specify",
+                    "fr": "Pas besoin de préciser"
                 },
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "A programme"
+                    "en": "A programme",
+                    "fr": "Un programme"
                 },
                 "attribute": "programme",
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "A project"
+                    "en": "A project",
+                    "fr": "Un projet"
                 },
                 "attribute": "project",
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "An activity"
+                    "en": "An activity",
+                    "fr": "Une activité"
                 },
                 "attribute": "activity",
                 "dest": "id_atts"
