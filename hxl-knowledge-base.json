@@ -850,51 +850,60 @@
     "geo_atts": {
         "question": {
             "en": "What kind of geographic information?",
-            "fr": "Quel genre d'informations géographiques ?"
+            "fr": "Quel genre d'informations géographiques ?",
+            "es": "¿Qué tipo de información geográfica?"
         },
         "options": [
             {
                 "text": {
                     "en": "Latitudes only",
-                    "fr": "Latitudes uniquement"
+                    "fr": "Latitudes uniquement",
+                    "es": "Solo latitudes"
                 },
                 "attribute": "lat",
                 "note": {
                     "en": "The preferred format for latitude is a decimal value, e.g. \"8.5\" instead of \"8 30.0N\".",
-                    "fr": "Le format préféré pour la latitude est une valeur décimale avec \".\", par ex. \"8.5 \" au lieu de \"8 30,0N \"."
+                    "fr": "Le format préféré pour la latitude est une valeur décimale avec «.», par ex. «8.5» au lieu de «8 30,0N».",
+                    "es": "El formato preferido para la latitud es un valor decimal, p. Ej. \"8.5\" en lugar de \"8 30.0N\"."
                 }
             },
             {
                 "text": {
                     "en": "Longitudes only",
-                    "fr": "Longitudes uniquement"
+                    "fr": "Longitudes uniquement",
+                    "es": "Solo longitudes"
                 },
                 "attribute": "lon",
                 "note": {
                     "en": "The preferred format for longitude is a decimal value, e.g. \"-75.5\" instead of \"75 30.0W\".",
-                    "fr": "Le format préféré pour la longitude est une valeur décimale avec \".\", par ex. \"-75.5\" au lieu de \"75 30,0W \"."
+                    "fr": "Le format préféré pour la longitude est une valeur décimale avec «.», par ex. «-75.5» au lieu de «75 30,0W.",
+                    "es": "El formato preferido para la longitud es un valor decimal, p. Ej. \"-75.5\" en lugar de \"75 30.0W\"."
                 }
             },
             {
                 "text": {
                     "en": "Latitude and longitude together in one field",
-                    "fr": "Latitudes et longitudes ensemble"
+                    "fr": "Latitudes et longitudes ensemble",
+                    "es": "Latitud y longitud juntas"
                 },
                 "attribute": "latlon",
                 "note": {
                     "en": "The preferred format is the decimal latitude separated by a comma from the decimal longitude, e.g. \"8.5, -75.5\".",
-                    "fr": "Le format préféré est la latitude décimale séparée par une virgule de la longitude décimale, par ex. \"8.5, -75.5\"."
+                    "fr": "Le format préféré est la latitude décimale séparée par une virgule de la longitude décimale, par ex. «8.5, -75.5».",
+                    "es": "El formato preferido es la latitud decimal separada por una coma de la longitud decimal, p. Ej. \"8,5, -75,5\"."
                 }
             },
             {
                 "text": {
                     "en": "Elevation above sea level",
-                    "fr": "Élévation au-dessus du niveau de la mer"
+                    "fr": "Élévation au-dessus du niveau de la mer",
+                    "es": "Elevación sobre el nivel del mar"
                 },
                 "attribute": "elev",
                 "note": {
                     "en": "The preferred unit is metres above sea level.",
-                    "fr": "L'unité préférée est le mètre"
+                    "fr": "L'unité préférée est le mètre",
+                    "es": "La unidad preferida son los metros"
                 }
             }
         ]
@@ -902,20 +911,23 @@
     "movement_atts": {
         "question": {
             "en": "Is this location part of a population movement?",
-            "fr": "Cet emplacement fait-il partie d'un mouvement de population ?"
+            "fr": "Cet emplacement fait-il partie d'un mouvement de population ?",
+            "es": "¿Esta ubicación es parte de un movimiento de población?"
         },
         "options": [
             {
                 "text": {
                     "en": "No, the locations are not related to population movements",
-                    "fr": "Non, les lieux ne sont pas liés aux mouvements de population"
+                    "fr": "Non, les lieux ne sont pas liés aux mouvements de population",
+                    "es": "No, las ubicaciones no tienen que ver con movimientos de población"
                 },
                 "dest": "adm_atts"
             },
             {
                 "text": {
                     "en": "Yes, they are the places of origin",
-                    "fr": "Oui, ce sont les lieux d'origine"
+                    "fr": "Oui, ce sont les lieux d'origine",
+                    "es": "Sí, ellos son los lugares de origen"
                 },
                 "attribute": "origin",
                 "dest": "adm_atts"
@@ -923,7 +935,8 @@
             {
                 "text": {
                     "en": "Yes, they are the destinations",
-                    "fr": "Oui, ce sont les destinations"
+                    "fr": "Oui, ce sont les destinations",
+                    "es": "Sí, son destinos"
                 },
                 "attribute": "dest",
                 "dest": "adm_atts"
@@ -931,7 +944,8 @@
             {
                 "text": {
                     "en": "Yes, they are the places of asylum",
-                    "fr": "Oui, ce sont les lieux d'asile"
+                    "fr": "Oui, ce sont les lieux d'asile",
+                    "es": "Sí, son lugares de asilo"
                 },
                 "attribute": "asylum",
                 "dest": "adm_atts"
@@ -941,13 +955,15 @@
     "loc_atts": {
         "question": {
             "en": "What kind of locations are they?",
-            "fr": "Quels types d'lieux sont-ils ?"
+            "fr": "Quels types d'lieux sont-ils ?",
+            "es": "¿Qué tipo de ubicaciones?"
         },
         "options": [
             {
                 "text": {
                     "en": "Camps",
-                    "fr": "Camps"
+                    "fr": "Camps",
+                    "es": "Campamentos"
                 },
                 "attribute": "camp",
                 "dest": "movement_atts"
@@ -955,7 +971,8 @@
             {
                 "text": {
                     "en": "Facilities (health, education, etc)",
-                    "fr": "Installations (santé, éducation, etc.)"
+                    "fr": "Installations (santé, éducation, etc.)",
+                    "es": "Instalaciones (salud, educación, etc.)"
                 },
                 "attribute": "facility",
                 "dest": "adm_atts"
@@ -963,7 +980,8 @@
             {
                 "text": {
                     "en": "Marketplaces",
-                    "fr": "Marchés"
+                    "fr": "Marchés",
+                    "es": "Mercados"
                 },
                 "attribute": "market",
                 "dest": "adm_atts"
@@ -971,7 +989,8 @@
             {
                 "text": {
                     "en": "None of the above",
-                    "fr": "Aucune de ces réponses"
+                    "fr": "Aucune de ces réponses",
+                    "es": "Ninguna de las anteriores"
                 },
                 "dest": "movement_atts"
             }
