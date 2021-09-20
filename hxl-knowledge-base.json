@@ -477,13 +477,15 @@
     "admin_tags": {
         "question": {
             "en": "What administrative level?",
-            "fr": "Quel niveau administratif ?"
+            "fr": "Quel niveau administratif ?",
+            "es": "¿Qué nivel administrativo?"
         },
         "options": [
             {
                 "text": {
                     "en": "A multi-country region, like West Africa or the Caribbean",
-                    "fr": "Une région multi-pays, comme l'Afrique occidentale ou les Caraïbes"
+                    "fr": "Une région multi-pays, comme l'Afrique occidentale ou les Caraïbes",
+                    "es": "Una región de varios países, como América Latina o Asia-Pacífico"
                 },
                 "hashtag": "region",
                 "dest": "movement_atts"
@@ -491,7 +493,8 @@
             {
                 "text": {
                     "en": "A country or country-like (admin0) entity",
-                    "fr": "Un pays ou quasi-pays (admin0)"
+                    "fr": "Un pays ou quasi-pays (admin0)",
+                    "es": "Una entidad de país o similar a un país (admin0)"
                 },
                 "hashtag": "country",
                 "dest": "movement_atts"
@@ -499,7 +502,8 @@
             {
                 "text": {
                     "en": "A top-level administrative subdivision (admin1)",
-                    "fr": "Une subdivision administrative de premier niveau (admin1)"
+                    "fr": "Une subdivision administrative de premier niveau (admin1)",
+                    "es": "Una subdivisión administrativa de nivel superior (admin1)"
                 },
                 "hashtag": "adm1",
                 "dest": "movement_atts"
@@ -507,7 +511,8 @@
             {
                 "text": {
                     "en": "A second-level administrative subdivision (admin2)",
-                    "fr": "Une subdivision administrative de deuxième niveau (admin2)"
+                    "fr": "Une subdivision administrative de deuxième niveau (admin2)",
+                    "es": "Una subdivisión administrativa de segundo nivel (admin2)"
                 },
                 "hashtag": "adm2",
                 "dest": "movement_atts"
@@ -515,7 +520,8 @@
             {
                 "text": {
                     "en": "A third-level administrative subdivision (admin3)",
-                    "fr": "Une subdivision administrative de troisième niveau (admin3)"
+                    "fr": "Une subdivision administrative de troisième niveau (admin3)",
+                    "es": "Una subdivisión administrativa de tercer nivel (admin3)"
                 },
                 "hashtag": "adm3",
                 "dest": "movement_atts"
@@ -523,7 +529,8 @@
             {
                 "text": {
                     "en": "A fourth-level administrative subdivision (admin4)",
-                    "fr": "Une subdivision administrative de quatrième niveau (admin4)"
+                    "fr": "Une subdivision administrative de quatrième niveau (admin4)",
+                    "es": "Una subdivisión administrativa de cuarto nivel (admin4)"
                 },
                 "hashtag": "adm4",
                 "dest": "movement_atts"
@@ -531,7 +538,8 @@
             {
                 "text": {
                     "en": "A fifth-level administrative subdivision (admin5)",
-                    "fr": "Une subdivision administrative de cinqième niveau (admin5)"
+                    "fr": "Une subdivision administrative de cinqième niveau (admin5)",
+                    "es": "Una subdivisión administrativa de quinto nivel (admin5)"
                 },
                 "hashtag": "adm5",
                 "dest": "movement_atts"
@@ -541,20 +549,23 @@
     "sector_tags": {
         "question": {
             "en": "What kind of sector or cluster?",
-            "fr": "Quel type de cluster ou de secteur ?"
+            "fr": "Quel type de cluster ou de secteur ?",
+            "es": "¿Qué tipo de sector o clúster?"
         },
         "options": [
             {
                 "text": {
                     "en": "I don't need to specify",
-                    "fr": "C'est sans importance"
+                    "fr": "C'est sans importance",
+                    "es": "No es necesario especificar"
                 },
                 "dest": "code_atts"
             },
             {
                 "text": {
                     "en": "A humanitarian cluster",
-                    "fr": "Un clusteur humanitaire"
+                    "fr": "Un clusteur humanitaire",
+                    "es": "Un cluster humanitario"
                 },
                 "hashtag": "sector",
                 "attribute": "cluster",
@@ -563,7 +574,8 @@
             {
                 "text": {
                     "en": "Another kind of top-level sector",
-                    "fr": "Un autre genre de secteur de premier niveau"
+                    "fr": "Un autre genre de secteur de premier niveau",
+                    "es": "Otro tipo de sector de primer nivel"
                 },
                 "hashtag": "sector",
                 "dest": "code_atts"
@@ -571,7 +583,8 @@
             {
                 "text": {
                     "en": "A subsector",
-                    "fr": "Un sous-secteur"
+                    "fr": "Un sous-secteur",
+                    "es": "Un subsector"
                 },
                 "hashtag": "subsector",
                 "dest": "code_atts"
@@ -581,13 +594,15 @@
     "cash_tags": {
         "question": {
             "en": "What kind of cash/finance information?",
-            "fr": "Quel type de données de cash ou financières ?"
+            "fr": "Quel type de données de cash ou financières ?",
+            "es": "¿Qué tipo de información de cash / finanzas?"
         },
         "options": [
             {
                 "text": {
                     "en": "Amounts of money",
-                    "fr": "Valeurs monétaires"
+                    "fr": "Valeurs monétaires",
+                    "es": "Cantidades de dinero"
                 },
                 "hashtag": "value",
                 "dest": "value_atts"
@@ -595,18 +610,22 @@
             {
                 "text": {
                     "en": "Currencies",
-                    "fr": "Devises"
+                    "fr": "Devises",
+                    "es": "Monedas"
                 },
                 "hashtag": "currency",
                 "attribute": "code",
                 "note": {
-                    "en": "Preferred content is ISO 4217 currency codes, such as \"CFA\" for the West African franc."
+                    "en": "Preferred content is ISO 4217 currency codes, such as \"CFA\" for the West African franc.",
+                    "fr": "Le contenu préféré est les codes de devise ISO 4217, tels que «CFA» pour le franc ouest-africain.",
+                    "es": "El contenido preferido son los códigos de moneda ISO 4217, como \"COP\" para el peso colombiano."
                 }
             },
             {
                 "text": {
                     "en": "Modalities or methods of cash transfer",
-                    "fr": "Modalités ou méthodes de transfert de cash"
+                    "fr": "Modalités ou méthodes de transfert de cash",
+                    "es": "Modalidades o métodos de transferencia de efectivo"
                 },
                 "hashtag": "modality",
                 "dest": "code_atts"
@@ -614,7 +633,8 @@
             {
                 "text": {
                     "en": "Channels through which money is transferred",
-                    "fr": "Canaux par lesquels l'argent est transféré (channels)"
+                    "fr": "Canaux par lesquels l'argent est transféré (channels)",
+                    "es": "Canales a través de los cuales se transfiere el dinero"
                 },
                 "hashtag": "channel",
                 "dest": "code_atts"
@@ -624,20 +644,23 @@
     "impact_atts": {
         "question": {
             "en": "What is impact on people or households?",
-            "fr": "Quel est l'impact sur les personnes ou les ménages"
+            "fr": "Quel est l'impact sur les personnes ou les ménages",
+            "es": "¿Qué es el impacto en las personas o los hogares?"
         },
         "options": [
             {
                 "text": {
                     "en": "No impact specified",
-                    "fr": "Aucun impact spécifié"
+                    "fr": "Aucun impact spécifié",
+                    "es": "Sin impacto especificado"
                 },
                 "dest": "gender_atts"
             },
             {
                 "text": {
                     "en": "Killed",
-                    "fr": "Tués"
+                    "fr": "Tués",
+                    "es": "Asesinados/as"
                 },
                 "dest": "gender_atts",
                 "attribute": "killed",
@@ -650,7 +673,8 @@
             {
                 "text": {
                     "en": "Injured",
-                    "fr": "Blessés"
+                    "fr": "Blessés",
+                    "es": "Heridos/as"
                 },
                 "dest": "gender_atts",
                 "attribute": "injured"
@@ -658,7 +682,8 @@
             {
                 "text": {
                     "en": "Abducted",
-                    "fr": "Enlevés"
+                    "fr": "Enlevés",
+                    "es": "Secuestrados/as"
                 },
                 "dest": "gender_atts",
                 "attribute": "abducted"
@@ -666,7 +691,8 @@
             {
                 "text": {
                     "en": "Displaced (internal and external)",
-                    "fr": "Déplacés (à l'intérieur et à l'extérieur)"
+                    "fr": "Déplacés (à l'intérieur et à l'extérieur)",
+                    "es": "Desplazados/as (internamente o externamente)"
                 },
                 "dest": "gender_atts",
                 "attribute": "displaced"
@@ -674,7 +700,8 @@
             {
                 "text": {
                     "en": "Internally-displaced (IDPs)",
-                    "fr": "Personnes déplacées à l'intérieur (PDI, IDP)"
+                    "fr": "Personnes déplacées à l'intérieur (PDI, IDP)",
+                    "es": "Desplazados internos (PDI, IDP)"
                 },
                 "dest": "gender_atts",
                 "attribute": "idps"
@@ -682,7 +709,8 @@
             {
                 "text": {
                     "en": "Refugees",
-                    "fr": "Réfugiés"
+                    "fr": "Réfugiés",
+                    "es": "Refugiados/as"
                 },
                 "dest": "gender_atts",
                 "attribute": "refugees"
@@ -691,21 +719,24 @@
     },
     "gender_atts": {
         "question": {
-            "en": "Does the data apply to a single gender?",
-            "fr": "Les données s'appliquent-elles à un seul genre ?"
+            "en": "Does the data in the column apply to a single gender?",
+            "fr": "Les données de la colonne s'appliquent-elles à un seul genre ?",
+            "es": "¿Los datos de la columna se aplican a un solo género?"
         },
         "options": [
             {
                 "text": {
                     "en": "No, all genders are included",
-                    "fr": "Non, tous les genres sont inclus"
+                    "fr": "Non, tous les genres sont inclus",
+                    "es": "No, todos los géneros están incluidos."
                 },
                 "dest": "age_atts"
             },
             {
                 "text": {
                     "en": "Female people only",
-                    "fr": "Femmes ou filles uniquement"
+                    "fr": "Femmes ou filles uniquement",
+                    "es": "Solo mujeres o niñas"
                 },
                 "dest": "age_atts",
                 "attribute": "f"
@@ -713,7 +744,8 @@
             {
                 "text": {
                     "en": "Male people only",
-                    "fr": "Hommes ou garçons uniquement"
+                    "fr": "Hommes ou garçons uniquement",
+                    "es": "Solo hombres o niños"
                 },
                 "dest": "age_atts",
                 "attribute": "m"
@@ -721,7 +753,8 @@
             {
                 "text": {
                     "en": "Non-gender-binary people only",
-                    "fr": "Personnes non binaires uniquement"
+                    "fr": "Personnes non binaires uniquement",
+                    "es": "Solo personas no binarias"
                 },
                 "dest": "age_atts",
                 "attribute": "i"
@@ -731,72 +764,85 @@
     "age_atts": {
         "question": {
             "en": "Does the data apply to a specific age group?",
-            "fr": "Les données s'appliquent-elles à un seul groupe d'âge ?"
+            "fr": "Les données s'appliquent-elles à un seul groupe d'âge ?",
+            "es": "¿Los datos se aplican a un grupo de edad específico?"
         },
         "options": [
             {
                 "text": {
-                    "en": "All ages are included",
-                    "fr": "Non, tous âges"
+                    "en": "No, all ages are included",
+                    "fr": "Non, tous âges",
+                    "es": "No, todas las edades están incluidas"
                 },
                 "note": {
-                    "en": "The values below should always be numbers",
-                    "fr": "Les valeurs ci-dessous doivent toujours être numériques."
+                    "en": "The values in the column should all be numbers",
+                    "fr": "Les valeurs de la colonne doivent toutes être numériques",
+                    "es": "Todos los valores de la columna deben ser numéricos"
                 }
             },
             {
                 "text": {
                     "en": "Any children (might include infants or adolescents)",
-                    "fr": "Enfants (peut inclure nourrissons et adolescents)"
+                    "fr": "Enfants (peut inclure nourrissons et adolescents)",
+                    "es": "Cualquier niño (puede incluir bebés o adolescentes)"
                 },
                 "attribute": "children",
                 "note": {
-                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_5_12 to give a specific range.",
-                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_5_12 pour donner une plage spécifique."
+                    "en": "The values in the column should all be numbers. You may also add a custom attribute like +age_5_12 to give a specific range.",
+                    "fr": "Les valeurs de la colonne doivent toutes être numériques. On peut également ajouter un attribut personnalisé tel que +age_5_12 pour donner une plage spécifique.",
+                    "es": "Todos los valores de la columna deben ser numéricos. Se puede agregar un atributo personalizado como +age_5_12 para dar un rango específico."
                 }
             },
             {
                 "text": {
                     "en": "Infants only",
-                    "fr": "Nourrissons uniquement"
+                    "fr": "Nourrissons uniquement",
+                    "es": "Solo bebés"
                 },
                 "attribute": "infants",
                 "note": {
-                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_0_2 to give a specific range.",
-                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_0_15 pour donner une plage spécifique."
+                    "en": "The values in the column should all be numbers. You may also add a custom attribute like +age_0_3 to give a specific range.",
+                    "fr": "Les valeurs de la colonne doivent toutes être numériques. On peut également ajouter un attribut personnalisé tel que +age_0_3 pour donner une plage spécifique.",
+                    "es": "Todos los valores de la columna deben ser numéricos. Se puede agregar un atributo personalizado como +age_0_3 para dar un rango específico."
                 }
             },
             {
                 "text": {
                     "en": "Adolescents only",
-                    "fr": "Adolescents uniquement"
+                    "fr": "Adolescents uniquement",
+                    "es": "Solo adolescentes"
                 },
                 "attribute": "adolescents",
                 "note": {
-                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_12_17 to give a specific range.",
-                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_12_17 pour donner une plage spécifique."
+                    "en": "The values in the column should all be numbers. You may also add a custom attribute like +age_12_17 to give a specific range.",
+                    "fr": "Les valeurs de la colonne doivent toutes être numériques. On peut également ajouter un attribut personnalisé tel que +age_12_17 pour donner une plage spécifique.",
+                    "es": "Todos los valores de la columna deben ser numéricos. Se puede agregar un atributo personalizado como +age_12_17 para dar un rango específico."
                 }
             },
             {
                 "text": {
-                    "en": "Any adults (might include adolescents or elderly people",
-                    "fr": "Adultes (peut inclure des adolescents et des âgées)"
+                    "en": "Any adults (might include adolescents or elderly people)",
+                    "fr": "Adultes (peut inclure des adolescents et des âgées)",
+                    "es": "Cualquier adulto (puede incluir adolescentes o personas mayores)"
                 },
                 "attribute": "adults",
                 "note": {
-                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_18_64 to give a specific range.",
-                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_18_64 pour donner une plage spécifique."
+                    "en": "The values in the column should all be numbers. You may also add a custom attribute like +age_18_64 to give a specific range.",
+                    "fr": "Les valeurs de la colonne doivent toutes être numériques. On peut également ajouter un attribut personnalisé tel que +age_18_64 pour donner une plage spécifique.",
+                    "es": "Todos los valores de la columna deben ser numéricos. Se puede agregar un atributo personalizado como +age_18_64 para dar un rango específico."
                 }
             },
             {
                 "text": {
                     "en": "Elderly people only",
-                    "fr": "Personnes âgés uniquement"
+                    "fr": "Personnes âgés uniquement",
+                    "es": "Solo personas mayores"
                 },
                 "attribute": "elderly",
                 "note": {
-                    "en": "The values below should always be numbers. You may also add a custom attribute like +age_65_ to give a specific range.",
-                    "fr": "Les valeurs ci-dessous doivent toujours être numériques. On peut également ajouter un attribut personnalisé tel que +age_65_ pour donner une plage spécifique."
+                    "en": "The values in the column should all be numbers. You may also add a custom attribute like +age_65_ to give a specific range.",
+                    "fr": "Les valeurs de la colonne doivent toutes être numériques. On peut également ajouter un attribut personnalisé tel que +age_65_ pour donner une plage spécifique.",
+                    "es": "Todos los valores de la columna deben ser numéricos. Se puede agregar un atributo personalizado como +age_65_ para dar un rango específico."
                 }
             }
         ]

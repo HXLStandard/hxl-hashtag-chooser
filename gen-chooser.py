@@ -149,16 +149,16 @@ def display_option(option, hashtag, attributes):
 
 def display_result(option, hashtag, attributes, previous_id):
     print("    <section class=\"result\" id=\"{}_000\">".format(esc(make_html_id(id, hashtag, attributes))))
-    print("      <h2>Finished!</h2>")
+    print("      <h2>{}</h2>".format(esc(t("Finished!"))))
     print("      <div class=\"tagspec-container\">")
     print("        <p class=\"tagspec final-tagspec\">{}</p>".format(esc(make_tagspec(hashtag, attributes))))
     print("      </div>")
     for attribute in attributes:
         if re.match(r"[A-Z]", attribute):
-            print("        <p>Don't forget to replace <b><code>+{}</code></b> with your own attribute.</p>".format(esc(attribute)))
+            print("        <p>{} <b><code>+{}</code></b>.</p>".format(esc(t("Don't forget to substitute your own attribute for")), esc(attribute)))
     if "note" in option:
         print("       <p class=\"note\">{}</p>".format(text(option["note"])))
-    print("      <p class=\"post-text\">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>")
+    print("      <p class=\"post-text\">{}</p>".format(esc(t("You are free to add more attributes, or to make up your own, if you need to make further distinctions."))))
     print("      <div class=\"nav\">")
     print("        <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc(t("Back"))))
     print("        <a href=\"#_top\">{}</a>".format(esc(t("Restart"))))

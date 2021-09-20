@@ -3,6 +3,14 @@
         "fr": "Retour",
         "es": "Retroceso"
     },
+    "Don't forget to substitute your own attribute for": {
+        "fr": "N'oubliez pas de substituer votre propre attribut à",
+        "es": "No olvide sustituir su propio atributo por"
+    },
+    "Finished!": {
+        "fr": "Terminé !",
+        "es": "¡Hecho!"
+    },
     "HXL Dictionary": {
         "fr": "Dictionnaire de HXL",
         "es": "Diccionario HXL"
@@ -14,5 +22,9 @@
     "Restart": {
         "fr": "Recommencer",
         "es": "Reiniciar"
+    },
+    "You are free to add more attributes, or to make up your own, if you need to make further distinctions.": {
+        "fr": "Vous pouvez ajouter d'autres attributs ou créer les vôtres si vous avez besoin de faire d'autres distinctions.",
+        "es": "Puede agregar más atributos, o crear los suyos propios, si necesita hacer más distinciones."
     }
 }
