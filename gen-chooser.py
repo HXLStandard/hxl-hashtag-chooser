@@ -101,7 +101,7 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     for link_lang in ("en", "fr", "es",):
         if lang != link_lang:
             print("          <a href=\"../{lang}/index.html\">{lang}</a>".format(lang=link_lang))
-    print("          <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc(t("HXL Dictionary"))))
+    print("          <a href=\"http://hxlstandard.org/standard/1-1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc(t("HXL Dictionary"))))
     print("        </div>")
 
     # end of question
@@ -162,7 +162,7 @@ def display_result(option, hashtag, attributes, previous_id):
     print("      <div class=\"nav\">")
     print("        <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc(t("Back"))))
     print("        <a href=\"#_top\">{}</a>".format(esc(t("Restart"))))
-    print("        <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc(t("HXL dictionary"))))
+    print("        <a href=\"http://hxlstandard.org/standard/1-1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc(t("HXL dictionary"))))
     print("      </div>")
     print("    </section>")
 

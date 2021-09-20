@@ -220,13 +220,15 @@
     "survey_tags": {
         "question": {
             "en": "What kind of survey/assessment information?",
-            "fr": "Quel type d'information d'enquête ?"
+            "fr": "Quel type d'information d'enquête ?",
+            "es": "¿Qué tipo de información de encuesta / evaluación?"
         },
         "options": [
             {
                 "text": {
                     "en": "One respondent (person, household, etc) per row",
-                    "fr": "Infos sur un répondant sur chaque ligne"
+                    "fr": "Infos sur un répondant sur chaque ligne",
+                    "es": "Información sobre un encuestado por fila"
                 },
                 "hashtag": "respondee",
                 "dest": "code_atts"
@@ -234,7 +236,8 @@
             {
                 "text": {
                     "en": "Capacities (number of beds, maximum cargo, etc)",
-                    "fr": "Capacités (nombre de lits, chargement maximum, etc.)"
+                    "fr": "Capacités (nombre de lits, chargement maximum, etc.)",
+                    "es": "Capacidades (número de camas, carga máxima, etc.)"
                 },
                 "hashtag": "capacity",
                 "dest": "code_atts"
@@ -242,7 +245,8 @@
             {
                 "text": {
                     "en": "Needs (shelter, communications, etc)",
-                    "fr": "Besoins (abri, communications, etc)"
+                    "fr": "Besoins (abri, communications, etc)",
+                    "es": "Necesidades (refugio, comunicaciones, etc.)"
                 },
                 "hashtag": "need",
                 "dest": "code_atts"
@@ -250,7 +254,8 @@
             {
                 "text": {
                     "en": "Services (healthcare, counselling, etc)",
-                    "fr": "Services (soins de santé, conseils, etc)"
+                    "fr": "Services (soins de santé, conseils, etc)",
+                    "es": "Servicios (salud, asesoramiento, etc.)"
                 },
                 "hashtag": "service",
                 "dest": "code_atts"
@@ -258,7 +263,8 @@
             {
                 "text": {
                     "en": "Items (food, shelter kits, etc)",
-                    "fr": "Articles (nourriture, kits d'abris, etc.)"
+                    "fr": "Articles (nourriture, kits d'abris, etc.)",
+                    "es": "Artículos (comida, kits de refugio, etc.)"
                 },
                 "hashtag": "item",
                 "dest": "code_atts"
@@ -266,7 +272,8 @@
             {
                 "text": {
                     "en": "Some other kind of indicator",
-                    "fr": "Un autre type d'indicateur"
+                    "fr": "Un autre type d'indicateur",
+                    "es": "Otro tipo de indicador"
                 },
                 "hashtag": "indicator",
                 "attribute": "MY_CUSTOM_ATTRIBUTE",
@@ -275,26 +282,30 @@
         ],
         "post-text": {
             "en": "CAUTION: survey results are often sensitive data.",
-            "fr": "ATTENTION : les résultats des enquêtes sont souvent des données sensibles."
+            "fr": "ATTENTION : les résultats des enquêtes sont souvent des données sensibles.",
+            "es": "PRECAUCIÓN: los resultados de la encuesta suelen ser datos confidenciales."
         }
     },
     "place_tags": {
         "question": {
             "en": "What kind of places?",
-            "fr": "Quel genre d'endroits ?"
+            "fr": "Quel genre d'endroits ?",
+            "es": "¿Qué tipo de lugares?"
         },
         "options": [
             {
                 "text": {
                     "en": "Administrative subdivisions (region, country, province, district, etc)",
-                    "fr": "Subdivisions administratives (région, pays, province, département, etc.)"
+                    "fr": "Subdivisions administratives (région, pays, province, département, etc.)",
+                    "es": "Subdivisiones administrativas (región, país, provincia, distrito, etc.)"
                 },
                 "dest": "admin_tags"
             },
             {
                 "text": {
                     "en": "Latitude and/or longitude",
-                    "fr": "Latitude et / ou longitude"
+                    "fr": "Latitude et / ou longitude",
+                    "es": "Latitud y / o longitud"
                 },
                 "hashtag": "geo",
                 "dest": "geo_atts"
@@ -302,7 +313,8 @@
             {
                 "text": {
                     "en": "Specific locations (e.g. camps) or mixed types of locations",
-                    "fr": "Emplacements spécifiques (par exemple, camps) ou niveaux mixtes"
+                    "fr": "Emplacements spécifiques (par exemple, camps) ou niveaux mixtes",
+                    "es": "Ubicaciones específicas (por ejemplo, campamentos) o tipos mixtos de ubicaciones"
                 },
                 "hashtag": "loc",
                 "dest": "loc_atts"
@@ -312,13 +324,15 @@
     "response_tags": {
         "question": {
             "en": "What kind of response information?",
-            "fr": "Quel genre d'infos sur la réponse ?"
+            "fr": "Quel genre d'infos sur la réponse ?",
+            "es": "¿Qué tipo de información sobre la respuesta?"
         },
         "options": [
             {
                 "text": {
                     "en": "A cluster or sector",
-                    "fr": "Un cluster ou un secteur"
+                    "fr": "Un cluster ou un secteur",
+                    "es": "Un clúster o sector"
                 },
                 "hashtag": "sector",
                 "dest": "sector_tags"
@@ -326,7 +340,8 @@
             {
                 "text": {
                     "en": "A programme, project, or activity",
-                    "fr": "Un programme, un projet ou une activité"
+                    "fr": "Un programme, un projet ou une activité",
+                    "es": "Un programa, proyecto o actividad"
                 },
                 "hashtag": "activity",
                 "dest": "activity_atts"
@@ -334,7 +349,8 @@
             {
                 "text": {
                     "en": "A longer description of what the row represents",
-                    "fr": "Une description plus longue de ce que représente la ligne"
+                    "fr": "Une description plus longue de ce que représente la ligne",
+                    "es": "Una descripción más larga del tema de la fila."
                 },
                 "hashtag": "description",
                 "dest": "lang_atts"
@@ -342,7 +358,8 @@
             {
                 "text": {
                     "en": "The output or outcome of a humanitarian activity",
-                    "fr": "Le produit ou le résultat d'une activité humanitaire"
+                    "fr": "Le produit ou le résultat d'une activité humanitaire",
+                    "es": "El producto o resultado de una actividad humanitaria"
                 },
                 "hashtag": "output",
                 "dest": "code_atts"
@@ -350,7 +367,8 @@
             {
                 "text": {
                     "en": "The intended beneficiary/ies",
-                    "fr": "Le groupe de bénéficiaires prévu"
+                    "fr": "Le groupe de bénéficiaires prévu",
+                    "es": "El grupo previsto de beneficiarios/as"
                 },
                 "hashtag": "beneficiary",
                 "dest": "code_atts"
@@ -358,7 +376,8 @@
             {
                 "text": {
                     "en": "The current status of an activity, project, etc.",
-                    "fr": "L'état actuel d'une activité, d'un projet, etc."
+                    "fr": "L'état actuel d'une activité, d'un projet, etc.",
+                    "es": "El estado actual de una actividad, proyecto, etc."
                 },
                 "hashtag": "status",
                 "dest": "code_atts"
@@ -366,7 +385,8 @@
             {
                 "text": {
                     "en": "Contact information",
-                    "fr": "Infos de contact"
+                    "fr": "Infos de contact",
+                    "es": "Información de contacto"
                 },
                 "hashtag": "contact",
                 "dest": "contact_atts"
