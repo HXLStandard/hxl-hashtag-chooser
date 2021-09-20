@@ -108,13 +108,15 @@
     "counting_atts": {
         "question": {
             "en": "What are you counting?",
-            "fr": "Vous comptez quoi ?"
+            "fr": "Vous comptez quoi ?",
+            "es": "¿Que se esta contando?"
         },
         "options": [
             {
                 "text": {
                     "en": "People",
-                    "fr": "Personnes"
+                    "fr": "Personnes",
+                    "es": "Gente"
                 },
                 "attribute": "ind",
                 "dest": "impact_atts"
@@ -122,7 +124,8 @@
             {
                 "text": {
                     "en": "Households",
-                    "fr": "Ménages"
+                    "fr": "Ménages",
+                    "es": "Hogares"
                 },
                 "attribute": "hh",
                 "dest": "impact_atts"
@@ -132,13 +135,15 @@
     "indicator_shape": {
         "question": {
             "en": "How is your overall dataset shaped?",
-            "fr": "Quelle est la forme de votre jeu de données ?"
+            "fr": "Quelle est la forme de votre jeu de données ?",
+            "es": "¿Cómo se forma su conjunto de datos?"
         },
         "options": [
             {
                 "text": {
                     "en": "It is wide, with multiple columns of indicator values in each row",
-                    "fr": "C'est large, avec de nombreuses colonnes de valeurs d'indicateur dans chaque ligne"
+                    "fr": "C'est large, avec de nombreuses colonnes de valeurs d'indicateur dans chaque ligne",
+                    "es": "Es ancho, con múltiples columnas de indicadores en cada fila."
                 },
                 "attribute": "MY_CUSTOM_ATTRIBUTE",
                 "dest": "datatype_atts"
@@ -146,26 +151,30 @@
             {
                 "text": {
                     "en": "It is narrow and long, with one indicator value in each row, together with the indicator's name or code",
-                    "fr": "C'est étroit et long, avec une valeur d'indicateur dans chaque ligne, ainsi que le nom ou le code de l'indicateur"
+                    "fr": "C'est étroit et long, avec une valeur d'indicateur dans chaque ligne, ainsi que le nom ou le code de l'indicateur",
+                    "es": "Es estrecho y largo, con un valor de indicador en cada fila, junto con el nombre o código del indicador."
                 },
                 "dest": "indicator_atts"
             }
         ],
         "pre-text": {
             "en": "Note that if your dataset contains many columns of indicators, you do not have to tag all of them. Add hashtags only to the columns that people might want to be able to work on using HXL-aware tools.",
-            "fr": "Notez que si votre ensemble de données contient de nombreuses colonnes d'indicateurs, vous n'avez pas à les baliser toutes. Ajoutez des hashtags uniquement aux colonnes sur lesquelles les utilisateurs peuvent souhaiter travailler à l'aide d'outils prenant en charge HXL."
+            "fr": "Notez que si votre ensemble de données contient de nombreuses colonnes d'indicateurs, vous n'avez pas à les baliser toutes. Ajoutez des hashtags uniquement aux colonnes sur lesquelles les utilisateurs peuvent souhaiter travailler à l'aide d'outils prenant en charge HXL.",
+            "es": "Si su conjunto de datos contiene muchas columnas de indicadores, no tiene que etiquetarlos a todos. Agregue hashtags solo a las columnas en las que se podría trabajar con herramientas compatibles con HXL."
         }
     },
     "people_tags": {
         "question": {
             "en": "What is the humanitarian context?",
-            "fr": "Quel est le contexte humanitaire?"
+            "fr": "Quel est le contexte humanitaire?",
+            "es": "¿Cuál es el contexto humanitario?"
         },
         "options": [
             {
                 "text": {
                     "en": "General population (including those not affected by the crisis)",
-                    "fr": "Population générale (y compris ceux qui n'ont pas été touchés par la crise)"
+                    "fr": "Population générale (y compris ceux qui n'ont pas été touchés par la crise)",
+                    "es": "Población en general (incluidos los no afectados por la crisis)"
                 },
                 "dest": "gender_atts",
                 "hashtag": "population"
@@ -173,7 +182,8 @@
             {
                 "text": {
                     "en": "Affected by the crisis (including those not in need of assistance)",
-                    "fr": "Touchées par la crise (y compris ceux qui n'ont pas besoin d'assistance)"
+                    "fr": "Touchées par la crise (y compris ceux qui n'ont pas besoin d'assistance)",
+                    "es": "Afectados por la crisis (incluidos aquellos que no necesitan asistencia)"
                 },
                 "hashtag": "affected",
                 "dest": "counting_atts"
@@ -181,7 +191,8 @@
             {
                 "text": {
                     "en": "In need of humanitarian assistance (including those not targeted)",
-                    "fr": "Besoin d'une assistance humanitaire (y compris ceux qui ne sont pas ciblés)"
+                    "fr": "Besoin d'une assistance humanitaire (y compris ceux qui ne sont pas ciblés)",
+                    "es": "Necesidad de asistencia humanitaria (incluidos los que no son destinados)"
                 },
                 "hashtag": "inneed",
                 "dest": "counting_atts"
@@ -189,7 +200,8 @@
             {
                 "text": {
                     "en": "Targeted for humanitarian assistance (including those not yet reached)",
-                    "fr": "Ciblés pour l'aide humanitaire (y compris ceux qui ne sont pas encore atteints)"
+                    "fr": "Ciblés pour l'aide humanitaire (y compris ceux qui ne sont pas encore atteints)",
+                    "es": "Destinados a la asistencia humanitaria (incluidos los que aún no han sido alcanzados)"
                 },
                 "hashtag": "targeted",
                 "dest": "counting_atts"
@@ -197,7 +209,8 @@
             {
                 "text": {
                     "en": "Actually reached with humanitarian assistance",
-                    "fr": "Effectivement touchés par une aide humanitaire"
+                    "fr": "Effectivement touchés par une aide humanitaire",
+                    "es": "Alcanzados con ayuda humanitaria"
                 },
                 "hashtag": "reached",
                 "dest": "counting_atts"
