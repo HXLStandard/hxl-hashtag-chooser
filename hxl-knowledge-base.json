@@ -557,7 +557,7 @@
                 "text": {
                     "en": "I don't need to specify",
                     "fr": "C'est sans importance",
-                    "es": "No es necesario especificar"
+                    "es": "No importa"
                 },
                 "dest": "code_atts"
             },
@@ -999,19 +999,22 @@
     "id_atts": {
         "question": {
             "en": "What kind of names or identifiers are in the column?",
-            "fr": "Quels types de noms ou d'identifiants se trouvent dans la colonne?"
+            "fr": "Quels types de noms ou d'identifiants se trouvent dans la colonne?",
+            "es": "¿Qué tipo de nombres o identificadores hay en la columna?"
         },
         "options": [
             {
                 "text": {
                     "en": "I don't need to specify",
-                    "fr": "Ça n'a pas d'importance"
+                    "fr": "Ça n'a pas d'importance",
+                    "es": "No importa"
                 }
             },
             {
                 "text": {
                     "en": "A name or title",
-                    "fr": "Un nom ou un titre"
+                    "fr": "Un nom ou un titre",
+                    "es": "Un nombre o título"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
@@ -1019,14 +1022,16 @@
             {
                 "text": {
                     "en": "A unique identifier",
-                    "fr": "Un identifiant unique"
+                    "fr": "Un identifiant unique",
+                    "es": "Un identificador único"
                 },
                 "attribute": "id"
             },
             {
                 "text": {
                     "en": "A type or classification",
-                    "fr": "Un type ou une classification"
+                    "fr": "Un type ou une classification",
+                    "es": "Un tipo o clasificación"
                 },
                 "attribute": "type"
             }
@@ -1040,13 +1045,15 @@
             {
                 "text": {
                     "en": "I don't need to specify",
-                    "fr": "Ça n'a pas d'importance"
+                    "fr": "Ça n'a pas d'importance",
+                    "es": "No importa"
                 }
             },
             {
                 "text": {
                     "en": "Names or titles",
-                    "fr": "Noms ou titres"
+                    "fr": "Noms ou titres",
+                    "es": "Nombres o títulos"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
@@ -1054,14 +1061,16 @@
             {
                 "text": {
                     "en": "Unique codes (like P-codes)",
-                    "fr": "Codes uniques (comme des P-codes)"
+                    "fr": "Codes uniques (comme des P-codes)",
+                    "es": "Códigos únicos (como P-codes)"
                 },
                 "attribute": "code"
             },
             {
                 "text": {
                     "en": "A type or classification",
-                    "fr": "Un type ou une classification"
+                    "fr": "Un type ou une classification",
+                    "es": "Un tipo o clasificación"
                 },
                 "attribute": "type",
                 "exclude": [
@@ -1073,61 +1082,72 @@
     "date_atts": {
         "question": {
             "en": "What kinds of dates are in the column?",
-            "fr": "Quels types de dates figurent dans la colonne ?"
+            "fr": "Quels types de dates figurent dans la colonne ?",
+            "es": "¿Qué tipo de fechas hay en la columna?"
         },
         "options": [
             {
                 "text": {
                     "en": "I don't need to specify",
-                    "fr": "Ça n'a pas d'importance"
+                    "fr": "Ça n'a pas d'importance",
+                    "es": "No importa"
                 },
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
-                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
+                    "en": "The preferred date format is YYYY-MM-DD following the international ISO 8601 standard, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ suivant la norme internationale ISO 8601, par ex. «2019-04-01». Vous pouvez également abréger uniquement le mois («2019-04») ou simplement l'année («2019»).",
+                    "es": "El formato de fecha preferido es AAAA-MM-DD siguiendo la norma internacional ISO 8601, p. Ej. \"2019-04-01\". También puede abreviar solo al mes (\"2019-04\") o solo al año (\"2019\")."
                 }
             },
             {
                 "text": {
                     "en": "Start dates",
-                    "fr": "Dates de début"
+                    "fr": "Dates de début",
+                    "es": "Fechas de inicio"
                 },
                 "attribute": "start",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
-                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
+                    "en": "The preferred date format is YYYY-MM-DD following the international ISO 8601 standard, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ suivant la norme internationale ISO 8601, par ex. «2019-04-01». Vous pouvez également abréger uniquement le mois («2019-04») ou simplement l'année («2019»).",
+                    "es": "El formato de fecha preferido es AAAA-MM-DD siguiendo la norma internacional ISO 8601, p. Ej. \"2019-04-01\". También puede abreviar solo al mes (\"2019-04\") o solo al año (\"2019\")."
                 }
             },
             {
                 "text": {
                     "en": "End dates",
-                    "fr": "Dates de fin"
+                    "fr": "Dates de fin",
+                    "es": "Fechas de finalización"
                 },
                 "attribute": "end",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
-                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
+                    "en": "The preferred date format is YYYY-MM-DD following the international ISO 8601 standard, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ suivant la norme internationale ISO 8601, par ex. «2019-04-01». Vous pouvez également abréger uniquement le mois («2019-04») ou simplement l'année («2019»).",
+                    "es": "El formato de fecha preferido es AAAA-MM-DD siguiendo la norma internacional ISO 8601, p. Ej. \"2019-04-01\". También puede abreviar solo al mes (\"2019-04\") o solo al año (\"2019\")."
                 }
             },
             {
                 "text": {
                     "en": "The dates when something happened",
-                    "fr": "Les dates aux lesquelles quelque chose s'est passé"
+                    "fr": "Les dates auxquelles un événement s'est produit",
+                    "es": "Las fechas en las que ocurrió un evento"
                 },
                 "attribute": "occurred",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
-                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
+                    "en": "The preferred date format is YYYY-MM-DD following the international ISO 8601 standard, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ suivant la norme internationale ISO 8601, par ex. «2019-04-01». Vous pouvez également abréger uniquement le mois («2019-04») ou simplement l'année («2019»).",
+                    "es": "El formato de fecha preferido es AAAA-MM-DD siguiendo la norma internacional ISO 8601, p. Ej. \"2019-04-01\". También puede abreviar solo al mes (\"2019-04\") o solo al año (\"2019\")."
                 }
             },
             {
                 "text": {
                     "en": "Reporting dates",
-                    "fr": "Dates de rapport"
+                    "fr": "Dates de rapport",
+                    "es": "Fechas de presentación de informes"
                 },
                 "attribute": "reported",
                 "note": {
-                    "en": "The preferred date format is YYYY-MM-DD, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
-                    "fr": "Le format de date préféré est AAAA-MM-JJ, par ex. \"01/04/2019 \". Vous pouvez également abréger uniquement le mois (\"2019-04 \") ou simplement l'année (\"2019 \")."
+                    "en": "The preferred date format is YYYY-MM-DD following the international ISO 8601 standard, e.g. \"2019-04-01\". You may also abbreviate to just the month (\"2019-04\") or just the year (\"2019\").",
+                    "fr": "Le format de date préféré est AAAA-MM-JJ suivant la norme internationale ISO 8601, par ex. «2019-04-01». Vous pouvez également abréger uniquement le mois («2019-04») ou simplement l'année («2019»).",
+                    "es": "El formato de fecha preferido es AAAA-MM-DD siguiendo la norma internacional ISO 8601, p. Ej. \"2019-04-01\". También puede abreviar solo al mes (\"2019-04\") o solo al año (\"2019\")."
                 }
             }
         ]
@@ -1135,13 +1155,15 @@
     "adm_atts": {
         "question": {
             "en": "What kinds of names or codes does the column contain?",
-            "fr": "Quels types de noms ou de codes la colonne contient-elle ?"
+            "fr": "Quels types de noms ou de codes la colonne contient-elle ?",
+            "es": "¿Qué tipo de nombres o códigos contiene la columna?"
         },
         "options": [
             {
                 "text": {
                     "en": "Names or titles",
-                    "fr": "Noms ou titres"
+                    "fr": "Noms ou titres",
+                    "es": "Nombres o títulos"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
@@ -1149,7 +1171,8 @@
             {
                 "text": {
                     "en": "Unique codes (like P-codes)",
-                    "fr": "Codes uniques (comme des P-codes)"
+                    "fr": "Codes uniques (comme des P-codes)",
+                    "es": "Códigos únicos (como P-codes)"
                 },
                 "attribute": "code",
                 "dest": "geocode_atts"
@@ -1159,66 +1182,76 @@
     "lang_atts": {
         "question": {
             "en": "Do you want to identify the language of the text in the column?",
-            "fr": "Voulez-vous identifier la langue du texte dans la colonne?"
+            "fr": "Voulez-vous identifier la langue du texte dans la colonne?",
+            "es": "¿Quisiera declarar el idioma del texto en la columna?"
         },
         "options": [
             {
                 "text": {
                     "en": "No, I want to leave it unspecified",
-                    "fr": "Non, ça n'a pas d'importance"
+                    "fr": "Non, ça n'a pas d'importance",
+                    "es": "No importa"
                 }
             },
             {
                 "text": {
                     "en": "Yes, it's all in English",
-                    "fr": "Oui, c'est tout en anglais"
+                    "fr": "Oui, c'est tout en anglais",
+                    "es": "Sí, está todo en ingles"
                 },
                 "attribute": "i_en"
             },
             {
                 "text": {
                     "en": "Yes, it's all in French",
-                    "fr": "Oui, c'est tout en français"
+                    "fr": "Oui, c'est tout en français",
+                    "es": "Sí, está todo en frances"
                 },
                 "attribute": "i_fr"
             },
             {
                 "text": {
                     "en": "Yes, it's all in Arabic",
-                    "fr": "Oui, c'est tout en arabe"
+                    "fr": "Oui, c'est tout en arabe",
+                    "es": "Sí, está todo en árabe"
                 },
                 "attribute": "i_ar"
             },
             {
                 "text": {
                     "en": "Yes, it's all in Spanish",
-                    "fr": "Oui, c'est tout en espagnol"
+                    "fr": "Oui, c'est tout en espagnol",
+                    "es": "Sí, está todo en español"
                 },
                 "attribute": "i_es"
             },
             {
                 "text": {
-                    "en": "Yes, it's all in Russian",
-                    "fr": "Oui, c'est tout en russe"
+                    "en": "Yes, it's all in Portuguese",
+                    "fr": "Oui, c'est tout en portugais",
+                    "es": "Sí, está todo en portugues"
                 },
-                "attribute": "i_ru"
+                "attribute": "i_pt"
             },
             {
                 "text": {
                     "en": "Yes, it's all in Swahili",
-                    "fr": "Oui, c'est tout en swahili"
+                    "fr": "Oui, c'est tout en swahili",
+                    "es": "Sí, está todo en suajili"
                 },
                 "attribute": "i_sw"
             },
             {
                 "text": {
                     "en": "Yes, but the text is in a language not listed here",
-                    "fr": "Oui, mais le texte est dans une langue non répertoriée ici"
+                    "fr": "Oui, mais le texte est dans une langue non répertoriée ici",
+                    "es": "Sí, pero el idioma no aparece aquí"
                 },
                 "attribute": "i_xx",
                 "note": {
                     "en": "Replace the \"xx\" in +i_xx with the two-letter ISO 639 code for your language, e.g. +i_tl for Tagalog.",
-                    "fr": "Remplacez le \"xx\" dans +i_xx par le code ISO 639 à deux lettres de votre langue, par exemple +i_tl pour le tagalog."
+                    "fr": "Remplacez le «xx» dans +i_xx par le code ISO 639 à deux lettres de votre langue, par exemple +i_tl pour le tagalog.",
+                    "es": "Reemplace \"xx\" en +i_xx con el código ISO 639 de dos letras para su idioma, p. Ej. +i_tl para tagalo."
                 }
             }
         ]
