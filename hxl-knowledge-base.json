@@ -396,13 +396,15 @@
     "event_tags": {
         "question": {
             "en": "What kind of crisis or event information?",
-            "fr": "Quel genre d'infos sur un crise ou une événement ?"
+            "fr": "Quel genre d'infos sur un crise ou une événement ?",
+            "es": "¿Qué tipo de información sobre crisis o eventos?"
         },
         "options": [
             {
                 "text": {
                     "en": "A major humanitarian crisis/emergency",
-                    "fr": "Une crise humanitaire majeure"
+                    "fr": "Une crise humanitaire majeure",
+                    "es": "Una gran emergencia humanitaria"
                 },
                 "hashtag": "crisis",
                 "dest": "code_atts"
@@ -410,7 +412,8 @@
             {
                 "text": {
                     "en": "A specific event or incident",
-                    "fr": "Un événement ou un incident"
+                    "fr": "Un événement ou un incident",
+                    "es": "Un evento o incidente"
                 },
                 "hashtag": "event",
                 "dest": "id_atts"
@@ -418,7 +421,8 @@
             {
                 "text": {
                     "en": "A non-humanitarian actor, such as a militia",
-                    "fr": "Un acteur non humanitaire, comme une milice"
+                    "fr": "Un acteur non humanitaire, comme une milice",
+                    "es": "Un actor no humanitario, como una milicia"
                 },
                 "hashtag": "group",
                 "dest": "id_atts"
@@ -426,7 +430,8 @@
             {
                 "text": {
                     "en": "Barriers or restrictions on humanitarian access",
-                    "fr": "Obstacles ou restrictions à l'accès humanitaire"
+                    "fr": "Obstacles ou restrictions à l'accès humanitaire",
+                    "es": "Obstáculos o restricciones al acceso humanitario"
                 },
                 "hashtag": "access",
                 "dest": "code_atts"
@@ -434,7 +439,8 @@
             {
                 "text": {
                     "en": "The cause of something",
-                    "fr": "La cause de quelque chose"
+                    "fr": "La cause de quelque chose",
+                    "es": "La causa de algo"
                 },
                 "hashtag": "cause",
                 "dest": "code_atts"
@@ -442,7 +448,8 @@
             {
                 "text": {
                     "en": "The frequency of something",
-                    "fr": "La fréquence de quelque chose"
+                    "fr": "La fréquence de quelque chose",
+                    "es": "La frecuencia de algo"
                 },
                 "hashtag": "frequency",
                 "dest": "code_atts"
@@ -450,7 +457,8 @@
             {
                 "text": {
                     "en": "The severity of something",
-                    "fr": "La gravité de quelque chose"
+                    "fr": "La gravité de quelque chose",
+                    "es": "La severidad de algo"
                 },
                 "hashtag": "severity",
                 "dest": "code_atts"
@@ -458,7 +466,8 @@
             {
                 "text": {
                     "en": "An impact of something",
-                    "fr": "L'impact de quelque chose"
+                    "fr": "L'impact de quelque chose",
+                    "es": "Un impacto de algo"
                 },
                 "hashtag": "impact",
                 "dest": "code_atts"
