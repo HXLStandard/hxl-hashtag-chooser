@@ -23,6 +23,9 @@ if sys.version_info < (3, ):
 with open("hxl-knowledge-base.json", "r") as input:
     base = json.load(input)
 
+with open("translations.json", "r") as input:
+    translations = json.load(input)
+
 if len(sys.argv) == 2:
     lang = sys.argv[1].lower()
 else:
@@ -33,6 +36,13 @@ print("Generating in {}".format(lang), file=sys.stderr)
 def esc(s):
     """ Escape HTML special characters """
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("\"", "&quot;").replace("'", "&apos;")
+
+def t(s):
+    """ Return a translation if available """
+    if s in translations and lang in translations[s]:
+        return translations[s][lang]
+    else:
+        return s
 
 def make_tagspec(hashtag, attributes):
     attributes = [attribute for attribute in attributes if attribute]
@@ -81,18 +91,17 @@ def display_question(id, hashtag=None, attributes=[], previous_id=None):
     # navigation
     print("      <div class=\"nav\">")
     if previous_id is not None:
-        print("      <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc("Retour" if lang == "fr" else "Back")))
+        print("      <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc(t("Back"))))
     else:
         print("      <a>&nbsp</a>")
     if id == "top":
-        print("          <a>{}</a>".format(esc("Sélecteur de hashtags HXL" if lang=="fr" else "HXL hashtag chooser")))
+        print("          <a>{}</a>".format(esc(t("HXL Hashtag Chooser"))))
     else:
-        print("          <a href=\"#_top\">{}</a>".format(esc("Recommencer" if lang=="fr" else "Restart")))
-    if lang == "en":
-        print("          <a href=\"../fr/index.html\">fr</a>")
-    else:
-        print("          <a href=\"../en/index.html\">en</a>")
-    print("          <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc("Dictionnaire de HXL" if lang=="fr" else "HXL Dictionary")))
+        print("          <a href=\"#_top\">{}</a>".format(esc(t("Restart"))))
+    for link_lang in ("en", "fr", "es",):
+        if lang != link_lang:
+            print("          <a href=\"../{lang}/index.html\">{lang}</a>".format(lang=link_lang))
+    print("          <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc(t("HXL Dictionary"))))
     print("        </div>")
 
     # end of question
@@ -151,9 +160,9 @@ def display_result(option, hashtag, attributes, previous_id):
         print("       <p class=\"note\">{}</p>".format(text(option["note"])))
     print("      <p class=\"post-text\">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>")
     print("      <div class=\"nav\">")
-    print("        <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc("Retour" if lang=="fr" else "Back")))
-    print("        <a href=\"#_top\">{}</a>".format(esc("Recommencer" if lang=="fr" else "Restart")))
-    print("        <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc("Dicionnaire de HXL" if lang == "fr" else "HXL dictionary")))
+    print("        <a href=\"#{}\">◀️ {}</a>".format(esc(previous_id), esc(t("Back"))))
+    print("        <a href=\"#_top\">{}</a>".format(esc(t("Restart"))))
+    print("        <a href=\"http://hxlstandard.org/standard/1_1final/dictionary\" target=\"_blank\">📖 {}</a>".format(esc(t("HXL dictionary"))))
     print("      </div>")
     print("    </section>")
 

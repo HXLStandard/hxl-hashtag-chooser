@@ -2,34 +2,39 @@
     "top": {
         "question": {
             "en": "What kind of data do you have in the column?",
-            "fr": "Quel type de données se trouve dans la colonne ?"
+            "fr": "Quel type de données se trouve dans la colonne ?",
+            "es": "¿Qué tipo de datos contiene la columna?"
         },
         "options": [
             {
                 "text": {
                     "en": "Numbers of people (e.g. census, assessment)",
-                    "fr": "Chiffres de la population ou du nombre de cas"
+                    "fr": "Chiffres de la population ou du nombre de cas",
+                    "es": "Cifras de población o número de casos"
                 },
                 "dest": "people_tags"
             },
             {
                 "text": {
                     "en": "Places",
-                    "fr": "Lieux"
+                    "fr": "Lieux",
+                    "es": "Lugares"
                 },
                 "dest": "place_tags"
             },
             {
                 "text": {
                     "en": "Survey or assessment results",
-                    "fr": "Résultats d'une enquête ou d'une évaluation"
+                    "fr": "Résultats d'une enquête ou d'une évaluation",
+                    "es": "Resultados de encuestas o evaluaciones"
                 },
                 "dest": "survey_tags"
             },
             {
                 "text": {
-                    "en": "Humanitarian organisations",
-                    "fr": "Organisations humanitaires"
+                    "en": "Humanitarian organisations (donors, multilaterals, NGOs)",
+                    "fr": "Organisations humanitaires (bailleurs de fonds, agences, ONG)",
+                    "es": "Organizaciones humanitarias (financiadores, agencias, ONG)"
                 },
                 "hashtag": "org",
                 "dest": "org_atts"
@@ -37,21 +42,24 @@
             {
                 "text": {
                     "en": "Humanitarian response (activities, clusters, etc.)",
-                    "fr": "Réponse humanitaire (activités, secteurs, etc.)"
+                    "fr": "Réponse humanitaire (activités, secteurs, etc.)",
+                    "es": "Respuesta humanitaria (actividades, clusters, etc.)"
                 },
                 "dest": "response_tags"
             },
             {
                 "text": {
                     "en": "Crises or events (e.g. security incidents)",
-                    "fr": "Crises ou événements (p. Ex. Incidents de sécurité)"
+                    "fr": "Crises ou événements (p. Ex. Incidents de sécurité)",
+                    "es": "Crisis o eventos (por ejemplo, incidentes de seguridad)"
                 },
                 "dest": "event_tags"
             },
             {
                 "text": {
                     "en": "Dates",
-                    "fr": "Dates"
+                    "fr": "Dates",
+                    "es": "Fechas"
                 },
                 "hashtag": "date",
                 "dest": "date_atts"
@@ -59,14 +67,16 @@
             {
                 "text": {
                     "en": "Cash or financial information",
-                    "fr": "Cash ou informations financières"
+                    "fr": "Cash ou informations financières",
+                    "es": "Programación de cash o información financiera"
                 },
                 "dest": "cash_tags"
             },
             {
                 "text": {
                     "en": "General humanitarian indicators",
-                    "fr": "Indicateurs humanitaires généraux"
+                    "fr": "Indicateurs humanitaires généraux",
+                    "es": "Indicadores humanitarios generales"
                 },
                 "hashtag": "indicator",
                 "dest": "indicator_shape"
@@ -74,7 +84,8 @@
             {
                 "text": {
                     "en": "Metadata describing the data row (e.g. source)",
-                    "fr": "Métadonnées décrivant la ligne de données (par exemple, source)"
+                    "fr": "Métadonnées décrivant la ligne de données (par exemple, source)",
+                    "es": "Metadatos que describen la fila de datos (por ejemplo, la fuente de los datos)"
                 },
                 "hashtag": "meta",
                 "dest": "meta_atts"
@@ -82,12 +93,14 @@
             {
                 "text": {
                     "en": "None of the above",
-                    "fr": "Aucune de ces réponses"
+                    "fr": "Aucune de ces réponses",
+                    "es": "Ninguna de las anteriores"
                 },
                 "hashtag": "x_???",
                 "note": {
                     "en": "The core HXL hashtags cannot cover every specialised type of humanitarian data. If you cannot find any match for what you need to tag, you are free to create a custom hashtag beginning with \"#x_\", e.g. \"#x_virulence\".",
-                    "fr": "Les hashtags de base HXL ne peuvent pas couvrir tous les types spécialisés de données humanitaires. Si vous ne trouvez aucune correspondance pour ce que vous devez baliser, vous êtes libre de créer un hashtag personnalisé commençant par \"#x_\", par exemple \"#x_virulence\"."
+                    "fr": "Les hashtags de base HXL ne peuvent pas couvrir tous les types spécialisés de données humanitaires. Si vous ne trouvez aucune correspondance pour ce que vous devez baliser, vous êtes libre de créer un hashtag personnalisé commençant par \"#x_\", par exemple \"#x_virulence\".",
+                    "es": "Los hashtags básicos de HXL no pueden describir todos los tipos especializados de datos humanitarios. Si no puede encontrar ninguna coincidencia para lo que necesita etiquetar, puede crear un hashtag personalizado que comience con \"# x_\", p. Ej. \"# x_virulence\"."
                 }
             }
         ]
