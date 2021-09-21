@@ -1594,28 +1594,32 @@
             {
                 "text": {
                     "en": "Name of a contact person",
-                    "fr": "Le nom de la personne contact"
+                    "fr": "Le nom de la personne contact",
+                    "es": "Nombre de una persona de contacto"
                 },
                 "attribute": "name"
             },
             {
                 "text": {
                     "en": "Email address",
-                    "fr": "L'adresse email"
+                    "fr": "L'adresse email",
+                    "es": "Dirección de correo electrónico"
                 },
                 "attribute": "email"
             },
             {
                 "text": {
                     "en": "Phone number",
-                    "fr": "Le numéro de téléphone"
+                    "fr": "Le numéro de téléphone",
+                    "es": "Número de teléfono"
                 },
                 "attribute": "phone"
             },
             {
                 "text": {
-                    "en": "Web site",
-                    "fr": "Site web"
+                    "en": "Web site (URL)",
+                    "fr": "Site web (URL)",
+                    "es": "Sitio web (URL)"
                 },
                 "attribute": "url"
             }
@@ -1624,43 +1628,50 @@
     "meta_atts": {
         "question": {
             "en": "What kind of row metadata?",
-            "fr": "Quels genres de métadonnées?"
+            "fr": "Quels genres de métadonnées ?",
+            "es": "¿Qué tipo de metadatos de fila?"
         },
         "options": [
             {
                 "text": {
                     "en": "A unique identifier for the record/row",
-                    "fr": "Un identifiant unique par enregistrement/ligne"
+                    "fr": "Un identifiant unique par enregistrement/ligne",
+                    "es": "Un identificador único para el registro / fila"
                 },
                 "attribute": "id",
                 "note": {
                     "en": "Assumed to be unique only within the dataset, not globally.",
-                    "fr": "Supposé unique seulement dans l'ensemble de données, et non global"
+                    "fr": "Supposé unique seulement dans l'ensemble de données, et non global",
+                    "es": "Se supone que es único solo dentro del conjunto de datos, no a nivel mundial."
                 }
             },
             {
                 "text": {
                     "en": "The source of the data",
-                    "fr": "La source des données"
+                    "fr": "La source des données",
+                    "es": "La fuente de los datos"
                 },
                 "attribute": "source"
             },
             {
                 "text": {
                     "en": "A URL for the data in the row",
-                    "fr": "Une URL pour les données de la ligne"
+                    "fr": "Une URL pour les données de la ligne",
+                    "es": "Una URL para los datos de la fila"
                 },
                 "attribute": "url"
             },
             {
                 "text": {
                     "en": "Metadata not listed above",
-                    "fr": "La métadonnée n'est pas listée en-dessus"
+                    "fr": "La métadonnée n'est pas listée en-dessus",
+                    "es": "Metadatos no enumerados arriba"
                 },
-                "attribute": "XXX",
+                "attribute": "xxx",
                 "note": {
                     "en": "You can invent any custom attribute you need to describe your metadata, e.g. +certainty",
-                    "fr": "Vous pouvez créer l'attribut, quelconque dont vous avez besoin pour décrire la métadonnée, exemple +certainty"
+                    "fr": "Vous pouvez créer l'attribut, quelconque dont vous avez besoin pour décrire la métadonnée, exemple +certainty",
+                    "es": "Puede inventar cualquier atributo personalizado que necesite para describir sus metadatos, p. Ej. +certainty"
                 }
             }
         ]
@@ -1668,20 +1679,23 @@
     "activity_atts": {
         "question": {
             "en": "What kind of aid activity/etc. is this?",
-            "fr": "Quelle genre d'activité/etc d'aide est-ce?"
+            "fr": "Quelle genre d'activité/etc d'aide est-ce?",
+            "es": "¿Qué tipo de actividad de ayuda es esta?"
         },
         "options": [
             {
                 "text": {
                     "en": "I don't need to specify",
-                    "fr": "Pas besoin de préciser"
+                    "fr": "Pas besoin de préciser",
+                    "es": "No importa"
                 },
                 "dest": "id_atts"
             },
             {
                 "text": {
                     "en": "A programme",
-                    "fr": "Un programme"
+                    "fr": "Un programme",
+                    "es": "Un programa"
                 },
                 "attribute": "programme",
                 "dest": "id_atts"
@@ -1689,7 +1703,8 @@
             {
                 "text": {
                     "en": "A project",
-                    "fr": "Un projet"
+                    "fr": "Un projet",
+                    "es": "Un proyecto"
                 },
                 "attribute": "project",
                 "dest": "id_atts"
@@ -1697,7 +1712,8 @@
             {
                 "text": {
                     "en": "An activity",
-                    "fr": "Une activité"
+                    "fr": "Une activité",
+                    "es": "Una actividad"
                 },
                 "attribute": "activity",
                 "dest": "id_atts"
