@@ -2,7 +2,7 @@
     "top": {
         "question": {
             "en": "What kind of data do you have in the column?",
-            "fr": "Quel type de données se trouve dans la colonne ?",
+            "fr": "Quel type de données se trouve dans la colonne ?",
             "es": "¿Qué tipo de datos contiene la columna?"
         },
         "options": [
@@ -108,7 +108,7 @@
     "counting_atts": {
         "question": {
             "en": "What are you counting?",
-            "fr": "Vous comptez quoi ?",
+            "fr": "Vous comptez quoi ?",
             "es": "¿Que se esta contando?"
         },
         "options": [
@@ -135,7 +135,7 @@
     "indicator_shape": {
         "question": {
             "en": "How is your overall dataset shaped?",
-            "fr": "Quelle est la forme de votre jeu de données ?",
+            "fr": "Quelle est la forme de votre jeu de données ?",
             "es": "¿Cómo se forma su conjunto de datos?"
         },
         "options": [
@@ -220,7 +220,7 @@
     "survey_tags": {
         "question": {
             "en": "What kind of survey/assessment information?",
-            "fr": "Quel type d'information d'enquête ?",
+            "fr": "Quel type d'information d'enquête ?",
             "es": "¿Qué tipo de información de encuesta / evaluación?"
         },
         "options": [
@@ -289,7 +289,7 @@
     "place_tags": {
         "question": {
             "en": "What kind of places?",
-            "fr": "Quel genre d'endroits ?",
+            "fr": "Quel genre d'endroits ?",
             "es": "¿Qué tipo de lugares?"
         },
         "options": [
@@ -324,7 +324,7 @@
     "response_tags": {
         "question": {
             "en": "What kind of response information?",
-            "fr": "Quel genre d'infos sur la réponse ?",
+            "fr": "Quel genre d'infos sur la réponse ?",
             "es": "¿Qué tipo de información sobre la respuesta?"
         },
         "options": [
@@ -396,7 +396,7 @@
     "event_tags": {
         "question": {
             "en": "What kind of crisis or event information?",
-            "fr": "Quel genre d'infos sur un crise ou une événement ?",
+            "fr": "Quel genre d'infos sur un crise ou une événement ?",
             "es": "¿Qué tipo de información sobre crisis o eventos?"
         },
         "options": [
@@ -477,7 +477,7 @@
     "admin_tags": {
         "question": {
             "en": "What administrative level?",
-            "fr": "Quel niveau administratif ?",
+            "fr": "Quel niveau administratif ?",
             "es": "¿Qué nivel administrativo?"
         },
         "options": [
@@ -549,7 +549,7 @@
     "sector_tags": {
         "question": {
             "en": "What kind of sector or cluster?",
-            "fr": "Quel type de cluster ou de secteur ?",
+            "fr": "Quel type de cluster ou de secteur ?",
             "es": "¿Qué tipo de sector o clúster?"
         },
         "options": [
@@ -594,7 +594,7 @@
     "cash_tags": {
         "question": {
             "en": "What kind of cash/finance information?",
-            "fr": "Quel type de données de cash ou financières ?",
+            "fr": "Quel type de données de cash ou financières ?",
             "es": "¿Qué tipo de información de cash / finanzas?"
         },
         "options": [
@@ -720,7 +720,7 @@
     "gender_atts": {
         "question": {
             "en": "Does the data in the column apply to a single gender?",
-            "fr": "Les données de la colonne s'appliquent-elles à un seul genre ?",
+            "fr": "Les données de la colonne s'appliquent-elles à un seul genre ?",
             "es": "¿Los datos de la columna se aplican a un solo género?"
         },
         "options": [
@@ -764,7 +764,7 @@
     "age_atts": {
         "question": {
             "en": "Does the data apply to a specific age group?",
-            "fr": "Les données s'appliquent-elles à un seul groupe d'âge ?",
+            "fr": "Les données s'appliquent-elles à un seul groupe d'âge ?",
             "es": "¿Los datos se aplican a un grupo de edad específico?"
         },
         "options": [
@@ -850,7 +850,7 @@
     "geo_atts": {
         "question": {
             "en": "What kind of geographic information?",
-            "fr": "Quel genre d'informations géographiques ?",
+            "fr": "Quel genre d'informations géographiques ?",
             "es": "¿Qué tipo de información geográfica?"
         },
         "options": [
@@ -911,7 +911,7 @@
     "movement_atts": {
         "question": {
             "en": "Is this location part of a population movement?",
-            "fr": "Cet emplacement fait-il partie d'un mouvement de population ?",
+            "fr": "Cet emplacement fait-il partie d'un mouvement de population ?",
             "es": "¿Esta ubicación es parte de un movimiento de población?"
         },
         "options": [
@@ -955,7 +955,7 @@
     "loc_atts": {
         "question": {
             "en": "What kind of locations are they?",
-            "fr": "Quels types d'lieux sont-ils ?",
+            "fr": "Quels types d'lieux sont-ils ?",
             "es": "¿Qué tipo de ubicaciones?"
         },
         "options": [
@@ -1082,7 +1082,7 @@
     "date_atts": {
         "question": {
             "en": "What kinds of dates are in the column?",
-            "fr": "Quels types de dates figurent dans la colonne ?",
+            "fr": "Quels types de dates figurent dans la colonne ?",
             "es": "¿Qué tipo de fechas hay en la columna?"
         },
         "options": [
@@ -1155,7 +1155,7 @@
     "adm_atts": {
         "question": {
             "en": "What kinds of names or codes does the column contain?",
-            "fr": "Quels types de noms ou de codes la colonne contient-elle ?",
+            "fr": "Quels types de noms ou de codes la colonne contient-elle ?",
             "es": "¿Qué tipo de nombres o códigos contiene la columna?"
         },
         "options": [
@@ -1259,23 +1259,27 @@
     "geocode_atts": {
         "question": {
             "en": "Do you want to indicate what code list you are using?",
-            "fr": "Voulez-vous indiquez le système de code que vous utilisez?"
+            "fr": "Voulez-vous indiquez le système de code que vous utilisez?",
+            "es": "¿Quisiera indicar qué lista de códigos está utilizando?"
         },
         "pre-text": {
             "en": "We assume ISO3 for countries and P-codes for administrative subdivisions if unspecified.",
-            "fr": "Si rien n'est spécifié, nous utiliserons pour les pays le code ISO3 et les P-codes pour les subdivisions administratives."
+            "fr": "Si rien n'est spécifié, nous utiliserons pour les pays le code ISO3 et les P-codes pour les subdivisions administratives.",
+            "es": "Por defecto, se utiliza ISO3 para los países y P-codes para las subdivisiones administrativas si no se especifica."
         },
         "options": [
             {
                 "text": {
                     "en": "No, leave it unspecified",
-                    "fr": "Non, aucune spécification"
+                    "fr": "Non, aucune spécification",
+                    "es": "No, déjalo sin especificar"
                 }
             },
             {
                 "text": {
                     "en": "Yes, specify ISO3 country codes (like \"SYR\" for Syria)",
-                    "fr": "Oui, utiliser le code ISO3 pour les pays (exemple \"SYR\" pour la Syrie)"
+                    "fr": "Oui, utiliser le code ISO3 pour les pays (exemple «SYR» pour la Syrie)",
+                    "es": "Sí, son códigos de país ISO3 (como \"VEN\" para Venezuela)"
                 },
                 "attribute": "v_iso3",
                 "include": [
@@ -1285,7 +1289,8 @@
             {
                 "text": {
                     "en": "Yes, specify ISO2 country codes (like \"SY\" for Syria)",
-                    "fr": "Oui, utiliser le code ISO2 pour les pays (exemple \"SY\" pour la Syrie)"
+                    "fr": "Oui, utiliser le code ISO2 pour les pays (exemple \"SY\" pour la Syrie)",
+                    "es": "Sí, son códigos de país ISO2 (como \"VE\" para Venezuela)"
                 },
                 "attribute": "v_iso2",
                 "include": [
@@ -1295,7 +1300,8 @@
             {
                 "text": {
                     "en": "Yes, specify P-codes",
-                    "fr": "Oui, utiliser les P-codes"
+                    "fr": "Oui, utiliser les P-codes",
+                    "es": "Sí, son P-codes"
                 },
                 "attribute": "v_pcodes",
                 "exclude": [
@@ -1308,13 +1314,15 @@
     "indicator_atts": {
         "question": {
             "en": "What do these values tell about the indicator (one indicator per row)?",
-            "fr": "Qu'est ce que ces données renseignent sur les indicateurs (un indicateur par ligne)?"
+            "fr": "Qu'est ce que ces données renseignent sur les indicateurs (un indicateur par ligne) ?",
+            "es": "¿Qué información especifican estos valores sobre el indicador (un indicador por fila)?"
         },
         "options": [
             {
                 "text": {
                     "en": "The indicator's name",
-                    "fr": "Le nom de l'indicateur"
+                    "fr": "Le nom de l'indicateur",
+                    "es": "El nombre del indicador"
                 },
                 "attribute": "name",
                 "dest": "lang_atts"
@@ -1322,21 +1330,24 @@
             {
                 "text": {
                     "en": "The indicator's identifier or code",
-                    "fr": "L'identifiant ou le code de l'indicateur"
+                    "fr": "L'identifiant ou le code de l'indicateur",
+                    "es": "El código del indicador"
                 },
                 "attribute": "code"
             },
             {
                 "text": {
-                    "en": "The indicators type/classification",
-                    "fr": "Le type/classe de l'indicateur"
+                    "en": "The indicator's type/classification",
+                    "fr": "Le type/classe de l'indicateur",
+                    "es": "El tipo o clasificación del indicador"
                 },
                 "attribute": "type"
             },
             {
                 "text": {
                     "en": "The indicator's value",
-                    "fr": "La valeur de l'indicateur"
+                    "fr": "La valeur de l'indicateur",
+                    "es": "El valor del indicador"
                 },
                 "attribute": "value",
                 "dest": "datatype_atts"
@@ -1345,41 +1356,47 @@
     },
     "datatype_atts": {
         "question": {
-            "en": "What is the most-specific data type that applies to every indicator value?",
-            "fr": "Quel est le type de donnée le plus spécifique pour chaque valeur d'indicateur?"
+            "en": "What is the most-specific data type that applies to every value in the column?",
+            "fr": "Quel est le type de données le plus spécifique qui s'applique à chaque valeur de la colonne ?",
+            "es": "¿Cuál es el tipo de datos más específico que se aplica a cada valor de la columna?"
         },
         "options": [
             {
                 "text": {
-                    "en": "Mixed types, or all text",
-                    "fr": "Types mixtes, ou texte"
+                    "en": "Mixed data types, or all text",
+                    "fr": "Types de données mixtes ou tout texte",
+                    "es": "Tipos de datos mixtos o solo texto"
                 }
             },
             {
                 "text": {
-                    "en": "A boolean (true/false or yes/no-style) value",
-                    "fr": "Un booléen (vrai/faux ou oui/non)"
+                    "en": "A boolean value (true/false or yes/no)",
+                    "fr": "Un booléen (vrai/faux ou oui/non)",
+                    "es": "Un valor booleano (verdadero/falso o sí/no)"
                 },
                 "attribute": "bool"
             },
             {
                 "text": {
                     "en": "A percentage",
-                    "fr": "Un pourcentage"
+                    "fr": "Un pourcentage",
+                    "es": "Un porcentaje"
                 },
                 "attribute": "pct"
             },
             {
                 "text": {
                     "en": "Any other numeric value",
-                    "fr": "Toute autre valeur numérique"
+                    "fr": "Toute autre valeur numérique",
+                    "es": "Cualquier otro valor numérico"
                 },
                 "attribute": "num"
             },
             {
                 "text": {
-                    "en": "A web link",
-                    "fr": "Un lien de page internet"
+                    "en": "A web link (URL)",
+                    "fr": "Un lien de page internet (URL)",
+                    "es": "Un enlace web (URL)"
                 },
                 "attribute": "url"
             }
@@ -1387,21 +1404,24 @@
     },
     "org_atts": {
         "question": {
-            "en": "Are all the organisations tagged playing a specific role?",
-            "fr": "Est ce que toutes les organisations listées jouent un rôle spécifique?"
+            "en": "Do all the organisations in the column play the same role?",
+            "fr": "Est ce que toutes les organisations de la colonne jouent le même rôle ?",
+            "es": "¿Todas las organizaciones de la columna juegan el mismo papel?"
         },
         "options": [
             {
                 "text": {
                     "en": "No, there are different roles mixed in the column",
-                    "fr": "Non, il y a divers rôles par colonne"
+                    "fr": "Non, il y a différents rôles combinés dans la colonne",
+                    "es": "No, hay diferentes roles combinados en la columna"
                 },
                 "dest": "id_atts"
             },
             {
                 "text": {
-                    "en": "Yes, they are all donor organisations",
-                    "fr": "Oui, toutes sont des organisations donatrices"
+                    "en": "Yes, they are all donor organisations (funders)",
+                    "fr": "Oui, toutes sont des organisations donatrices (bailleurs de fonds)",
+                    "es": "Sí, todas son organizaciones donantes (financiadores)"
                 },
                 "attribute": "funding",
                 "dest": "id_atts"
@@ -1409,7 +1429,8 @@
             {
                 "text": {
                     "en": "Yes, they are all programming/extending organisations",
-                    "fr": "Oui, toutes sont des organisations de programmation"
+                    "fr": "Oui, toutes sont des organisations de programmation",
+                    "es": "Sí, todas son organizaciones de programación"
                 },
                 "attribute": "prog",
                 "dest": "id_atts"
@@ -1417,7 +1438,8 @@
             {
                 "text": {
                     "en": "Yes, they are all implementing partners",
-                    "fr": "Oui, toutes sont des partenaires d'implémentation"
+                    "fr": "Oui, toutes sont des partenaires d'implémentation",
+                    "es": "Sí, todas son organizaciones asociadas implementadoras"
                 },
                 "attribute": "impl",
                 "dest": "id_atts"
@@ -1425,7 +1447,8 @@
             {
                 "text": {
                     "en": "Yes, they are all organisations making a report",
-                    "fr": "Oui, toutes sont des organisatons faisant des rapports"
+                    "fr": "Oui, toutes sont des organisatons faisant des rapports",
+                    "es": "Sí, todas son organizaciones informantes"
                 },
                 "attribute": "reporting",
                 "dest": "id_atts"
@@ -1435,20 +1458,23 @@
     "value_atts": {
         "question": {
             "en": "What type of monetary value is this?",
-            "fr": "Quelle type de valeur monétaire est ce?"
+            "fr": "Quelle type de valeur monétaire est ce ?",
+            "es": "¿Qué tipo de valor monetario es este?"
         },
         "options": [
             {
                 "text": {
                     "en": "Not specified",
-                    "fr": "Aucune"
+                    "fr": "Aucune",
+                    "es": "No especificado"
                 },
                 "dest": "currency_atts"
             },
             {
                 "text": {
                     "en": "A cash transfer",
-                    "fr": "Transfert monétaire"
+                    "fr": "Transfert monétaire",
+                    "es": "Una transferencia de efectivo"
                 },
                 "attribute": "transfer",
                 "dest": "currency_atts"
@@ -1456,7 +1482,8 @@
             {
                 "text": {
                     "en": "An incoming funding commitment",
-                    "fr": "Un engagement de financement entrant"
+                    "fr": "Un engagement de financement entrant",
+                    "es": "Un compromiso financiero entrante"
                 },
                 "attribute": "incoming",
                 "dest": "currency_atts"
@@ -1464,31 +1491,35 @@
             {
                 "text": {
                     "en": "An outgoing funding commitment",
-                    "fr": "Un engagement de financement sortant"
+                    "fr": "Un engagement de financement sortant",
+                    "es": "Un compromiso financiero saliente"
                 },
                 "attribute": "outgoing",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "A budget",
-                    "fr": "Un budget"
+                    "en": "A budgeted figure",
+                    "fr": "Un chiffre budgétaire",
+                    "es": "Una cifra presupestaria"
                 },
                 "attribute": "budget",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "A disbursement",
-                    "fr": "Un decaissement"
+                    "en": "A disbursement to another aid organisation",
+                    "fr": "Un decaissement à une autre organisation d'aide",
+                    "es": "Un desembolso a otra organización de ayuda"
                 },
                 "attribute": "disbursement",
                 "dest": "currency_atts"
             },
             {
                 "text": {
-                    "en": "An expenditure",
-                    "fr": "Une dépense"
+                    "en": "A direct expenditure (expense)",
+                    "fr": "Une dépense directe",
+                    "es": "Un gasto directo"
                 },
                 "attribute": "expenditure",
                 "dest": "currency_atts"
@@ -1497,50 +1528,58 @@
     },
     "currency_atts": {
         "question": {
-            "en": "What currency do the monetary values represent?",
-            "fr": "Quelle devise la valeur monétaire représente elle ?"
+            "en": "What currency applies to the monetary values in the column?",
+            "fr": "Quelle devise s'applique aux valeurs monétaires de la colonne ?",
+            "es": "¿Qué moneda se aplica a los valores monetarios de la columna?"
         },
         "options": [
             {
                 "text": {
                     "en": "A mixture of different currencies",
-                    "fr": "Diverses devises"
+                    "fr": "Diverses devises",
+                    "es": "Monedas mixtas"
                 },
                 "note": {
-                    "en": "there should be another column tagged with #currency",
-                    "fr": "Il doit y avoir une autre colonne tagguée avec #currency"
+                    "en": "There should be another column tagged with #currency",
+                    "fr": "Il doit y avoir une autre colonne tagguée avec #currency",
+                    "es": "Debería haber otra columna etiquetada con #currency"
                 }
             },
             {
                 "text": {
-                    "en": "Us dollars",
-                    "fr": "Dollar américain"
+                    "en": "US dollars",
+                    "fr": "Dollar américain",
+                    "es": "Dólares estadounidenses"
                 },
-                "attribute": "usd"
+                "attribute": "c_usd"
             },
             {
                 "text": {
                     "en": "Euros",
-                    "fr": "Euros"
+                    "fr": "Euros",
+                    "es": "Euros"
                 },
-                "attribute": "eur"
+                "attribute": "c_eur"
             },
             {
                 "text": {
                     "en": "Pounds Sterling",
-                    "fr": "Livres Sterling"
+                    "fr": "Livres Sterling",
+                    "es": "Libra esterlina"
                 },
-                "attribute": "gbp"
+                "attribute": "c_gbp"
             },
             {
                 "text": {
-                    "en": "A currency not listed here",
-                    "fr": "La devise n'est pas listée"
+                    "en": "A different currency",
+                    "fr": "Une devise différente",
+                    "es": "Una moneda diferente"
                 },
-                "attribute": "xxx",
+                "attribute": "c_xxx",
                 "note": {
-                    "en": "Replace +xxx with your currency code, e.g. +xof for West African francs",
-                    "fr": "Remplacer +xxx avec le code de la devise correspondante, exemple +xof pour les pays de la zone UEMOA "
+                    "en": "Replace \"xxx\" with your currency code, e.g. +c_xof for West African francs",
+                    "fr": "Remplacer «xxx» avec le code de la devise correspondante, exemple +c_xof pour les pays de la zone UEMOA",
+                    "es": "Reemplaza \"xxx\" con tu código de moneda, p. Ej. +c_brl para reales brasileños"
                 }
             }
         ]
@@ -1548,7 +1587,8 @@
     "contact_atts": {
         "question": {
             "en": "What kind of contact information?",
-            "fr": "Quelles d'informations de contact?"
+            "fr": "Quelles d'informations de contact ?",
+            "es": "¿Qué tipo de información de contacto?"
         },
         "options": [
             {

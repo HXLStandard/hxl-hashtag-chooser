@@ -31108,13 +31108,13 @@
       </div>
     </section>
     <section class="question" id="indicator_MY_CUSTOM_ATTRIBUTE">
-      <h2>What is the most-specific data type that applies to every indicator value?</h2>
+      <h2>What is the most-specific data type that applies to every value in the column?</h2>
       <p class="progress"><span class="tagspec">#indicator +MY_CUSTOM_ATTRIBUTE</span></p>
-        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE__000">Mixed types, or all text</a></p>
-        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_bool_000">A boolean (true/false or yes/no-style) value</a></p>
+        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE__000">Mixed data types, or all text</a></p>
+        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_bool_000">A boolean value (true/false or yes/no)</a></p>
         <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_pct_000">A percentage</a></p>
         <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_num_000">Any other numeric value</a></p>
-        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_url_000">A web link</a></p>
+        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_url_000">A web link (URL)</a></p>
       <div class="nav">
       <a href="#_survey_tags">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -31189,10 +31189,10 @@
       </div>
     </section>
     <section class="question" id="org">
-      <h2>Are all the organisations tagged playing a specific role?</h2>
+      <h2>Do all the organisations in the column play the same role?</h2>
       <p class="progress"><span class="tagspec">#org</span></p>
         <p class="option"><a href="#org_">No, there are different roles mixed in the column</a></p>
-        <p class="option"><a href="#org_funding">Yes, they are all donor organisations</a></p>
+        <p class="option"><a href="#org_funding">Yes, they are all donor organisations (funders)</a></p>
         <p class="option"><a href="#org_prog">Yes, they are all programming/extending organisations</a></p>
         <p class="option"><a href="#org_impl">Yes, they are all implementing partners</a></p>
         <p class="option"><a href="#org_reporting">Yes, they are all organisations making a report</a></p>
@@ -35557,9 +35557,9 @@
         <p class="option"><a href="#value_transfer">A cash transfer</a></p>
         <p class="option"><a href="#value_incoming">An incoming funding commitment</a></p>
         <p class="option"><a href="#value_outgoing">An outgoing funding commitment</a></p>
-        <p class="option"><a href="#value_budget">A budget</a></p>
-        <p class="option"><a href="#value_disbursement">A disbursement</a></p>
-        <p class="option"><a href="#value_expenditure">An expenditure</a></p>
+        <p class="option"><a href="#value_budget">A budgeted figure</a></p>
+        <p class="option"><a href="#value_disbursement">A disbursement to another aid organisation</a></p>
+        <p class="option"><a href="#value_expenditure">A direct expenditure (expense)</a></p>
       <div class="nav">
       <a href="#_cash_tags">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -35569,13 +35569,13 @@
         </div>
     </section>
     <section class="question" id="value_">
-      <h2>What currency do the monetary values represent?</h2>
+      <h2>What currency applies to the monetary values in the column?</h2>
       <p class="progress"><span class="tagspec">#value</span></p>
         <p class="option"><a href="#value___000">A mixture of different currencies</a></p>
-        <p class="option"><a href="#value__usd_000">Us dollars</a></p>
-        <p class="option"><a href="#value__eur_000">Euros</a></p>
-        <p class="option"><a href="#value__gbp_000">Pounds Sterling</a></p>
-        <p class="option"><a href="#value__xxx_000">A currency not listed here</a></p>
+        <p class="option"><a href="#value__c_usd_000">US dollars</a></p>
+        <p class="option"><a href="#value__c_eur_000">Euros</a></p>
+        <p class="option"><a href="#value__c_gbp_000">Pounds Sterling</a></p>
+        <p class="option"><a href="#value__c_xxx_000">A different currency</a></p>
       <div class="nav">
       <a href="#value">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -35589,7 +35589,7 @@
       <div class="tagspec-container">
         <p class="tagspec final-tagspec">#value</p>
       </div>
-       <p class="note">there should be another column tagged with #currency</p>
+       <p class="note">There should be another column tagged with #currency</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_">◀️ Back</a>
@@ -35597,22 +35597,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value__usd_000">
+    <section class="result" id="value__c_usd_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +usd</p>
-      </div>
-      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
-      <div class="nav">
-        <a href="#value_">◀️ Back</a>
-        <a href="#_top">Restart</a>
-        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
-      </div>
-    </section>
-    <section class="result" id="value__eur_000">
-      <h2>Finished!</h2>
-      <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +eur</p>
+        <p class="tagspec final-tagspec">#value +c_usd</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35621,10 +35609,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value__gbp_000">
+    <section class="result" id="value__c_eur_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +gbp</p>
+        <p class="tagspec final-tagspec">#value +c_eur</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35633,12 +35621,24 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value__xxx_000">
+    <section class="result" id="value__c_gbp_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +xxx</p>
+        <p class="tagspec final-tagspec">#value +c_gbp</p>
       </div>
-       <p class="note">Replace +xxx with your currency code, e.g. +xof for West African francs</p>
+      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#value_">◀️ Back</a>
+        <a href="#_top">Restart</a>
+        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="value__c_xxx_000">
+      <h2>Finished!</h2>
+      <div class="tagspec-container">
+        <p class="tagspec final-tagspec">#value +c_xxx</p>
+      </div>
+       <p class="note">Replace &quot;xxx&quot; with your currency code, e.g. +c_xof for West African francs</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_">◀️ Back</a>
@@ -35647,13 +35647,13 @@
       </div>
     </section>
     <section class="question" id="value_transfer">
-      <h2>What currency do the monetary values represent?</h2>
+      <h2>What currency applies to the monetary values in the column?</h2>
       <p class="progress"><span class="tagspec">#value +transfer</span></p>
         <p class="option"><a href="#value_transfer__000">A mixture of different currencies</a></p>
-        <p class="option"><a href="#value_transfer_usd_000">Us dollars</a></p>
-        <p class="option"><a href="#value_transfer_eur_000">Euros</a></p>
-        <p class="option"><a href="#value_transfer_gbp_000">Pounds Sterling</a></p>
-        <p class="option"><a href="#value_transfer_xxx_000">A currency not listed here</a></p>
+        <p class="option"><a href="#value_transfer_c_usd_000">US dollars</a></p>
+        <p class="option"><a href="#value_transfer_c_eur_000">Euros</a></p>
+        <p class="option"><a href="#value_transfer_c_gbp_000">Pounds Sterling</a></p>
+        <p class="option"><a href="#value_transfer_c_xxx_000">A different currency</a></p>
       <div class="nav">
       <a href="#value">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -35667,7 +35667,7 @@
       <div class="tagspec-container">
         <p class="tagspec final-tagspec">#value +transfer</p>
       </div>
-       <p class="note">there should be another column tagged with #currency</p>
+       <p class="note">There should be another column tagged with #currency</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_transfer">◀️ Back</a>
@@ -35675,22 +35675,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_transfer_usd_000">
+    <section class="result" id="value_transfer_c_usd_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +transfer +usd</p>
-      </div>
-      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
-      <div class="nav">
-        <a href="#value_transfer">◀️ Back</a>
-        <a href="#_top">Restart</a>
-        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
-      </div>
-    </section>
-    <section class="result" id="value_transfer_eur_000">
-      <h2>Finished!</h2>
-      <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +transfer +eur</p>
+        <p class="tagspec final-tagspec">#value +transfer +c_usd</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35699,10 +35687,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_transfer_gbp_000">
+    <section class="result" id="value_transfer_c_eur_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +transfer +gbp</p>
+        <p class="tagspec final-tagspec">#value +transfer +c_eur</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35711,12 +35699,24 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_transfer_xxx_000">
+    <section class="result" id="value_transfer_c_gbp_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +transfer +xxx</p>
+        <p class="tagspec final-tagspec">#value +transfer +c_gbp</p>
       </div>
-       <p class="note">Replace +xxx with your currency code, e.g. +xof for West African francs</p>
+      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#value_transfer">◀️ Back</a>
+        <a href="#_top">Restart</a>
+        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="value_transfer_c_xxx_000">
+      <h2>Finished!</h2>
+      <div class="tagspec-container">
+        <p class="tagspec final-tagspec">#value +transfer +c_xxx</p>
+      </div>
+       <p class="note">Replace &quot;xxx&quot; with your currency code, e.g. +c_xof for West African francs</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_transfer">◀️ Back</a>
@@ -35725,13 +35725,13 @@
       </div>
     </section>
     <section class="question" id="value_incoming">
-      <h2>What currency do the monetary values represent?</h2>
+      <h2>What currency applies to the monetary values in the column?</h2>
       <p class="progress"><span class="tagspec">#value +incoming</span></p>
         <p class="option"><a href="#value_incoming__000">A mixture of different currencies</a></p>
-        <p class="option"><a href="#value_incoming_usd_000">Us dollars</a></p>
-        <p class="option"><a href="#value_incoming_eur_000">Euros</a></p>
-        <p class="option"><a href="#value_incoming_gbp_000">Pounds Sterling</a></p>
-        <p class="option"><a href="#value_incoming_xxx_000">A currency not listed here</a></p>
+        <p class="option"><a href="#value_incoming_c_usd_000">US dollars</a></p>
+        <p class="option"><a href="#value_incoming_c_eur_000">Euros</a></p>
+        <p class="option"><a href="#value_incoming_c_gbp_000">Pounds Sterling</a></p>
+        <p class="option"><a href="#value_incoming_c_xxx_000">A different currency</a></p>
       <div class="nav">
       <a href="#value">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -35745,7 +35745,7 @@
       <div class="tagspec-container">
         <p class="tagspec final-tagspec">#value +incoming</p>
       </div>
-       <p class="note">there should be another column tagged with #currency</p>
+       <p class="note">There should be another column tagged with #currency</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_incoming">◀️ Back</a>
@@ -35753,22 +35753,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_incoming_usd_000">
+    <section class="result" id="value_incoming_c_usd_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +incoming +usd</p>
-      </div>
-      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
-      <div class="nav">
-        <a href="#value_incoming">◀️ Back</a>
-        <a href="#_top">Restart</a>
-        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
-      </div>
-    </section>
-    <section class="result" id="value_incoming_eur_000">
-      <h2>Finished!</h2>
-      <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +incoming +eur</p>
+        <p class="tagspec final-tagspec">#value +incoming +c_usd</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35777,10 +35765,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_incoming_gbp_000">
+    <section class="result" id="value_incoming_c_eur_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +incoming +gbp</p>
+        <p class="tagspec final-tagspec">#value +incoming +c_eur</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35789,12 +35777,24 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_incoming_xxx_000">
+    <section class="result" id="value_incoming_c_gbp_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +incoming +xxx</p>
+        <p class="tagspec final-tagspec">#value +incoming +c_gbp</p>
       </div>
-       <p class="note">Replace +xxx with your currency code, e.g. +xof for West African francs</p>
+      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#value_incoming">◀️ Back</a>
+        <a href="#_top">Restart</a>
+        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="value_incoming_c_xxx_000">
+      <h2>Finished!</h2>
+      <div class="tagspec-container">
+        <p class="tagspec final-tagspec">#value +incoming +c_xxx</p>
+      </div>
+       <p class="note">Replace &quot;xxx&quot; with your currency code, e.g. +c_xof for West African francs</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_incoming">◀️ Back</a>
@@ -35803,13 +35803,13 @@
       </div>
     </section>
     <section class="question" id="value_outgoing">
-      <h2>What currency do the monetary values represent?</h2>
+      <h2>What currency applies to the monetary values in the column?</h2>
       <p class="progress"><span class="tagspec">#value +outgoing</span></p>
         <p class="option"><a href="#value_outgoing__000">A mixture of different currencies</a></p>
-        <p class="option"><a href="#value_outgoing_usd_000">Us dollars</a></p>
-        <p class="option"><a href="#value_outgoing_eur_000">Euros</a></p>
-        <p class="option"><a href="#value_outgoing_gbp_000">Pounds Sterling</a></p>
-        <p class="option"><a href="#value_outgoing_xxx_000">A currency not listed here</a></p>
+        <p class="option"><a href="#value_outgoing_c_usd_000">US dollars</a></p>
+        <p class="option"><a href="#value_outgoing_c_eur_000">Euros</a></p>
+        <p class="option"><a href="#value_outgoing_c_gbp_000">Pounds Sterling</a></p>
+        <p class="option"><a href="#value_outgoing_c_xxx_000">A different currency</a></p>
       <div class="nav">
       <a href="#value">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -35823,7 +35823,7 @@
       <div class="tagspec-container">
         <p class="tagspec final-tagspec">#value +outgoing</p>
       </div>
-       <p class="note">there should be another column tagged with #currency</p>
+       <p class="note">There should be another column tagged with #currency</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_outgoing">◀️ Back</a>
@@ -35831,22 +35831,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_outgoing_usd_000">
+    <section class="result" id="value_outgoing_c_usd_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +outgoing +usd</p>
-      </div>
-      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
-      <div class="nav">
-        <a href="#value_outgoing">◀️ Back</a>
-        <a href="#_top">Restart</a>
-        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
-      </div>
-    </section>
-    <section class="result" id="value_outgoing_eur_000">
-      <h2>Finished!</h2>
-      <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +outgoing +eur</p>
+        <p class="tagspec final-tagspec">#value +outgoing +c_usd</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35855,10 +35843,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_outgoing_gbp_000">
+    <section class="result" id="value_outgoing_c_eur_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +outgoing +gbp</p>
+        <p class="tagspec final-tagspec">#value +outgoing +c_eur</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35867,12 +35855,24 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_outgoing_xxx_000">
+    <section class="result" id="value_outgoing_c_gbp_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +outgoing +xxx</p>
+        <p class="tagspec final-tagspec">#value +outgoing +c_gbp</p>
       </div>
-       <p class="note">Replace +xxx with your currency code, e.g. +xof for West African francs</p>
+      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#value_outgoing">◀️ Back</a>
+        <a href="#_top">Restart</a>
+        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="value_outgoing_c_xxx_000">
+      <h2>Finished!</h2>
+      <div class="tagspec-container">
+        <p class="tagspec final-tagspec">#value +outgoing +c_xxx</p>
+      </div>
+       <p class="note">Replace &quot;xxx&quot; with your currency code, e.g. +c_xof for West African francs</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_outgoing">◀️ Back</a>
@@ -35881,13 +35881,13 @@
       </div>
     </section>
     <section class="question" id="value_budget">
-      <h2>What currency do the monetary values represent?</h2>
+      <h2>What currency applies to the monetary values in the column?</h2>
       <p class="progress"><span class="tagspec">#value +budget</span></p>
         <p class="option"><a href="#value_budget__000">A mixture of different currencies</a></p>
-        <p class="option"><a href="#value_budget_usd_000">Us dollars</a></p>
-        <p class="option"><a href="#value_budget_eur_000">Euros</a></p>
-        <p class="option"><a href="#value_budget_gbp_000">Pounds Sterling</a></p>
-        <p class="option"><a href="#value_budget_xxx_000">A currency not listed here</a></p>
+        <p class="option"><a href="#value_budget_c_usd_000">US dollars</a></p>
+        <p class="option"><a href="#value_budget_c_eur_000">Euros</a></p>
+        <p class="option"><a href="#value_budget_c_gbp_000">Pounds Sterling</a></p>
+        <p class="option"><a href="#value_budget_c_xxx_000">A different currency</a></p>
       <div class="nav">
       <a href="#value">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -35901,7 +35901,7 @@
       <div class="tagspec-container">
         <p class="tagspec final-tagspec">#value +budget</p>
       </div>
-       <p class="note">there should be another column tagged with #currency</p>
+       <p class="note">There should be another column tagged with #currency</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_budget">◀️ Back</a>
@@ -35909,22 +35909,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_budget_usd_000">
+    <section class="result" id="value_budget_c_usd_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +budget +usd</p>
-      </div>
-      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
-      <div class="nav">
-        <a href="#value_budget">◀️ Back</a>
-        <a href="#_top">Restart</a>
-        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
-      </div>
-    </section>
-    <section class="result" id="value_budget_eur_000">
-      <h2>Finished!</h2>
-      <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +budget +eur</p>
+        <p class="tagspec final-tagspec">#value +budget +c_usd</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35933,10 +35921,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_budget_gbp_000">
+    <section class="result" id="value_budget_c_eur_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +budget +gbp</p>
+        <p class="tagspec final-tagspec">#value +budget +c_eur</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -35945,12 +35933,24 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_budget_xxx_000">
+    <section class="result" id="value_budget_c_gbp_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +budget +xxx</p>
+        <p class="tagspec final-tagspec">#value +budget +c_gbp</p>
       </div>
-       <p class="note">Replace +xxx with your currency code, e.g. +xof for West African francs</p>
+      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#value_budget">◀️ Back</a>
+        <a href="#_top">Restart</a>
+        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="value_budget_c_xxx_000">
+      <h2>Finished!</h2>
+      <div class="tagspec-container">
+        <p class="tagspec final-tagspec">#value +budget +c_xxx</p>
+      </div>
+       <p class="note">Replace &quot;xxx&quot; with your currency code, e.g. +c_xof for West African francs</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_budget">◀️ Back</a>
@@ -35959,13 +35959,13 @@
       </div>
     </section>
     <section class="question" id="value_disbursement">
-      <h2>What currency do the monetary values represent?</h2>
+      <h2>What currency applies to the monetary values in the column?</h2>
       <p class="progress"><span class="tagspec">#value +disbursement</span></p>
         <p class="option"><a href="#value_disbursement__000">A mixture of different currencies</a></p>
-        <p class="option"><a href="#value_disbursement_usd_000">Us dollars</a></p>
-        <p class="option"><a href="#value_disbursement_eur_000">Euros</a></p>
-        <p class="option"><a href="#value_disbursement_gbp_000">Pounds Sterling</a></p>
-        <p class="option"><a href="#value_disbursement_xxx_000">A currency not listed here</a></p>
+        <p class="option"><a href="#value_disbursement_c_usd_000">US dollars</a></p>
+        <p class="option"><a href="#value_disbursement_c_eur_000">Euros</a></p>
+        <p class="option"><a href="#value_disbursement_c_gbp_000">Pounds Sterling</a></p>
+        <p class="option"><a href="#value_disbursement_c_xxx_000">A different currency</a></p>
       <div class="nav">
       <a href="#value">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -35979,7 +35979,7 @@
       <div class="tagspec-container">
         <p class="tagspec final-tagspec">#value +disbursement</p>
       </div>
-       <p class="note">there should be another column tagged with #currency</p>
+       <p class="note">There should be another column tagged with #currency</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_disbursement">◀️ Back</a>
@@ -35987,22 +35987,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_disbursement_usd_000">
+    <section class="result" id="value_disbursement_c_usd_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +disbursement +usd</p>
-      </div>
-      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
-      <div class="nav">
-        <a href="#value_disbursement">◀️ Back</a>
-        <a href="#_top">Restart</a>
-        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
-      </div>
-    </section>
-    <section class="result" id="value_disbursement_eur_000">
-      <h2>Finished!</h2>
-      <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +disbursement +eur</p>
+        <p class="tagspec final-tagspec">#value +disbursement +c_usd</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -36011,10 +35999,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_disbursement_gbp_000">
+    <section class="result" id="value_disbursement_c_eur_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +disbursement +gbp</p>
+        <p class="tagspec final-tagspec">#value +disbursement +c_eur</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -36023,12 +36011,24 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_disbursement_xxx_000">
+    <section class="result" id="value_disbursement_c_gbp_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +disbursement +xxx</p>
+        <p class="tagspec final-tagspec">#value +disbursement +c_gbp</p>
       </div>
-       <p class="note">Replace +xxx with your currency code, e.g. +xof for West African francs</p>
+      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#value_disbursement">◀️ Back</a>
+        <a href="#_top">Restart</a>
+        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="value_disbursement_c_xxx_000">
+      <h2>Finished!</h2>
+      <div class="tagspec-container">
+        <p class="tagspec final-tagspec">#value +disbursement +c_xxx</p>
+      </div>
+       <p class="note">Replace &quot;xxx&quot; with your currency code, e.g. +c_xof for West African francs</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_disbursement">◀️ Back</a>
@@ -36037,13 +36037,13 @@
       </div>
     </section>
     <section class="question" id="value_expenditure">
-      <h2>What currency do the monetary values represent?</h2>
+      <h2>What currency applies to the monetary values in the column?</h2>
       <p class="progress"><span class="tagspec">#value +expenditure</span></p>
         <p class="option"><a href="#value_expenditure__000">A mixture of different currencies</a></p>
-        <p class="option"><a href="#value_expenditure_usd_000">Us dollars</a></p>
-        <p class="option"><a href="#value_expenditure_eur_000">Euros</a></p>
-        <p class="option"><a href="#value_expenditure_gbp_000">Pounds Sterling</a></p>
-        <p class="option"><a href="#value_expenditure_xxx_000">A currency not listed here</a></p>
+        <p class="option"><a href="#value_expenditure_c_usd_000">US dollars</a></p>
+        <p class="option"><a href="#value_expenditure_c_eur_000">Euros</a></p>
+        <p class="option"><a href="#value_expenditure_c_gbp_000">Pounds Sterling</a></p>
+        <p class="option"><a href="#value_expenditure_c_xxx_000">A different currency</a></p>
       <div class="nav">
       <a href="#value">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -36057,7 +36057,7 @@
       <div class="tagspec-container">
         <p class="tagspec final-tagspec">#value +expenditure</p>
       </div>
-       <p class="note">there should be another column tagged with #currency</p>
+       <p class="note">There should be another column tagged with #currency</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_expenditure">◀️ Back</a>
@@ -36065,22 +36065,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_expenditure_usd_000">
+    <section class="result" id="value_expenditure_c_usd_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +expenditure +usd</p>
-      </div>
-      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
-      <div class="nav">
-        <a href="#value_expenditure">◀️ Back</a>
-        <a href="#_top">Restart</a>
-        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
-      </div>
-    </section>
-    <section class="result" id="value_expenditure_eur_000">
-      <h2>Finished!</h2>
-      <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +expenditure +eur</p>
+        <p class="tagspec final-tagspec">#value +expenditure +c_usd</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -36089,10 +36077,10 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_expenditure_gbp_000">
+    <section class="result" id="value_expenditure_c_eur_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +expenditure +gbp</p>
+        <p class="tagspec final-tagspec">#value +expenditure +c_eur</p>
       </div>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
@@ -36101,12 +36089,24 @@
         <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
       </div>
     </section>
-    <section class="result" id="value_expenditure_xxx_000">
+    <section class="result" id="value_expenditure_c_gbp_000">
       <h2>Finished!</h2>
       <div class="tagspec-container">
-        <p class="tagspec final-tagspec">#value +expenditure +xxx</p>
+        <p class="tagspec final-tagspec">#value +expenditure +c_gbp</p>
       </div>
-       <p class="note">Replace +xxx with your currency code, e.g. +xof for West African francs</p>
+      <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
+      <div class="nav">
+        <a href="#value_expenditure">◀️ Back</a>
+        <a href="#_top">Restart</a>
+        <a href="http://hxlstandard.org/standard/1-1final/dictionary" target="_blank">📖 HXL dictionary</a>
+      </div>
+    </section>
+    <section class="result" id="value_expenditure_c_xxx_000">
+      <h2>Finished!</h2>
+      <div class="tagspec-container">
+        <p class="tagspec final-tagspec">#value +expenditure +c_xxx</p>
+      </div>
+       <p class="note">Replace &quot;xxx&quot; with your currency code, e.g. +c_xof for West African francs</p>
       <p class="post-text">You are free to add more attributes, or to make up your own, if you need to make further distinctions.</p>
       <div class="nav">
         <a href="#value_expenditure">◀️ Back</a>
@@ -36476,13 +36476,13 @@
         </div>
     </section>
     <section class="question" id="indicator_MY_CUSTOM_ATTRIBUTE">
-      <h2>What is the most-specific data type that applies to every indicator value?</h2>
+      <h2>What is the most-specific data type that applies to every value in the column?</h2>
       <p class="progress"><span class="tagspec">#indicator +MY_CUSTOM_ATTRIBUTE</span></p>
-        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE__000">Mixed types, or all text</a></p>
-        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_bool_000">A boolean (true/false or yes/no-style) value</a></p>
+        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE__000">Mixed data types, or all text</a></p>
+        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_bool_000">A boolean value (true/false or yes/no)</a></p>
         <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_pct_000">A percentage</a></p>
         <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_num_000">Any other numeric value</a></p>
-        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_url_000">A web link</a></p>
+        <p class="option"><a href="#indicator_MY_CUSTOM_ATTRIBUTE_url_000">A web link (URL)</a></p>
       <div class="nav">
       <a href="#indicator">◀️ Back</a>
           <a href="#_top">Restart</a>
@@ -36561,7 +36561,7 @@
       <p class="progress"><span class="tagspec">#indicator</span></p>
         <p class="option"><a href="#indicator__name">The indicator&apos;s name</a></p>
         <p class="option"><a href="#indicator__code_000">The indicator&apos;s identifier or code</a></p>
-        <p class="option"><a href="#indicator__type_000">The indicators type/classification</a></p>
+        <p class="option"><a href="#indicator__type_000">The indicator&apos;s type/classification</a></p>
         <p class="option"><a href="#indicator__value">The indicator&apos;s value</a></p>
       <div class="nav">
       <a href="#indicator">◀️ Back</a>
@@ -36712,13 +36712,13 @@
       </div>
     </section>
     <section class="question" id="indicator__value">
-      <h2>What is the most-specific data type that applies to every indicator value?</h2>
+      <h2>What is the most-specific data type that applies to every value in the column?</h2>
       <p class="progress"><span class="tagspec">#indicator +value</span></p>
-        <p class="option"><a href="#indicator__value__000">Mixed types, or all text</a></p>
-        <p class="option"><a href="#indicator__value_bool_000">A boolean (true/false or yes/no-style) value</a></p>
+        <p class="option"><a href="#indicator__value__000">Mixed data types, or all text</a></p>
+        <p class="option"><a href="#indicator__value_bool_000">A boolean value (true/false or yes/no)</a></p>
         <p class="option"><a href="#indicator__value_pct_000">A percentage</a></p>
         <p class="option"><a href="#indicator__value_num_000">Any other numeric value</a></p>
-        <p class="option"><a href="#indicator__value_url_000">A web link</a></p>
+        <p class="option"><a href="#indicator__value_url_000">A web link (URL)</a></p>
       <div class="nav">
       <a href="#indicator_">◀️ Back</a>
           <a href="#_top">Restart</a>
